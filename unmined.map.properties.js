@@ -8,7 +8,7 @@ var UnminedMapProperties = {
     minRegionZ: -12,
     maxRegionX: 11,
     maxRegionZ: 11,
-    worldName: "Friend Zone 2026 Februari edit (imported) (imported)",
+    worldName: "Friend Zone 2026 Februari",
     background: "",
     markers: new Array(),
     enableGrid: true,
