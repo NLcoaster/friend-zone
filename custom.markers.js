@@ -38,48 +38,127 @@ Use the imageScale property if the pin image is too large.
 
 UnminedCustomMarkers = {
 
-    isEnabled: false,
+    isEnabled: true,
 
     markers: [
 
-        // Example 1: Simple marker
-        {
-            x: -200,
-            z: -200,
-            image: "custom.pin.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 0.5,
-        },
+       
+        // add your markers here
 
-        // Example 2: Marker with text
-        {
-            x: 0,
-            z: 0,
-            image: "custom.pin.png",
+	// quests
+
+	//prisson
+	{
+            x: -712,
+            z: 383,
+            image: "sword.png",
             imageAnchor: [0.5, 1],
             imageScale: 0.5,
-            text: "Marker with text",
-            textColor: "red", 
+            text: "prisson",
+            textColor: "cyan", 
             offsetX: 0,
             offsetY: 20,
             font: "bold 20px Calibri,sans serif",
         },
 
-        // Example 3: Text only
-        {
-            x: 200,
-            z: 200,
-            text: "Text only", 
+	//player build locations
+
+	//hotel
+	{
+            x: -51,
+            z: -157,
+            image: "crafting-table.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.9,
+            text: "hotel Spawn",
             textColor: "yellow", 
             offsetX: 0,
-            offsetY: 0, 
-            font: "bold 50px Calibri,sans serif",
+            offsetY: 20,
+            font: "bold 20px Calibri,sans serif",
         },
 
-        // add your markers here
 
+	//Sand Castle
+	{
+            x: -1280,
+            z: -306,
+            image: "diamond.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.7,
+            text: "Sand Castle",
+            textColor: "yellow", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 20px Calibri,sans serif",
+        },
 
+	//Frank
+	{
+            x: -2211,
+            z: -481,
+            image: "golden-apple.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.7,
+            text: "Frank's zone",
+            textColor: "yellow", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 20px Calibri,sans serif",
+        },
 
+	//City
+	{
+            x: 1024,
+            z: 1024,
+            image: "furnace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.7,
+            text: "Monuments City",
+            textColor: "yellow", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 20px Calibri,sans serif",
+        },
+
+	//Marit
+	{
+            x: 28,
+            z: -730,
+            image: "diamond.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.7,
+            text: "Stufje House",
+            textColor: "yellow", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 20px Calibri,sans serif",
+        },
+
+	//daarook
+	{
+            x: -1560,
+            z: 432,
+            image: "pickaxe.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.7,
+            text: "Daarook's Hut",
+            textColor: "yellow", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 20px Calibri,sans serif",
+        },
+	//landscape names
+
+        // lake of no name
+        {
+            x: -800,
+            z: 0,
+            text: "lake of no name", 
+            textColor: "lime", 
+            offsetX: 0,
+            offsetY: 0, 
+            font: "bold 30px Calibri,sans serif",
+        },
 
         // do not delete the following two closing brackets
     ]
