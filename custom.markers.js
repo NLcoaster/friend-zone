@@ -147,6 +147,73 @@ UnminedCustomMarkers = {
             offsetY: 20,
             font: "bold 20px Calibri,sans serif",
         },
+
+	// villages
+
+	// village 1
+	{
+            x: -378,
+            z: -967,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.4,
+	},
+
+	// village 2
+	{
+            x: -1541,
+            z: -1258,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.4,
+	},
+
+	// village 3
+	{
+            x: -1022,
+            z: -1963,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.4,
+	},
+
+	// village 4
+	{
+            x: -1364,
+            z: -2100,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.4,
+	},
+
+	// village 5
+	{
+            x: -1892,
+            z: 331,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.4,
+	},
+
+	// village 6
+	{
+            x: 773,
+            z: 2957,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.4,
+	},
+
+
+	// Pillager 1
+	{
+            x: -824,
+            z: -856,
+            image: "PillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.4,
+	},
+
 	//landscape names
 
         // lake of no name
