@@ -61,6 +61,37 @@ UnminedCustomMarkers = {
             font: "bold 20px Calibri,sans serif",
         },
 
+	// Map room 1
+	{
+            x: -33,
+            z: -174,
+            image: "EnvSprite_world.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 1.0,
+            text: "Map Room",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+
+
+
+	// Map room 2
+	{
+            x: -1495,
+            z: 352,
+            image: "EnvSprite_world.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 1.0,
+            text: "Map Room",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+
+
 	//player build locations
 
 	//hotel
@@ -214,6 +245,17 @@ UnminedCustomMarkers = {
             imageScale: 0.4,
 	},
 
+
+
+	// broken portal
+	{
+            x: 126,
+            z: -429,
+            image: "EnvSprite_ruined-portal.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 1.0,
+	},
+
 	//landscape names
 
         // lake of no name
@@ -221,6 +263,17 @@ UnminedCustomMarkers = {
             x: -800,
             z: 0,
             text: "lake of no name", 
+            textColor: "lime", 
+            offsetX: 0,
+            offsetY: 0, 
+            font: "bold 30px Calibri,sans serif",
+        },
+
+        // stufo island
+        {
+            x: 100,
+            z: -560,
+            text: "stufo island", 
             textColor: "lime", 
             offsetX: 0,
             offsetY: 0, 
