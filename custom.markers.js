@@ -42,65 +42,224 @@ UnminedCustomMarkers = {
 
     markers: [
 
+
+	//spawn
+	{
+            x: 0,
+            z: 0,
+            image: "compass.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "World Spawn",
+            textColor: "red", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 20px Calibri,sans serif",
+        },
+
        
-        // add your markers here
+// add your markers here
 
 	// quests
 
-	//prisson
+		//prisson
 	{
-            x: -712,
-            z: 383,
-            image: "sword.png",
+            x: -716,
+            z: 362,
+            image: "quest.png",
             imageAnchor: [0.5, 1],
             imageScale: 0.5,
-            text: "prisson",
+            text: "Prisson",
             textColor: "cyan", 
             offsetX: 0,
             offsetY: 20,
             font: "bold 20px Calibri,sans serif",
         },
 
-	// Map room 1
+	// men made 
+
+		// Map room 1
 	{
             x: -33,
             z: -174,
             image: "EnvSprite_world.png",
             imageAnchor: [0.5, 1],
-            imageScale: 1.0,
+            imageScale: 0.25,
             text: "Map Room",
             textColor: "black", 
             offsetX: 0,
             offsetY: 20,
             font: "bold 10px Calibri,sans serif",
         },
-
-
-
-	// Map room 2
+		// Map room 2
 	{
             x: -1495,
             z: 352,
             image: "EnvSprite_world.png",
             imageAnchor: [0.5, 1],
-            imageScale: 1.0,
+            imageScale: 0.25,
             text: "Map Room",
             textColor: "black", 
             offsetX: 0,
             offsetY: 20,
             font: "bold 10px Calibri,sans serif",
         },
+		// library 1
+	{
+            x: -70,
+            z: -138,
+            image: "book enchanted.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.25,
+            text: "Library",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
 
+	//station's
 
-	//player build locations
+		// station Green keep
+	{
+            x: -1916,
+            z: -1384,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+		// station 26
+	{
+            x: -1550,
+            z: -1206,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station 26",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+		// station pilager tower
+	{
+            x: -841,
+            z: -828,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station ",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+		// station 12
+	{
+            x: -331,
+            z: -923,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station 12",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+		// station chery
+	{
+            x: -101,
+            z: -706,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station chery",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+
+		// station spawn
+	{
+            x: -5,
+            z: -426,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+		// station 3
+	{
+            x: -1104,
+            z: -305,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station 3",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+		// station 10
+	{
+            x: -1479,
+            z: 423,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station 10",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+		// station 11
+	{
+            x: -1910,
+            z: 194,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station 11",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+		// station 5
+	{
+            x: -2140,
+            z: -501,
+            image: "riding.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "station 5",
+            textColor: "black", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 10px Calibri,sans serif",
+        },
+//player build locations
 
 	//hotel
 	{
             x: -51,
             z: -157,
-            image: "crafting-table.png",
+            image: "Red_Bed_2D.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.9,
+            imageScale: 0.5,
             text: "hotel Spawn",
             textColor: "yellow", 
             offsetX: 0,
@@ -113,9 +272,9 @@ UnminedCustomMarkers = {
 	{
             x: -1280,
             z: -306,
-            image: "diamond.png",
+            image: "item.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.7,
+            imageScale: 0.5,
             text: "Sand Castle",
             textColor: "yellow", 
             offsetX: 0,
@@ -127,9 +286,9 @@ UnminedCustomMarkers = {
 	{
             x: -2211,
             z: -481,
-            image: "golden-apple.png",
+            image: "item.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.7,
+            imageScale: 0.5,
             text: "Frank's zone",
             textColor: "yellow", 
             offsetX: 0,
@@ -141,9 +300,9 @@ UnminedCustomMarkers = {
 	{
             x: 1024,
             z: 1024,
-            image: "furnace.png",
+            image: "item.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.7,
+            imageScale: 0.5,
             text: "Monuments City",
             textColor: "yellow", 
             offsetX: 0,
@@ -155,9 +314,9 @@ UnminedCustomMarkers = {
 	{
             x: 28,
             z: -730,
-            image: "diamond.png",
+            image: "item.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.7,
+            imageScale: 0.5,
             text: "Stufje House",
             textColor: "yellow", 
             offsetX: 0,
@@ -169,9 +328,9 @@ UnminedCustomMarkers = {
 	{
             x: -1560,
             z: 432,
-            image: "pickaxe.png",
+            image: "item.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.7,
+            imageScale: 0.5,
             text: "Daarook's Hut",
             textColor: "yellow", 
             offsetX: 0,
@@ -179,9 +338,23 @@ UnminedCustomMarkers = {
             font: "bold 20px Calibri,sans serif",
         },
 
-	// villages
+	// Green Keep
+	{
+            x: -2000,
+            z: -1509,
+            image: "item.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+            text: "Green Keep",
+            textColor: "yellow", 
+            offsetX: 0,
+            offsetY: 20,
+            font: "bold 20px Calibri,sans serif",
+        },
 
-	// village 1
+// villages
+
+		// village 1
 	{
             x: -378,
             z: -967,
@@ -189,8 +362,7 @@ UnminedCustomMarkers = {
             imageAnchor: [0.5, 1],
             imageScale: 0.4,
 	},
-
-	// village 2
+		// village 2
 	{
             x: -1541,
             z: -1258,
@@ -198,65 +370,126 @@ UnminedCustomMarkers = {
             imageAnchor: [0.5, 1],
             imageScale: 0.4,
 	},
-
-	// village 3
+		// village 3
 	{
             x: -1022,
             z: -1963,
             image: "VillagerFace.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.4,
+            imageScale: 0.3,
 	},
-
-	// village 4
+		// village 4
 	{
             x: -1364,
             z: -2100,
             image: "VillagerFace.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.4,
+            imageScale: 0.3,
 	},
-
-	// village 5
+		// village 5
 	{
             x: -1892,
             z: 331,
             image: "VillagerFace.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.4,
+            imageScale: 0.3,
 	},
-
-	// village 6
+		// village 6
 	{
             x: 773,
             z: 2957,
             image: "VillagerFace.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.4,
+            imageScale: 0.3,
 	},
-
-
-	// Pillager 1
+		// village 7
+	{
+            x: -2396,
+            z: -1908,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+	},
+		// village 8
+	{
+            x: -2522,
+            z: -2453,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+	},
+		// village 9
+	{
+            x: -3243,
+            z: -2603,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+	},
+		// village 10
+	{
+            x: -3987,
+            z: -2548,
+            image: "VillagerFace.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+	},
+	//pill
+		// Pillager 1
 	{
             x: -824,
             z: -856,
             image: "PillagerFace.png",
             imageAnchor: [0.5, 1],
-            imageScale: 0.4,
+            imageScale: 0.3,
 	},
 
-
-
-	// broken portal
+	//portals
+		// broken portal 1
 	{
             x: 126,
             z: -429,
             image: "EnvSprite_ruined-portal.png",
             imageAnchor: [0.5, 1],
-            imageScale: 1.0,
+            imageScale: 0.5,
+	},
+		// broken portal 2
+	{
+            x: -1722,
+            z: -444,
+            image: "EnvSprite_ruined-portal.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+	},
+		// broken portal 3
+	{
+            x: -1063,
+            z: -940,
+            image: "EnvSprite_ruined-portal.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.5,
+	},
+		// portal spawn
+	{
+            x: -46,
+            z: -77,
+            image: "nether-portal.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.25,
 	},
 
-	//landscape names
+	//ship wrek
+		// ship 1
+	{
+            x: -2304,
+            z: -1707,
+            image: "shipwreck.png",
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+	},
+
+
+//landscape names
 
         // lake of no name
         {
@@ -266,7 +499,7 @@ UnminedCustomMarkers = {
             textColor: "lime", 
             offsetX: 0,
             offsetY: 0, 
-            font: "bold 30px Calibri,sans serif",
+            font: "bold 15px Calibri,sans serif",
         },
 
         // stufo island
@@ -277,7 +510,7 @@ UnminedCustomMarkers = {
             textColor: "lime", 
             offsetX: 0,
             offsetY: 0, 
-            font: "bold 30px Calibri,sans serif",
+            font: "bold 15px Calibri,sans serif",
         },
 
         // do not delete the following two closing brackets
