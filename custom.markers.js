@@ -803,6 +803,118 @@ UnminedCustomMarkers = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
+            // village 74
+                {
+                    x: 5617,
+                    z: 2868,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 75
+                {
+                    x: 5579,
+                    z: 1239,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 76
+                {
+                    x: 4127,
+                    z: 1265,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 77
+                {
+                    x: 4006,
+                    z: 637,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 78
+                {
+                    x: 4532,
+                    z: 654,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 79
+                {
+                    x: 4187,
+                    z: 204,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 80
+                {
+                    x: 5603,
+                    z: 294,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 81
+                {
+                    x: 5044,
+                    z: 265,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 82
+                {
+                    x: 4487,
+                    z: 246,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 83
+                {
+                    x: 5050,
+                    z: 204,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 84
+                {
+                    x: 3868,
+                    z: -340,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 85
+                {
+                    x: 4011,
+                    z: -990,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 86
+                {
+                    x: 4644,
+                    z: -1434,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 87
+                {
+                    x: 2954,
+                    z: 4540,
+                    image: "VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
         // Woodland Mansion
         // Portal
                 // portal spawn
