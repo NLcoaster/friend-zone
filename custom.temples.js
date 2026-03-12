@@ -35,23 +35,46 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustomMarkers = {
+UnminedCustomtemples = {
     isEnabled: true,
 
     markers: [
-        //spawn
-        {
-            x: 0,
-            z: 0,
-            image: "compass.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 0.5,
-            text: "World Spawn",
-            textColor: "red",
-            offsetX: 0,
-            offsetY: 20,
-            font: "bold 20px Calibri,sans serif",
-        },
+    // Structure
+        // Desert Pyramid
+            // Pyramid 1
+                {
+                    x: -3576,
+                    z: -2744,
+                    image: "desert-pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Pyramid 2
+                {
+                    x: 2216,
+                    z: 3592,
+                    image: "desert-pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Pyramid 3
+                {
+                    x: -5976,
+                    z: 4328,
+                    image: "desert-pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+
+        // Jungle Pyramid
+            // Jungle 1
+                {
+                    x: 3592,
+                    z: 4376,
+                    image: "jungle-pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
     // do not delete the following two closing brackets
     ]
 };

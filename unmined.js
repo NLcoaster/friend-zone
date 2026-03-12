@@ -172,23 +172,43 @@ class Unmined {
     viewProjection = null;
     dataProjection = null;
     regionMap = null;
-    markersLayer = null;
-    playerMarkersLayer = null;
+	villagesLayer = null;
+	pillagerLayer = null;
+	shipwreckLayer = null;
+	templesLayer = null;
+	portalsLayer = null;
+	undergroundLayer = null;
+	playerbuildLayer = null;
+	landscapesLayer = null;
+
+	markersLayer = null;
+	playerMarkersLayer = null;
 
     #scaleLine = null;
     #options = null;
 
     static defaultOptions = {
-        enableGrid: true,
-        showGrid: true,
-        binaryGrid: true,
-        showScaleBar: true,
-        denseGrid: false,
-        showMarkers: true,
-        showPlayers: true,
-        centerX: 0,
-        centerZ: 0
-    }
+	enableGrid: true,
+    showGrid: true,
+    binaryGrid: true,
+    showScaleBar: true,
+    denseGrid: false,
+
+    showvillages: true,
+    showpillager: true,
+    showshipwrecks: true,
+    showtemples: true,
+    showportals: true,
+    showunderground: true,
+    showplayerbuild: true,
+    showlandscapes: true,
+
+    showMarkers: true,
+    showPlayers: true,
+
+    centerX: 0,
+    centerZ: 0
+}
 
     constructor(mapElement, options, regions) {
 
@@ -304,6 +324,46 @@ class Unmined {
             })
         });
 
+        if (this.#options.villages && this.#options.villages.length > 0) {
+            this.villagesLayer = this.createvillagesLayer(this.#options.villages);
+            map.addLayer(this.villagesLayer);
+        }
+		
+		if (this.#options.pillager) {
+			this.pillagerLayer = this.createMarkersLayer(this.#options.pillager);
+			map.addLayer(this.pillagerLayer);
+		}
+
+		if (this.#options.shipwrecks) {
+			this.shipwreckLayer = this.createMarkersLayer(this.#options.shipwrecks);
+			map.addLayer(this.shipwreckLayer);
+		}
+
+		if (this.#options.temples) {
+			this.templesLayer = this.createMarkersLayer(this.#options.temples);
+			map.addLayer(this.templesLayer);
+		}
+
+		if (this.#options.portals) {
+			this.portalsLayer = this.createMarkersLayer(this.#options.portals);
+			map.addLayer(this.portalsLayer);
+		}
+
+		if (this.#options.underground) {
+			this.undergroundLayer = this.createMarkersLayer(this.#options.underground);
+			map.addLayer(this.undergroundLayer);
+		}
+
+		if (this.#options.playerbuild) {
+			this.playerbuildLayer = this.createMarkersLayer(this.#options.playerbuild);
+			map.addLayer(this.playerbuildLayer);
+		}
+
+		if (this.#options.landscapes) {
+			this.landscapesLayer = this.createMarkersLayer(this.#options.landscapes);
+			map.addLayer(this.landscapesLayer);
+		}		
+
         if (this.#options.markers && this.#options.markers.length > 0) {
             this.markersLayer = this.createMarkersLayer(this.#options.markers);
             map.addLayer(this.markersLayer);
@@ -322,6 +382,7 @@ class Unmined {
 
         this.updateGraticule();
         this.updateScaleBar();
+		this.updatevillagesLayer();
         this.updateMarkersLayer();
         this.updatePlayerMarkersLayer();
         this.olMap.addControl(this.createContextMenu());
@@ -348,7 +409,66 @@ class Unmined {
         this.redDotMarker.setCoordinates(coordinates);
     }
 
-    createMarkersLayer(markers) {
+    createvillagesLayer(villages) {
+        var features = [];
+
+        for (var i = 0; i < villages.length; i++) {
+            var item = villages[i];
+            var longitude = item.x;
+            var latitude = item.z;
+
+            var feature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], this.dataProjection, this.viewProjection))
+            });
+
+            var style = new ol.style.Style();
+            if (item.image)
+                style.setImage(new ol.style.Icon({
+                    src: item.image,
+                    anchor: item.imageAnchor,
+                    scale: item.imageScale
+                }));
+
+            if (item.text) {
+                style.setText(new ol.style.Text({
+                    text: item.text,
+                    font: item.font,
+                    offsetX: item.offsetX,
+                    offsetY: item.offsetY,
+                    fill: item.textColor ? new ol.style.Fill({
+                        color: item.textColor
+                    }) : null,
+                    padding: item.textPadding ?? [2, 4, 2, 4],
+                    stroke: item.textStrokeColor ? new ol.style.Stroke({
+                        color: item.textStrokeColor,
+                        width: item.textStrokeWidth
+                    }) : null,
+                    backgroundFill: item.textBackgroundColor ? new ol.style.Fill({
+                        color: item.textBackgroundColor
+                    }) : null,
+                    backgroundStroke: item.textBackgroundStrokeColor ? new ol.style.Stroke({
+                        color: item.textBackgroundStrokeColor,
+                        width: item.textBackgroundStrokeWidth
+                    }) : null,
+                }));
+            }
+
+            feature.setStyle(style);
+
+            features.push(feature);
+        }
+
+        var vectorSource = new ol.source.Vector({
+            features: features
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource
+        });
+        return vectorLayer;
+    }
+
+ createMarkersLayer(markers) {
         var features = [];
 
         for (var i = 0; i < markers.length; i++) {
@@ -619,6 +739,82 @@ class Unmined {
                     })
             }
 
+            if (this.villagesLayer) {
+                contextmenu.push(
+                    {
+                        classname: this.#options.showvillages ? 'menuitem-checked' : 'menuitem-unchecked',
+                        text: 'Show villages',
+                        callback: () => this.togglevillages()
+                    })
+            }
+
+			if (this.pillagerLayer) {
+				contextmenu.push(
+				{
+					classname: this.#options.showpillager ? 'menuitem-checked' : 'menuitem-unchecked',
+					text: 'Show pillager',
+					callback: () => this.togglepillager()
+				})
+			}
+
+			if (this.shipwreckLayer) {
+				contextmenu.push(
+				{
+					classname: this.#options.showshipwrecks ? 'menuitem-checked' : 'menuitem-unchecked',
+					text: 'Show shipwrecks',
+					callback: () => this.toggleshipwrecks()
+				})
+			}
+
+			if (this.templesLayer) {
+				contextmenu.push(
+				{
+					classname: this.#options.showtemples ? 'menuitem-checked' : 'menuitem-unchecked',
+					text: 'Show temples',
+					callback: () => this.toggletemples()
+				})
+			}
+
+			if (this.portalsLayer) {
+				contextmenu.push(
+				{
+					classname: this.#options.showportals ? 'menuitem-checked' : 'menuitem-unchecked',
+					text: 'Show portals',
+					callback: () => this.toggleportals()
+				})
+			}
+
+			if (this.undergroundLayer) {
+				contextmenu.push(
+				{
+					classname: this.#options.showunderground ? 'menuitem-checked' : 'menuitem-unchecked',
+					text: 'Show underground',
+					callback: () => this.toggleunderground()
+				})
+			}
+
+			if (this.playerbuildLayer) {
+				contextmenu.push(
+				{
+					classname: this.#options.showplayerbuild ? 'menuitem-checked' : 'menuitem-unchecked',
+					text: 'Show player builds',
+					callback: () => this.toggleplayerbuild()
+				})
+			}
+
+			if (this.landscapesLayer) {
+				contextmenu.push(
+				{
+					classname: this.#options.showlandscapes ? 'menuitem-checked' : 'menuitem-unchecked',
+					text: 'Show landscapes',
+					callback: () => this.togglelandscapes()
+				})
+			}
+
+            if (this.villagesLayer || this.playerMarkersLayer) {
+                contextmenu.push('-');
+            }
+
             if (this.markersLayer) {
                 contextmenu.push(
                     {
@@ -690,7 +886,48 @@ class Unmined {
         this.saveSettings();
     }
 
-    toggleMarkers() {
+    togglevillages() {
+        this.#options.showvillages = !this.#options.showvillages;
+        this.updatevillagesLayer();
+        this.saveSettings();
+    }
+	
+	togglepillager() {
+		this.#options.showpillager = !this.#options.showpillager;
+		this.pillagerLayer?.setVisible(this.#options.showpillager);
+	}
+
+	toggleshipwrecks() {
+		this.#options.showshipwrecks = !this.#options.showshipwrecks;
+		this.shipwreckLayer?.setVisible(this.#options.showshipwrecks);
+	}
+
+	toggletemples() {
+		this.#options.showtemples = !this.#options.showtemples;
+		this.templesLayer?.setVisible(this.#options.showtemples);
+	}
+
+	toggleportals() {
+		this.#options.showportals = !this.#options.showportals;
+		this.portalsLayer?.setVisible(this.#options.showportals);
+	}
+
+	toggleunderground() {
+		this.#options.showunderground = !this.#options.showunderground;
+		this.undergroundLayer?.setVisible(this.#options.showunderground);
+	}
+
+	toggleplayerbuild() {
+		this.#options.showplayerbuild = !this.#options.showplayerbuild;
+		this.playerbuildLayer?.setVisible(this.#options.showplayerbuild);
+	}
+
+	togglelandscapes() {
+		this.#options.showlandscapes = !this.#options.showlandscapes;
+		this.landscapesLayer?.setVisible(this.#options.showlandscapes);
+	}
+	
+	toggleMarkers() {
         this.#options.showMarkers = !this.#options.showMarkers;
         this.updateMarkersLayer();
         this.saveSettings();
@@ -718,7 +955,8 @@ class Unmined {
         this.#options.showGrid = mapSettings.showGrid ?? this.#options.showGrid;
         this.#options.binaryGrid = mapSettings.binaryGrid ?? this.#options.binaryGrid;
         this.#options.denseGrid = mapSettings.denseGrid ?? this.#options.denseGrid;
-        this.#options.showMarkers = mapSettings.showMarkers ?? this.#options.showMarkers;
+        this.#options.showvillages = mapSettings.showvillages ?? this.#options.showvillages;
+		this.#options.showMarkers = mapSettings.showMarkers ?? this.#options.showMarkers;
         this.#options.showPlayers = mapSettings.showPlayers ?? this.#options.showPlayers;
 
     }
@@ -729,15 +967,20 @@ class Unmined {
             showGrid: this.#options.showGrid,
             binaryGrid: this.#options.binaryGrid,
             denseGrid: this.#options.denseGrid,
-            showMarkers: this.#options.showMarkers,
+            showvillages: this.#options.showvillages,
+			showMarkers: this.#options.showMarkers,
             showPlayers: this.#options.showPlayers,
         }
         localStorage.setItem("mapSettings", JSON.stringify(mapSettings))
     }
 
+    updatevillagesLayer() {
+        this.villagesLayer?.setVisible(this.#options.showvillages);
+    }
+	
     updateMarkersLayer() {
         this.markersLayer?.setVisible(this.#options.showMarkers);
-    }
+    }	
 
     updatePlayerMarkersLayer() {
         this.playerMarkersLayer?.setVisible(this.#options.showPlayers);

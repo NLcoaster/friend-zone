@@ -35,23 +35,44 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustomMarkers = {
+UnminedCustomportals = {
     isEnabled: true,
 
     markers: [
-        //spawn
-        {
-            x: 0,
-            z: 0,
-            image: "compass.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 0.5,
-            text: "World Spawn",
-            textColor: "red",
-            offsetX: 0,
-            offsetY: 20,
-            font: "bold 20px Calibri,sans serif",
-        },
+        // Portal
+                // portal spawn
+                    {
+                        x: -46,
+                        z: -77,
+                        image: "nether-portal.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.25,
+                    },
+            // Ruined Portal
+                // broken portal 1
+                    {
+                        x: 126,
+                        z: -429,
+                        image: "EnvSprite_ruined-portal.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.5,
+                    },
+                // broken portal 2
+                    {
+                        x: -1722,
+                        z: -444,
+                        image: "EnvSprite_ruined-portal.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.5,
+                    },
+                // broken portal 3
+                    {
+                        x: -1063,
+                        z: -940,
+                        image: "EnvSprite_ruined-portal.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.5,
+                    },
     // do not delete the following two closing brackets
     ]
 };

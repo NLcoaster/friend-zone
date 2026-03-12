@@ -35,23 +35,45 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustomMarkers = {
+UnminedCustompillager = {
     isEnabled: true,
 
     markers: [
-        //spawn
-        {
-            x: 0,
-            z: 0,
-            image: "compass.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 0.5,
-            text: "World Spawn",
-            textColor: "red",
-            offsetX: 0,
-            offsetY: 20,
-            font: "bold 20px Calibri,sans serif",
-        },
+        // Pillager Outpost
+            // Pillager 1
+                {
+                    x: -824,
+                    z: -856,
+                    image: "pillager-outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Pillager 2
+                {
+                    x: -5048,
+                    z: -2120,
+                    image: "pillager-outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Pillager 3
+                {
+                    x: -5864,
+                    z: -3608,
+                    image: "pillager-outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Pillager 4
+                {
+                    x: -4536,
+                    z: -3496,
+                    image: "pillager-outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+        // Swamp Hut
+        // Woodland Mansion
     // do not delete the following two closing brackets
     ]
 };

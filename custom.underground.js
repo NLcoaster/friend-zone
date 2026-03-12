@@ -35,7 +35,7 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustomMarkers = {
+UnminedCustomunderground = {
     isEnabled: true,
 
     markers: [
@@ -52,6 +52,21 @@ UnminedCustomMarkers = {
             offsetY: 20,
             font: "bold 20px Calibri,sans serif",
         },
+            
+        //player build locations
+            //hotel
+            {
+                x: -51,
+                z: -157,
+                image: "Red_Bed_2D.png",
+                imageAnchor: [0.5, 1],
+                imageScale: 0.5,
+                text: "hotel Spawn",
+                textColor: "yellow",
+                offsetX: 0,
+                offsetY: 20,
+                font: "bold 20px Calibri,sans serif",
+            },
     // do not delete the following two closing brackets
     ]
 };

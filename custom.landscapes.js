@@ -35,23 +35,45 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustomMarkers = {
+UnminedCustomLandscapes = {
     isEnabled: true,
 
     markers: [
-        //spawn
-        {
-            x: 0,
-            z: 0,
-            image: "compass.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 0.5,
-            text: "World Spawn",
-            textColor: "red",
-            offsetX: 0,
-            offsetY: 20,
-            font: "bold 20px Calibri,sans serif",
-        },
+        //landscape names
+            // lake of no name
+                {
+                x: -800,
+                z: 0,
+                text: "lake of no name",
+                textColor: "lime",
+                offsetX: 0,
+                offsetY: 0,
+                font: "bold 15px Calibri,sans serif",
+                },
+            // stufo island
+                {
+                x: 100,
+                z: -560,
+                text: "stufo island",
+                textColor: "lime",
+                offsetX: 0,
+                offsetY: 0,
+                font: "bold 15px Calibri,sans serif",
+                },
+        // quests
+            //prisson
+                {
+                    x: -716,
+                    z: 362,
+                    image: "quest.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.5,
+                    text: "Prisson",
+                    textColor: "cyan",
+                    offsetX: 0,
+                    offsetY: 20,
+                    font: "bold 20px Calibri,sans serif",
+                },
     // do not delete the following two closing brackets
     ]
 };
