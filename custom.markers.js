@@ -1077,7 +1077,7 @@ UnminedCustomMarkers = {
                 {
                     x: -33,
                     z: -174,
-                    image: "EnvSprite_world.png",
+                    image: "spyglass.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.25,
                     text: "Map Room",
@@ -1088,9 +1088,22 @@ UnminedCustomMarkers = {
                 },
             // Map room 2
                 {
+                    x: -358,
+                    z: -892,
+                    image: "spyglass.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.25,
+                    text: "Map Room",
+                    textColor: "black",
+                    offsetX: 0,
+                    offsetY: 20,
+                    font: "bold 10px Calibri,sans serif",
+                },
+            // Map room 3
+                {
                     x: -1495,
                     z: 352,
-                    image: "EnvSprite_world.png",
+                    image: "spyglass.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.25,
                     text: "Map Room",
