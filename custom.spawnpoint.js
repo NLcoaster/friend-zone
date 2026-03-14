@@ -35,18 +35,18 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustomMarkers = {
+UnminedCustomSpawnpoint = {
     isEnabled: true,
 
-    markers: [
-        //spawn
+    spawnpoint: [
+        //Spawnpoint
         {
             x: 0,
             z: 0,
             image: "compass.png",
             imageAnchor: [0.5, 1],
             imageScale: 0.5,
-            text: "World Spawn",
+            text: "World Spawnpoint",
             textColor: "red",
             offsetX: 0,
             offsetY: 20,

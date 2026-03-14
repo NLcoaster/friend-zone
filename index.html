@@ -25,8 +25,8 @@
     <script type="text/javascript" src="unmined.map.regions.js"></script>
     <script type="text/javascript" src="unmined.map.players.js"></script>
 
-    <!-- Custom markers -->
-    <script type="text/javascript" src="custom.markers.js"></script>
+    <!-- Custom spawnpoint =-->
+    <script type="text/javascript" src="custom.spawnpoint.js"></script>
 	
 	 <!-- Custom villages -->
     <script type="text/javascript" src="custom.villages.js"></script>
@@ -68,13 +68,12 @@
 document.title = UnminedMapProperties.worldName + " - " + document.title;
 
 
-// Custom markers
-if (typeof UnminedCustomMarkers !== "undefined" &&
-    UnminedCustomMarkers.isEnabled &&
-    UnminedCustomMarkers.markers) {
+// Custom spawnpoint
+if (typeof UnminedCustomSpawnpoint !== "undefined" &&
+    UnminedCustomSpawnpoint.isEnabled &&
+    UnminedCustomSpawnpoint.spawnpoint) {
 
-    UnminedMapProperties.markers =
-        UnminedMapProperties.markers.concat(UnminedCustomMarkers.markers);
+    UnminedMapProperties.spawnpoint = UnminedCustomSpawnpoint.spawnpoint;
 }
 
 

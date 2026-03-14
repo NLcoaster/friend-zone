@@ -39,28 +39,6 @@ UnminedCustomPlayerbuild = {
     isEnabled: true,
 
     playerbuild: [
-        //spawn
-        {
-            x: 0,
-            z: 0,
-            image: "compass.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 0.5,
-            text: "World Spawn",
-            textColor: "red",
-            offsetX: 0,
-            offsetY: 20,
-            font: "bold 20px Calibri,sans serif",
-        },
-        // Portal
-                // portal spawn
-                    {
-                        x: -46,
-                        z: -77,
-                        image: "nether-portal.png",
-                        imageAnchor: [0.5, 1],
-                        imageScale: 0.25,
-                    },
     // add your markers here
         // utilities
             // Map room 1

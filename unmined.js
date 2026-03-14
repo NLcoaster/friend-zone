@@ -181,7 +181,7 @@ class Unmined {
 	playerbuildLayer = null;
 	landscapesLayer = null;
 
-	markersLayer = null;
+	spawnpointLayer = null;
 	playerMarkersLayer = null;
 
     #scaleLine = null;
@@ -203,7 +203,7 @@ class Unmined {
     showplayerbuild: true,
     showlandscapes: true,
 
-    showMarkers: true,
+    showSpawnpoint: true,
     showPlayers: true,
 
     centerX: 0,
@@ -364,9 +364,9 @@ class Unmined {
 			map.addLayer(this.landscapesLayer);
 		}		
 
-        if (this.#options.markers && this.#options.markers.length > 0) {
-            this.markersLayer = this.createMarkersLayer(this.#options.markers);
-            map.addLayer(this.markersLayer);
+        if (this.#options.spawnpoint && this.#options.spawnpoint.length > 0) {
+            this.spawnpointLayer = this.createspawnpointLayer(this.#options.spawnpoint);
+            map.addLayer(this.spawnpointLayer);
         }
 
         if (this.#options.playerMarkers && this.#options.playerMarkers.length > 0) {
@@ -390,7 +390,7 @@ class Unmined {
 		this.updateundergroundLayer();
 		this.updateplayerbuildLayer();
 		this.updatelandscapesLayer();
-        this.updateMarkersLayer();
+        this.updateSpawnpointLayer();
         this.updatePlayerMarkersLayer();
         this.olMap.addControl(this.createContextMenu());
 
@@ -888,11 +888,11 @@ class Unmined {
         return vectorLayer;
     }
 
- createMarkersLayer(markers) {
+ createspawnpointLayer(spawnpoint) {
         var features = [];
 
-        for (var i = 0; i < markers.length; i++) {
-            var item = markers[i];
+        for (var i = 0; i < spawnpoint.length; i++) {
+            var item = spawnpoint[i];
             var longitude = item.x;
             var latitude = item.z;
 
@@ -1239,17 +1239,17 @@ class Unmined {
                 }
 			})
 
-            if (this.markersLayer) {
+            if (this.spawnpointLayer) {
                 contextmenu.push(
                     {
-                        classname: this.#options.showMarkers ? 'menuitem-checked' : 'menuitem-unchecked',
-                        text: 'Show markers',
-                        callback: () => this.toggleMarkers()
+                        classname: this.#options.showSpawnpoint ? 'menuitem-checked' : 'menuitem-unchecked',
+                        text: 'Show spawnpoint',
+                        callback: () => this.toggleSpawnpoint()
                     })
             }
 
 
-            if (this.markersLayer || this.playerMarkersLayer) {
+            if (this.spawnpointLayer || this.playerMarkersLayer) {
                 contextmenu.push('-');
             }
 
@@ -1358,9 +1358,9 @@ class Unmined {
         this.saveSettings();
 	}
 	
-	toggleMarkers() {
-        this.#options.showMarkers = !this.#options.showMarkers;
-        this.updateMarkersLayer();
+	toggleSpawnpoint() {
+        this.#options.showSpawnpoint = !this.#options.showSpawnpoint;
+        this.updateSpawnpointLayer();
         this.saveSettings();
     }
 
@@ -1394,7 +1394,7 @@ class Unmined {
         this.#options.showunderground = mapSettings.showunderground ?? this.#options.showunderground;
         this.#options.showplayerbuild = mapSettings.showplayerbuild ?? this.#options.showplayerbuild;
         this.#options.showlandscapes = mapSettings.showlandscapes ?? this.#options.showlandscapes;
-		this.#options.showMarkers = mapSettings.showMarkers ?? this.#options.showMarkers;
+		this.#options.showSpawnpoint = mapSettings.showSpawnpoint ?? this.#options.showSpawnpoint;
         this.#options.showPlayers = mapSettings.showPlayers ?? this.#options.showPlayers;
 
     }
@@ -1413,7 +1413,7 @@ class Unmined {
             showunderground: this.#options.showunderground,
             showplayerbuild: this.#options.showplayerbuild,
             showlandscapes: this.#options.showlandscapes,
-			showMarkers: this.#options.showMarkers,
+			showSpawnpoint: this.#options.showSpawnpoint,
             showPlayers: this.#options.showPlayers,
         }
         localStorage.setItem("mapSettings", JSON.stringify(mapSettings))
@@ -1451,9 +1451,9 @@ class Unmined {
         this.landscapesLayer?.setVisible(this.#options.showlandscapes);
     }
 	
-    updateMarkersLayer() {
-        this.markersLayer?.setVisible(this.#options.showMarkers);
-    }	
+    updateSpawnpointLayer() {
+        this.spawnpointLayer?.setVisible(this.#options.showSpawnpoint);
+    }
 
     updatePlayerMarkersLayer() {
         this.playerMarkersLayer?.setVisible(this.#options.showPlayers);
