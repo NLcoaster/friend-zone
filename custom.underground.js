@@ -35,10 +35,10 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustomunderground = {
+UnminedCustomUnderground = {
     isEnabled: true,
 
-    markers: [
+    underground: [
         //spawn
         {
             x: 0,

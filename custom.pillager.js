@@ -35,10 +35,10 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustompillager = {
+UnminedCustomPillager = {
     isEnabled: true,
 
-    markers: [
+    pillager: [
         // Pillager Outpost
             // Pillager 1
                 {

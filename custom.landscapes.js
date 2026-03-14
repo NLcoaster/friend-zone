@@ -38,7 +38,7 @@ Use the imageScale property if the pin image is too large.
 UnminedCustomLandscapes = {
     isEnabled: true,
 
-    markers: [
+    landscapes: [
         //landscape names
             // lake of no name
                 {

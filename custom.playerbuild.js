@@ -35,10 +35,10 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustomMarkers = {
+UnminedCustomPlayerbuild = {
     isEnabled: true,
 
-    markers: [
+    playerbuild: [
         //spawn
         {
             x: 0,
@@ -67,7 +67,7 @@ UnminedCustomMarkers = {
                 {
                     x: -33,
                     z: -174,
-                    image: "world.png",
+                    image: "EnvSprite_world.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.25,
                     text: "Map Room",
@@ -80,7 +80,7 @@ UnminedCustomMarkers = {
                 {
                     x: -1495,
                     z: 352,
-                    image: "world.png",
+                    image: "EnvSprite_world.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.25,
                     text: "Map Room",
@@ -98,19 +98,6 @@ UnminedCustomMarkers = {
                     imageScale: 0.25,
                     text: "Library",
                     textColor: "black",
-                    offsetX: 0,
-                    offsetY: 20,
-                    font: "bold 15px Calibri,sans serif",
-                },
-            // rules
-                {
-                    x: -17,
-                    z: -2,
-                    image: "book knowledge.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.25,
-                    text: "Da rules",
-                    textColor: "purple",
                     offsetX: 0,
                     offsetY: 20,
                     font: "bold 10px Calibri,sans serif",

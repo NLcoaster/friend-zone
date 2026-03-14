@@ -35,10 +35,10 @@ You can use https://mapmarker.io/editor to generate custom pin images.
 Use the imageScale property if the pin image is too large.
 
 */
-UnminedCustomtemples = {
+UnminedCustomTemples = {
     isEnabled: true,
 
-    markers: [
+    temples: [
     // Structure
         // Desert Pyramid
             // Pyramid 1
