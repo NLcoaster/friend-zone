@@ -2121,38 +2121,6 @@ UnminedCustomShipwrecks = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Treasure 2
-                {
-                    x: ,
-                    z: ,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			// Treasure 3
-                {
-                    x: ,
-                    z: ,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			// Treasure 4 
-                {
-                    x: ,
-                    z: ,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			// Treasure 5
-                {
-                    x: ,
-                    z: ,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
     // do not delete the following two closing brackets
     ]
 };

@@ -44,7 +44,7 @@ UnminedCustomPillager = {
                 {
                     x: -824,
                     z: -856,
-                    image: "playerimages/pillager-outpost.png",
+                    image: "playerimages/Pillager_Outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -52,7 +52,7 @@ UnminedCustomPillager = {
                 {
                     x: -5048,
                     z: -2120,
-                    image: "playerimages/pillager-outpost.png",
+                    image: "playerimages/Pillager_Outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -60,7 +60,7 @@ UnminedCustomPillager = {
                 {
                     x: -5864,
                     z: -3608,
-                    image: "playerimages/pillager-outpost.png",
+                    image: "playerimages/Pillager_Outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -68,13 +68,45 @@ UnminedCustomPillager = {
                 {
                     x: -4536,
                     z: -3496,
-                    image: "playerimages/pillager-outpost.png",
+                    image: "playerimages/Pillager_Outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
         // Swamp Hut
         // Woodland Mansion
+		// Zombie Village
+			//Zombie Village 1
+                {
+                    x: -952,
+                    z: -4184,
+                    image: "playerimages/ZombieVillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			//Zombie Village 2
+                {
+                    x: -3992,
+                    z: -1592,
+                    image: "playerimages/ZombieVillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			//Zombie Village 3
+                {
+                    x: -5048,
+                    z: -280,
+                    image: "playerimages/ZombieVillagerFace.pngg",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			//Zombie Village 4
+                {
+                    x: -296,
+                    z: -2296,
+                    image: "playerimages/ZombieVillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                }
     // do not delete the following two closing brackets
     ]
 };
-
