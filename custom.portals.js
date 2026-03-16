@@ -44,7 +44,7 @@ UnminedCustomPortals = {
                     {
                         x: -46,
                         z: -77,
-                        image: "nether-portal.png",
+                        image: "playerimages/nether-portal.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.25,
                     },
@@ -53,7 +53,7 @@ UnminedCustomPortals = {
                     {
                         x: 126,
                         z: -429,
-                        image: "EnvSprite_ruined-portal.png",
+                        image: "playerimages/ruined-portal.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                     },
@@ -61,7 +61,7 @@ UnminedCustomPortals = {
                     {
                         x: -1722,
                         z: -444,
-                        image: "EnvSprite_ruined-portal.png",
+                        image: "playerimages/ruined-portal.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                     },
@@ -69,7 +69,7 @@ UnminedCustomPortals = {
                     {
                         x: -1063,
                         z: -940,
-                        image: "EnvSprite_ruined-portal.png",
+                        image: "playerimages/ruined-portal.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                     },

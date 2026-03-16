@@ -43,7 +43,7 @@ UnminedCustomSpawnpoint = {
         {
             x: 0,
             z: 0,
-            image: "compass.png",
+            image: "playerimages/compass.png",
             imageAnchor: [0.5, 1],
             imageScale: 0.5,
             text: "World Spawnpoint",

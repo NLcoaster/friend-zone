@@ -5,7 +5,7 @@ Pillager
 Shipwrecks
 	Shipwrecks, Buried Treasure
 Temples
-	Desert Pyramid, Jungle Temple, Ocean Ruins, Ocean Monument,
+	Desert Pyramid, Desert Well, Jungle Temple, Ocean Ruins, Ocean Monument,
 portals
 	Ruined Portal, Portal
 Underground

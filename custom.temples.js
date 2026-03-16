@@ -45,7 +45,7 @@ UnminedCustomTemples = {
                 {
                     x: -3576,
                     z: -2744,
-                    image: "desert-pyramid.png",
+                    image: "playerimages/desert-pyramid.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -53,7 +53,7 @@ UnminedCustomTemples = {
                 {
                     x: 2216,
                     z: 3592,
-                    image: "desert-pyramid.png",
+                    image: "playerimages/desert-pyramid.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -61,7 +61,7 @@ UnminedCustomTemples = {
                 {
                     x: -5976,
                     z: 4328,
-                    image: "desert-pyramid.png",
+                    image: "playerimages/desert-pyramid.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -71,7 +71,7 @@ UnminedCustomTemples = {
                 {
                     x: 3592,
                     z: 4376,
-                    image: "jungle-pyramid.png",
+                    image: "playerimages/jungle-pyramid.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },

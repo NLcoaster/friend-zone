@@ -44,7 +44,7 @@ UnminedCustomPillager = {
                 {
                     x: -824,
                     z: -856,
-                    image: "pillager-outpost.png",
+                    image: "playerimages/pillager-outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -52,7 +52,7 @@ UnminedCustomPillager = {
                 {
                     x: -5048,
                     z: -2120,
-                    image: "pillager-outpost.png",
+                    image: "playerimages/pillager-outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -60,7 +60,7 @@ UnminedCustomPillager = {
                 {
                     x: -5864,
                     z: -3608,
-                    image: "pillager-outpost.png",
+                    image: "playerimages/pillager-outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -68,7 +68,7 @@ UnminedCustomPillager = {
                 {
                     x: -4536,
                     z: -3496,
-                    image: "pillager-outpost.png",
+                    image: "playerimages/pillager-outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },

@@ -45,7 +45,7 @@ UnminedCustomPlayerbuild = {
                 {
                     x: -33,
                     z: -174,
-                    image: "EnvSprite_world.png",
+                    image: "playerimages/world.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.25,
                     text: "Map Room",
@@ -58,7 +58,7 @@ UnminedCustomPlayerbuild = {
                 {
                     x: -1495,
                     z: 352,
-                    image: "EnvSprite_world.png",
+                    image: "playerimages/world.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.25,
                     text: "Map Room",
@@ -71,7 +71,7 @@ UnminedCustomPlayerbuild = {
                 {
                     x: -70,
                     z: -138,
-                    image: "book enchanted.png",
+                    image: "playerimages/book enchanted.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.25,
                     text: "Library",
@@ -85,7 +85,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -1916,
                         z: -1384,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station",
@@ -98,7 +98,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -1550,
                         z: -1206,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station 26",
@@ -111,7 +111,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -841,
                         z: -828,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station ",
@@ -124,7 +124,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -331,
                         z: -923,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station 12",
@@ -137,7 +137,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -101,
                         z: -706,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station chery",
@@ -151,7 +151,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -5,
                         z: -426,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station",
@@ -164,7 +164,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -1104,
                         z: -305,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station 3",
@@ -177,7 +177,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -1479,
                         z: 423,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station 10",
@@ -190,7 +190,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -1910,
                         z: 194,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station 11",
@@ -203,7 +203,7 @@ UnminedCustomPlayerbuild = {
                     {
                         x: -2140,
                         z: -501,
-                        image: "riding.png",
+                        image: "playerimages/riding.png",
                         imageAnchor: [0.5, 1],
                         imageScale: 0.5,
                         text: "station 5",
@@ -217,7 +217,7 @@ UnminedCustomPlayerbuild = {
             {
                 x: -51,
                 z: -157,
-                image: "Red_Bed_2D.png",
+                image: "playerimages/Red_Bed_2D.png",
                 imageAnchor: [0.5, 1],
                 imageScale: 0.5,
                 text: "hotel Spawn",
@@ -230,7 +230,7 @@ UnminedCustomPlayerbuild = {
             {
                 x: -1280,
                 z: -306,
-                image: "item.png",
+                image: "playerimages/item.png",
                 imageAnchor: [0.5, 1],
                 imageScale: 0.5,
                 text: "Sand Castle",
@@ -243,7 +243,7 @@ UnminedCustomPlayerbuild = {
             {
                 x: -2211,
                 z: -481,
-                image: "item.png",
+                image: "playerimages/item.png",
                 imageAnchor: [0.5, 1],
                 imageScale: 0.5,
                 text: "Frank's zone",
@@ -256,7 +256,7 @@ UnminedCustomPlayerbuild = {
             {
                 x: 1024,
                 z: 1024,
-                image: "item.png",
+                image: "playerimages/item.png",
                 imageAnchor: [0.5, 1],
                 imageScale: 0.5,
                 text: "Monuments City",
@@ -269,7 +269,7 @@ UnminedCustomPlayerbuild = {
             {
                 x: 28,
                 z: -730,
-                image: "item.png",
+                image: "playerimages/item.png",
                 imageAnchor: [0.5, 1],
                 imageScale: 0.5,
                 text: "Stufje House",
@@ -282,7 +282,7 @@ UnminedCustomPlayerbuild = {
             {
                 x: -1560,
                 z: 432,
-                image: "item.png",
+                image: "playerimages/item.png",
                 imageAnchor: [0.5, 1],
                 imageScale: 0.5,
                 text: "Daarook's Hut",
@@ -295,7 +295,7 @@ UnminedCustomPlayerbuild = {
             {
                 x: -2000,
                 z: -1509,
-                image: "item.png",
+                image: "playerimages/item.png",
                 imageAnchor: [0.5, 1],
                 imageScale: 0.5,
                 text: "Green Keep",
@@ -309,7 +309,7 @@ UnminedCustomPlayerbuild = {
                 {
                     x: -716,
                     z: 362,
-                    image: "quest.png",
+                    image: "playerimages/quest.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.5,
                     text: "Prisson",

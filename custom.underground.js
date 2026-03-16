@@ -44,7 +44,7 @@ UnminedCustomUnderground = {
             {
                 x: -51,
                 z: -157,
-                image: "Red_Bed_2D.png",
+                image: "playerimages/Red_Bed_2D.png",
                 imageAnchor: [0.5, 1],
                 imageScale: 0.5,
                 text: "hotel Spawn",
