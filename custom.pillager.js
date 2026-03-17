@@ -42,13 +42,141 @@ UnminedCustomPillager = {
         // Pillager Outpost
             // Pillager 1
                 {
+                    x: 5656,
+                    z: 3016,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Pillager 2
+                {
+                    x: 5640,
+                    z: -2136,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Pillager 3
+                {
+                    x: -5528,
+                    z: 584,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Pillager 4
+                {
+                    x: 5192,
+                    z: -4824,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 5
+                {
+                    x: 5192,
+                    z: -6088,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 6
+                {
+                    x: 4408,
+                    z: -456,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 7
+                {
+                    x: 4392,
+                    z: -568,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 8
+                {
+                    x: 4280,
+                    z: -4744,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 9
+                {
+                    x: 3960,
+                    z: -2264,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 10
+                {
+                    x: 2952,
+                    z: 344,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 11
+                {
+                    x: 696,
+                    z: 1928,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 12
+                {
+                    x: -504,
+                    z: 4248,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 13
+                {
                     x: -824,
                     z: -856,
                     image: "playerimages/Pillager_Outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-            // Pillager 2
+			// Pillager 14
+                {
+                    x: -3336,
+                    z: -5400,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 15
+                {
+                    x: -3560,
+                    z: 1864,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 16
+                {
+                    x: -4376,
+                    z: 3144,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 17
+                {
+                    x: -4536,
+                    z: 3496,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 18
                 {
                     x: -5048,
                     z: -2120,
@@ -56,7 +184,15 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-            // Pillager 3
+			// Pillager 19
+                {
+                    x: -5832,
+                    z: 4568,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 20
                 {
                     x: -5864,
                     z: -3608,
@@ -64,10 +200,26 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-            // Pillager 4
+			// Pillager 21
                 {
-                    x: -4536,
-                    z: -3496,
+                    x: -6008,
+                    z: -4824,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 22
+                {
+                    x: -6040,
+                    z: 408,
+                    image: "playerimages/Pillager_Outpost.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Pillager 23
+                {
+                    x: -6056,
+                    z: -5864,
                     image: "playerimages/Pillager_Outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
