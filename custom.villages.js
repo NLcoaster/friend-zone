@@ -1084,6 +1084,40 @@ UnminedCustomVillages = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
+        
+		// Zombie Village
+			//Zombie Village 1
+                {
+                    x: -952,
+                    z: -4184,
+                    image: "playerimages/ZombieVillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			//Zombie Village 2
+                {
+                    x: -3992,
+                    z: -1592,
+                    image: "playerimages/ZombieVillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			//Zombie Village 3
+                {
+                    x: -5048,
+                    z: -280,
+                    image: "playerimages/ZombieVillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			//Zombie Village 4
+                {
+                    x: -296,
+                    z: -2296,
+                    image: "playerimages/ZombieVillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                }
     // do not delete the following two closing brackets
     ]
 };
