@@ -245,21 +245,293 @@ UnminedCustomUnderground = {
 		//Trail Ruins
 			// Trail Ruin 1
                 {
-                    x: 5556,
-                    z: 1236,
+                    x: 5459,
+                    z: 301,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 2
+                {
+                    x: 5027,
+                    z: -2451,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 3
+                {
+                    x: 4942,
+                    z: -3214,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 4
+                {
+                    x: 4594,
+                    z: -3602,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 5
+                {
+                    x: 4526,
+                    z: 290,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 6
+                {
+                    x: 4467,
+                    z: -829,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 7
+                {
+                    x: 4451,
+                    z: 2419,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 8
+                {
+                    x: 4366,
+                    z: 942,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 9
+                {
+                    x: 4158,
+                    z: 830,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 10
+                {
+                    x: 4157,
+                    z: -5667,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 11
+                {
+                    x: 4066,
+                    z: -3042,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 12
+                {
+                    x: 4061,
+                    z: 1117,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 13
+                {
+                    x: 3986,
+                    z: 366,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 14
+                {
+                    x: 3965,
+                    z: -277,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 15
+                {
+                    x: 3870,
+                    z: -1618,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 16
+                {
+                    x: 3539,
+                    z: 29,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 17
+                {
+                    x: 3506,
+                    z: -1358,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 18
+                {
+                    x: 3309,
+                    z: -5357,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 19
+                {
+                    x: 3037,
+                    z: -3987,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 20
+                {
+                    x: 2206,
+                    z: 222,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 21
+                {
+                    x: 1826,
+                    z: -4078,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 22
+                {
+                    x: 1218,
+                    z: 2562,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 23
+                {
+                    x: 563,
+                    z: 1709,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 24
+                {
+                    x: -530,
+                    z: 3650,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 25
+                {
+                    x: -882,
+                    z: 2974,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 26
+                {
+                    x: -1277,
+                    z: -989,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 27
+                {
+                    x: -1902,
+                    z: -4334,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 28
+                {
+                    x: -2083,
+                    z: -813,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 29
+                {
+                    x: -2173,
+                    z: -317,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 30
+                {
+                    x: -2674,
+                    z: 738,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 31
+                {
+                    x: -2675,
+                    z: 5677,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 32
+                {
+                    x: -3005,
+                    z: 5683,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Trail Ruin 33
+                {
+                    x: -3779,
+                    z: -1283,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },				
+			// Trail Ruin 34
+                {
+                    x: -4322,
+                    z: -2018,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+			// Trail Ruin 35
+                {
+                    x: -5741,
+                    z: 1203,
                     image: "playerimages/Trail_Ruin.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
 		//Trail Chambers
-			// Trail Chamber 1
+			// Trail Ruin 1
                 {
                     x: 5556,
                     z: 1236,
                     image: "playerimages/Trial_Chamber.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
-                },		
+                },				
     // do not delete the following two closing brackets
     ]
 };

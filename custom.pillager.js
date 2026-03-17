@@ -95,7 +95,7 @@ UnminedCustomPillager = {
                 {
                     x: -5048,
                     z: -280,
-                    image: "playerimages/ZombieVillagerFace.pngg",
+                    image: "playerimages/ZombieVillagerFace.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
