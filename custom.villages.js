@@ -1,40 +1,3 @@
-/*
-
-This is a JavaScript file you can edit to add custom markers to the map.
-uNmINeD does not overwrite this file during map generation.
-
-Steps:
-
-    1. Edit this file using Notepad or a code editor (do not use document editors like Microsoft Word)
-    2. Change the line "isEnabled: false," to "isEnabled: true," to display the markers
-    3. Change or remove the example markers
-    4. Add your own markers
-
-Marker format:
-
-    {
-        x: X coordinate of the marker (in Minecraft block units),
-        z: Z coordinate of the marker (in Minecraft block units),
-        image: marker image URL to display (in quotes),
-        imageScale: scale of the image (e.g. 1 = display full size, 0.5 = display half size),
-        imageAnchor: [0.5, 1] means the tip of the pin is at the center-bottom of the image (see OpenLayers documentation for more info),
-        text: marker text do display (in quotes),
-        textColor: text color in HTML/CSS format (in quotes),
-        offsetX: horizontal pixel offset of the text,
-        offsetY: vertical pixel offset of the text,
-        font: text font in HTML/CSS format (in quotes),
-    },
-
-Things to keep in mind:
-
-* There are opening and closing brackets for each marker "{" and "}"
-* Property names are case sensitive (i.e. "textColor" is okay, "TextColor" is not)
-* There is a comma (",") at the end of each line except the opening brackets ("{")
-
-You can use https://mapmarker.io/editor to generate custom pin images.
-Use the imageScale property if the pin image is too large.
-
-*/
 UnminedCustomVillages = {
     isEnabled: true,
 
@@ -830,6 +793,157 @@ UnminedCustomVillages = {
                 {
                     x: 2954,
                     z: 4540,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 88
+                {
+                    x: -5072,
+                    z: 1355,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 89
+                {
+                    x: -5744,
+                    z: 639,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 90
+                {
+                    x: -4603, z: -316,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 91
+                {
+                    x: -4811,
+                    z: 189,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 92
+                {
+                    x: -3632,
+                    z: 1415,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 93
+                {
+                    x: -4734,
+                    z: 2750,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 94
+                {
+                    x: -5735,
+                    z: 2907,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 95
+                {
+                    x: -5975,
+                    z: 3335,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 96
+                {
+                    x: -5716,
+                    z: 4043,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 97
+                {
+                    x: -5146,
+                    z: 3931,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 98
+                {
+                    x: -3067,
+                    z: 5013,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 99
+                {
+                    x: -2923,
+                    z: 6028,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 100
+                {
+                    x: -3581,
+                    z: 5540,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 101
+                {
+                    x: -4186,
+                    z: 5247,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 102
+                {
+                    x: -4252,
+                    z: 5654,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 103
+                {
+                    x: -4521,
+                    z: 5507,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 104
+                {
+                    x: 5056,
+                    z: -204,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 105
+                {
+                    x: 5645,
+                    z: -2573,
+                    image: "playerimages/VillagerFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // village 106
+                {
+                    x: 5781,
+                    z: -3561,
                     image: "playerimages/VillagerFace.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
