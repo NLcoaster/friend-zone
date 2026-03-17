@@ -21,45 +21,21 @@ UnminedCustomVillages = {
                 },
             // igloo 3
                 {
-                    x: 5944,
-                    z: -2504,
+                    x: 2760,
+                    z: -824,
                     image: "playerimages/igloo.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
             // igloo 4
                 {
-                    x: 5192,
-                    z: -2392,
+                    x: 3160,
+                    z: 40,
                     image: "playerimages/igloo.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
             // igloo 5
-                {
-                    x: -4648,
-                    z: -2248,
-                    image: "playerimages/igloo.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            // igloo 6
-                {
-                    x: 5144,
-                    z: -1896,
-                    image: "playerimages/igloo.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            // igloo 7
-                {
-                    x: 4760,
-                    z: -1720,
-                    image: "playerimages/igloo.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            // igloo 8
                 {
                     x: 4360,
                     z: -1336,
@@ -67,39 +43,199 @@ UnminedCustomVillages = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
+            // igloo 6
+                {
+                    x: 4360,
+                    z: -232,
+                    image: "playerimages/igloo.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // igloo 7
+                {
+                    x: 4472,
+                    z: 216,
+                    image: "playerimages/igloo.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // igloo 8
+                {
+                    x: 4760,
+                    z: -1720,
+                    image: "playerimages/igloo.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
             // igloo 9
                 {
-                    x: 3800,
-                    z: -1336,
+                    x: 4808,
+                    z: 840,
                     image: "playerimages/igloo.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
             // igloo 10
                 {
-                    x: 3240,
-                    z: -952,
+                    x: 5144,
+                    z: -1896,
                     image: "playerimages/igloo.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
             // igloo 11
                 {
-                    x: 2760,
-                    z: -824,
+                    x: -3272,
+                    z: 4952,
                     image: "playerimages/igloo.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
             // igloo 12
                 {
-                    x: 2216,
-                    z: -840,
+                    x: -3032,
+                    z: 5176,
                     image: "playerimages/igloo.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-
+            // igloo 13
+                {
+                    x: -3432,
+                    z: 5816,
+                    image: "playerimages/igloo.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // igloo 14
+                {
+                    x: -3768,
+                    z: 5832,
+                    image: "playerimages/igloo.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // igloo 15
+                {
+                    x: -4232,
+                    z: 5848,
+                    image: "playerimages/igloo.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+        //Igloo (with basement)
+            // igloo with basement 1
+                    {
+                        x: 2216,
+                        z: -840,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 2
+                    {
+                        x: 2264,
+                        z: -136,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 3
+                    {
+                        x: 2280,
+                        z: -152,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 4
+                    {
+                        x: 3192,
+                        z: -456,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 5
+                    {
+                        x: 3240,
+                        z: -952,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 6
+                    {
+                        x: 3800,
+                        z: -1336,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 7
+                    {
+                        x: 4120,
+                        z: -648,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 8
+                    {
+                        x: 4648,
+                        z: -2248,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 9
+                    {
+                        x: 4808,
+                        z: -488,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 10
+                    {
+                        x: 4696,
+                        z: 312,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 11
+                    {
+                        x: 5192,
+                        z: -2392,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 12
+                    {
+                        x: 5944,
+                        z: -2504,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 13
+                    {
+                        x: -3736,
+                        z: 4968,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
+            // igloo with basement 14
+                    {
+                        x: -3512,
+                        z: 5432,
+                        image: "playerimages/igloo with basemen.png",
+                        imageAnchor: [0.5, 1],
+                        imageScale: 0.3,
+                    },
         // Village 
             // village 1
                 {
