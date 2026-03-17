@@ -39,21 +39,227 @@ UnminedCustomUnderground = {
     isEnabled: true,
 
     underground: [
-     //player build locations
-            //hotel
-            {
-                x: -51,
-                z: -157,
-                image: "playerimages/Red_Bed_2D.png",
-                imageAnchor: [0.5, 1],
-                imageScale: 0.5,
-                text: "hotel Spawn",
-                textColor: "yellow",
-                offsetX: 0,
-                offsetY: 20,
-                font: "bold 20px Calibri,sans serif",
-            },
+		// Ancient City's
+            // Ancient City 1
+                {
+                    x: 5128,
+                    z: 2920,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Ancient City 2
+                {
+                    x: 3960,
+                    z: -3000,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Ancient City 3
+                {
+                    x: 3928,
+                    z: -2216,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Ancient City 4
+                {
+                    x: 3592,
+                    z: -1800,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+            // Ancient City 5
+                {
+                    x: 2856,
+                    z: -3704,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },		
+            // Ancient City 6
+                {
+                    x: 2824,
+                    z: -3320,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 7
+                {
+                    x: -774,
+                    z: -184,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 8
+                {
+                    x: -1816,
+                    z: 152,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 9
+                {
+                    x: -2184,
+                    z: 904,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 10
+                {
+                    x: -3704,
+                    z: 5464,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 11
+                {
+                    x: -3800,
+                    z: -4856,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 12
+                {
+                    x: -3816,
+                    z: 5816,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 13
+                {
+                    x: -4520,
+                    z: 1640,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 14
+                {
+                    x: -4568,
+                    z: 488,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 15
+                {
+                    x: -5272,
+                    z: -2568,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },	
+            // Ancient City 16
+                {
+                    x: -5656,
+                    z: -3000,
+                    image: "playerimages/Ancient_City.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+		//Mineshafts
+			// Mineshaft 1
+                {
+                    x: 5556,
+                    z: 1236,
+                    image: "playerimages/Abandoned_Mineshaft.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },				
+		//Strongholds
+			// Stronghold 1
+                {
+                    x: 5556,
+                    z: 1236,
+                    image: "playerimages/Stronghold.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Stronghold 2
+                {
+                    x: 4580,
+                    z: 4420,
+                    image: "playerimages/Stronghold.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Stronghold 3
+                {
+                    x: -300,
+                    z: 2292,
+                    image: "playerimages/Stronghold.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Stronghold 4
+                {
+                    x: -1324,
+                    z: -2156,
+                    image: "playerimages/Stronghold.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Stronghold 5
+                {
+                    x: -1900,
+                    z: 340,
+                    image: "playerimages/Stronghold.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Stronghold 6
+                {
+                    x: -4332,
+                    z: -4028,
+                    image: "playerimages/Stronghold.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Stronghold 7
+                {
+                    x: -4588,
+                    z: -1276,
+                    image: "playerimages/Stronghold.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Stronghold 8
+                {
+                    x: -4668,
+                    z: 1668,
+                    image: "playerimages/Stronghold.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+		//Trail Ruins
+			// Trail Ruin 1
+                {
+                    x: 5556,
+                    z: 1236,
+                    image: "playerimages/Trail_Ruin.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+		//Trail Chambers
+			// Trail Chamber 1
+                {
+                    x: 5556,
+                    z: 1236,
+                    image: "playerimages/Trial_Chamber.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },		
     // do not delete the following two closing brackets
     ]
 };
-
