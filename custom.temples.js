@@ -45,7 +45,7 @@ UnminedCustomTemples = {
                 {
                     x: -3576,
                     z: -2744,
-                    image: "playerimages/desert-pyramid.png",
+                    image: "playerimages/Desert_Pyramid.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -53,7 +53,7 @@ UnminedCustomTemples = {
                 {
                     x: 2216,
                     z: 3592,
-                    image: "playerimages/desert-pyramid.png",
+                    image: "playerimages/Desert_Pyramid.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
@@ -61,17 +61,129 @@ UnminedCustomTemples = {
                 {
                     x: -5976,
                     z: 4328,
-                    image: "playerimages/desert-pyramid.png",
+                    image: "playerimages/Desert_Pyramid.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-
+        // Desert Well
+            // Desert Well 1
+                {
+                    x: 3347,
+                    z: -2979,
+                    image: "playerimages/Desert_Well.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Desert Well 2
+                {
+                    x: 3246,
+                    z: -2606,
+                    image: "playerimages/Desert_Well.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Desert Well 3
+                {
+                    x: -3476,
+                    z: -1589,
+                    image: "playerimages/Desert_Well.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Desert Well 4
+                {
+                    x: 776,
+                    z: 2906,
+                    image: "playerimages/Desert_Well.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Desert Well 5
+                {
+                    x: 793,
+                    z: 2915,
+                    image: "playerimages/Desert_Well.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
         // Jungle Pyramid
             // Jungle 1
                 {
+                    x: 4152,
+                    z: -5864,
+                    image: "playerimages/Jungle_Pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Jungle 2
+                {
+                    x: 3736,
+                    z: -5880,
+                    image: "playerimages/Jungle_Pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Jungle 3
+                {
+                    x: 4888,
+                    z: -4834,
+                    image: "playerimages/Jungle_Pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Jungle 4
+                {
+                    x: -4296,
+                    z: -1816,
+                    image: "playerimages/Jungle_Pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Jungle 5
+                {
+                    x: -4232,
+                    z: -1320,
+                    image: "playerimages/Jungle_Pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Jungle 6
+                {
+                    x: -824,
+                    z: 2408,
+                    image: "playerimages/Jungle_Pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Jungle 7
+                {
+                    x: -744,
+                    z: 2872,
+                    image: "playerimages/Jungle_Pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Jungle 8
+                {
+                    x: -392,
+                    z: 3624,
+                    image: "playerimages/Jungle_Pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Jungle 9
+                {
                     x: 3592,
                     z: 4376,
-                    image: "playerimages/jungle-pyramid.png",
+                    image: "playerimages/Jungle_Pyramid.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+			// Jungle 10
+                {
+                    x: 4776,
+                    z: 2680,
+                    image: "playerimages/Jungle_Pyramid.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
