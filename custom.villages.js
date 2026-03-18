@@ -895,8 +895,8 @@ UnminedCustomVillages = {
                 },
             // village 83
                 {
-                    x: 5050,
-                    z: 204,
+                    x: 6036,
+                    z: -4610,
                     image: "playerimages/VillagerFace.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
