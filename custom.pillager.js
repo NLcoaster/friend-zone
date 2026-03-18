@@ -225,6 +225,14 @@ UnminedCustomPillager = {
                     imageScale: 0.3,
                 },
         // Swamp Hut
+			// Swamp Hut 1
+                {
+                    x: -5000,
+                    z: 2856,
+                    image: "playerimages/WitchFace.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
         // Woodland Mansion
     // do not delete the following two closing brackets
     ]
