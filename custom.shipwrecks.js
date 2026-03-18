@@ -2066,7 +2066,7 @@ UnminedCustomShipwrecks = {
                 },
 			// ship 254
                 {
-                    x: -7520,
+                    x: -5520,
                     z: -632,
                     image: "playerimages/shipwreck.png",
                     imageAnchor: [0.5, 1],
