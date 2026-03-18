@@ -74,21 +74,13 @@ UnminedCustomPillager = {
                 },
 			// Pillager 5
                 {
-                    x: 5192,
-                    z: -6088,
-                    image: "playerimages/Pillager_Outpost.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			// Pillager 6
-                {
                     x: 4408,
                     z: -456,
                     image: "playerimages/Pillager_Outpost.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 7
+			// Pillager 6
                 {
                     x: 4392,
                     z: -568,
@@ -96,7 +88,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 8
+			// Pillager 7
                 {
                     x: 4280,
                     z: -4744,
@@ -104,7 +96,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 9
+			// Pillager 8
                 {
                     x: 3960,
                     z: -2264,
@@ -112,7 +104,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 10
+			// Pillager 9
                 {
                     x: 2952,
                     z: 344,
@@ -120,7 +112,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 11
+			// Pillager 10
                 {
                     x: 696,
                     z: 1928,
@@ -128,7 +120,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 12
+			// Pillager 11
                 {
                     x: -504,
                     z: 4248,
@@ -136,7 +128,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 13
+			// Pillager 12
                 {
                     x: -824,
                     z: -856,
@@ -144,7 +136,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 14
+			// Pillager 13
                 {
                     x: -3336,
                     z: -5400,
@@ -152,7 +144,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 15
+			// Pillager 14
                 {
                     x: -3560,
                     z: 1864,
@@ -160,7 +152,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 16
+			// Pillager 15
                 {
                     x: -4376,
                     z: 3144,
@@ -168,7 +160,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 17
+			// Pillager 16
                 {
                     x: -4536,
                     z: 3496,
@@ -176,7 +168,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 18
+			// Pillager 17
                 {
                     x: -5048,
                     z: -2120,
@@ -184,7 +176,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 19
+			// Pillager 18
                 {
                     x: -5832,
                     z: 4568,
@@ -192,7 +184,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 20
+			// Pillager 19
                 {
                     x: -5864,
                     z: -3608,
@@ -200,7 +192,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 21
+			// Pillager 20
                 {
                     x: -6008,
                     z: -4824,
@@ -208,7 +200,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 22
+			// Pillager 21
                 {
                     x: -6040,
                     z: 408,
@@ -216,7 +208,7 @@ UnminedCustomPillager = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },
-			// Pillager 23
+			// Pillager 22
                 {
                     x: -6056,
                     z: -5864,
