@@ -22660,7 +22660,7 @@ UnminedCustomUnderground = {
                     imageAnchor: [0.5, 1],
                     imageScale: 0.3,
                 },		
-			// Trail Chamber 473
+		    // Trail Chamber 473
                 {
                     x: 5556,
                     z: 1236,
