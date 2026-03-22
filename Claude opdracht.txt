@@ -17,4 +17,4 @@ kan je vanuit excel het onderstaande stuk vullen?
 
 achter layernaam plaats je het cijfer uit de kolom nummer
 X:  vul je voor de komma de cijfers uit de tabel kolom X
-Z: zelfde maar dan met de cijfers uit table Kolom Z
+Z: zelfde maar dan met de cijfers uit tabel Kolom Z
