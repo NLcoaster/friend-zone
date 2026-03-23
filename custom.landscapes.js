@@ -39,8 +39,8 @@ UnminedCustomLandscapes = {
     isEnabled: true,
 
     landscapes: [
-        // landscape names
-            // lake of Mizu umi
+        //landscape names
+            //lake of Mizu umi
                 {
                 x: -800,
                 z: 0,
@@ -50,7 +50,7 @@ UnminedCustomLandscapes = {
                 offsetY: 0,
                 font: "bold 15px Calibri,sans serif",
                 },
-            // Røstànde
+            //Røstànde
                 {
                 x: -2434,
                 z: -1344,
@@ -60,7 +60,7 @@ UnminedCustomLandscapes = {
                 offsetY: 0,
                 font: "bold 15px Calibri,sans serif",
                 },
-            // Tredabellos
+            //Tredabellos
                 {
                 x: -1702,
                 z: -1059,
@@ -70,7 +70,7 @@ UnminedCustomLandscapes = {
                 offsetY: 0,
                 font: "bold 15px Calibri,sans serif",
                 },
-            // bortre punkten
+            //bortre punkten
                 {
                 x: -1560,
                 z: -1753,
@@ -81,7 +81,7 @@ UnminedCustomLandscapes = {
                 font: "bold 15px Calibri,sans serif",
                 },
         //channel
-            // channel
+            //channel
                 {
                 x: -2224,
                 z: -1776,
@@ -91,8 +91,8 @@ UnminedCustomLandscapes = {
                 offsetY: 0,
                 font: "bold 12px Calibri,sans serif",
                 },
-        // island
-            // stufo island
+        //island
+            //stufo island
                 {
                 x: 100,
                 z: -560,
@@ -102,15 +102,15 @@ UnminedCustomLandscapes = {
                 offsetY: 0,
                 font: "bold 15px Calibri,sans serif",
                 },
-        // quests
-            //prisson
+        //quests
+            //prison
                 {
                     x: -716,
                     z: 362,
                     image: "quest.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.5,
-                    text: "Prisson",
+                    text: "Prison",
                     textColor: "cyan",
                     offsetX: 0,
                     offsetY: 20,

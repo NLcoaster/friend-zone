@@ -2,9 +2,9 @@ UnminedCustomPortals = {
     isEnabled: true,
 
     portals: [
-        // Portal
-            // portal nether
-                // portal nether 1
+        //Portal
+            //portal nether
+                //portal nether 1
                     {
                         x: -46,
                         z: -77,
@@ -12,7 +12,7 @@ UnminedCustomPortals = {
                         imageAnchor: [0.5, 1],
                         imageScale: 0.3,
                     },
-                // portal nether 2
+                //portal nether 2
                     {
                         x: -1566,
                         z: 424,
@@ -20,8 +20,8 @@ UnminedCustomPortals = {
                         imageAnchor: [0.5, 1],
                         imageScale: 0.3,
                     },
-            // Ruined Portal
-                // broken portal 1
+            //Ruined Portal
+                //broken portal 1
                     {
                         x: 126,
                         z: -429,
@@ -29,7 +29,7 @@ UnminedCustomPortals = {
                         imageAnchor: [0.5, 1],
                         imageScale: 0.3,
                     },
-                // broken portal 2
+                //broken portal 2
                     {
                         x: -1722,
                         z: -444,
@@ -37,7 +37,7 @@ UnminedCustomPortals = {
                         imageAnchor: [0.5, 1],
                         imageScale: 0.3,
                     },
-                // broken portal 3
+                //broken portal 3
                     {
                         x: -1063,
                         z: -940,
@@ -45,8 +45,8 @@ UnminedCustomPortals = {
                         imageAnchor: [0.5, 1],
                         imageScale: 0.3,
                     },
-            // portal end
-                // portal end 1
+            //portal end
+                //portal end 1
                     {
                         x: -52,
                         z: -78,
