@@ -80,6 +80,17 @@ UnminedCustomLandscapes = {
                 offsetY: 0,
                 font: "bold 15px Calibri,sans serif",
                 },
+        //channel
+            // channel
+                {
+                x: -2224,
+                z: -1776,
+                text: "Küloko Channel",
+                textColor: "lime",
+                offsetX: 0,
+                offsetY: 0,
+                font: "bold 12px Calibri,sans serif",
+                },
         // island
             // stufo island
                 {
