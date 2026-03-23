@@ -172,23 +172,43 @@ class Unmined {
     viewProjection = null;
     dataProjection = null;
     regionMap = null;
-    markersLayer = null;
-    playerMarkersLayer = null;
+	villagesLayer = null;
+	pillagerLayer = null;
+	shipwrecksLayer = null;
+	templesLayer = null;
+	portalsLayer = null;
+	undergroundLayer = null;
+	playerbuildLayer = null;
+	landscapesLayer = null;
+
+	spawnpointLayer = null;
+	playerMarkersLayer = null;
 
     #scaleLine = null;
     #options = null;
 
     static defaultOptions = {
-        enableGrid: true,
-        showGrid: true,
-        binaryGrid: true,
-        showScaleBar: true,
-        denseGrid: false,
-        showMarkers: true,
-        showPlayers: true,
-        centerX: 0,
-        centerZ: 0
-    }
+	enableGrid: true,
+    showGrid: true,
+    binaryGrid: true,
+    showScaleBar: true,
+    denseGrid: false,
+
+    showvillages: true,
+    showpillager: true,
+    showshipwrecks: true,
+    showtemples: true,
+    showportals: true,
+    showunderground: true,
+    showplayerbuild: true,
+    showlandscapes: true,
+
+    showSpawnpoint: true,
+    showPlayers: true,
+
+    centerX: 0,
+    centerZ: 0
+}
 
     constructor(mapElement, options, regions) {
 
@@ -304,9 +324,49 @@ class Unmined {
             })
         });
 
-        if (this.#options.markers && this.#options.markers.length > 0) {
-            this.markersLayer = this.createMarkersLayer(this.#options.markers);
-            map.addLayer(this.markersLayer);
+        if (this.#options.villages && this.#options.villages.length > 0) {
+            this.villagesLayer = this.createvillagesLayer(this.#options.villages);
+            map.addLayer(this.villagesLayer);
+        }
+		
+		if (this.#options.pillager && this.#options.pillager.length > 0) {
+			this.pillagerLayer = this.createpillagerLayer(this.#options.pillager);
+			map.addLayer(this.pillagerLayer);
+		}
+
+		if (this.#options.shipwrecks && this.#options.shipwrecks.length > 0) {
+			this.shipwrecksLayer = this.createshipwrecksLayer(this.#options.shipwrecks);
+			map.addLayer(this.shipwrecksLayer);
+		}
+
+		if (this.#options.temples && this.#options.temples.length > 0) {
+			this.templesLayer = this.createtemplesLayer(this.#options.temples);
+			map.addLayer(this.templesLayer);
+		}
+
+		if (this.#options.portals && this.#options.portals.length > 0) {
+			this.portalsLayer = this.createportalsLayer(this.#options.portals);
+			map.addLayer(this.portalsLayer);
+		}
+
+		if (this.#options.underground && this.#options.underground.length > 0) {
+			this.undergroundLayer = this.createundergroundLayer(this.#options.underground);
+			map.addLayer(this.undergroundLayer);
+		}
+
+		if (this.#options.playerbuild && this.#options.playerbuild.length > 0) {
+			this.playerbuildLayer = this.createplayerbuildLayer(this.#options.playerbuild);
+			map.addLayer(this.playerbuildLayer);
+		}
+
+		if (this.#options.landscapes && this.#options.landscapes.length > 0) {
+			this.landscapesLayer = this.createlandscapesLayer(this.#options.landscapes);
+			map.addLayer(this.landscapesLayer);
+		}		
+
+        if (this.#options.spawnpoint && this.#options.spawnpoint.length > 0) {
+            this.spawnpointLayer = this.createspawnpointLayer(this.#options.spawnpoint);
+            map.addLayer(this.spawnpointLayer);
         }
 
         if (this.#options.playerMarkers && this.#options.playerMarkers.length > 0) {
@@ -322,7 +382,15 @@ class Unmined {
 
         this.updateGraticule();
         this.updateScaleBar();
-        this.updateMarkersLayer();
+		this.updatevillagesLayer();
+		this.updatepillagerLayer();
+		this.updateshipwrecksLayer();
+		this.updatetemplesLayer();
+		this.updateportalsLayer();
+		this.updateundergroundLayer();
+		this.updateplayerbuildLayer();
+		this.updatelandscapesLayer();
+        this.updateSpawnpointLayer();
         this.updatePlayerMarkersLayer();
         this.olMap.addControl(this.createContextMenu());
 
@@ -348,11 +416,483 @@ class Unmined {
         this.redDotMarker.setCoordinates(coordinates);
     }
 
-    createMarkersLayer(markers) {
+    createvillagesLayer(villages) {
         var features = [];
 
-        for (var i = 0; i < markers.length; i++) {
-            var item = markers[i];
+        for (var i = 0; i < villages.length; i++) {
+            var item = villages[i];
+            var longitude = item.x;
+            var latitude = item.z;
+
+            var feature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], this.dataProjection, this.viewProjection))
+            });
+
+            var style = new ol.style.Style();
+            if (item.image)
+                style.setImage(new ol.style.Icon({
+                    src: item.image,
+                    anchor: item.imageAnchor,
+                    scale: item.imageScale
+                }));
+
+            if (item.text) {
+                style.setText(new ol.style.Text({
+                    text: item.text,
+                    font: item.font,
+                    offsetX: item.offsetX,
+                    offsetY: item.offsetY,
+                    fill: item.textColor ? new ol.style.Fill({
+                        color: item.textColor
+                    }) : null,
+                    padding: item.textPadding ?? [2, 4, 2, 4],
+                    stroke: item.textStrokeColor ? new ol.style.Stroke({
+                        color: item.textStrokeColor,
+                        width: item.textStrokeWidth
+                    }) : null,
+                    backgroundFill: item.textBackgroundColor ? new ol.style.Fill({
+                        color: item.textBackgroundColor
+                    }) : null,
+                    backgroundStroke: item.textBackgroundStrokeColor ? new ol.style.Stroke({
+                        color: item.textBackgroundStrokeColor,
+                        width: item.textBackgroundStrokeWidth
+                    }) : null,
+                }));
+            }
+
+            feature.setStyle(style);
+
+            features.push(feature);
+        }
+
+        var vectorSource = new ol.source.Vector({
+            features: features
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource
+        });
+        return vectorLayer;
+    }
+	
+	    createpillagerLayer(pillager) {
+        var features = [];
+
+        for (var i = 0; i < pillager.length; i++) {
+            var item = pillager[i];
+            var longitude = item.x;
+            var latitude = item.z;
+
+            var feature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], this.dataProjection, this.viewProjection))
+            });
+
+            var style = new ol.style.Style();
+            if (item.image)
+                style.setImage(new ol.style.Icon({
+                    src: item.image,
+                    anchor: item.imageAnchor,
+                    scale: item.imageScale
+                }));
+
+            if (item.text) {
+                style.setText(new ol.style.Text({
+                    text: item.text,
+                    font: item.font,
+                    offsetX: item.offsetX,
+                    offsetY: item.offsetY,
+                    fill: item.textColor ? new ol.style.Fill({
+                        color: item.textColor
+                    }) : null,
+                    padding: item.textPadding ?? [2, 4, 2, 4],
+                    stroke: item.textStrokeColor ? new ol.style.Stroke({
+                        color: item.textStrokeColor,
+                        width: item.textStrokeWidth
+                    }) : null,
+                    backgroundFill: item.textBackgroundColor ? new ol.style.Fill({
+                        color: item.textBackgroundColor
+                    }) : null,
+                    backgroundStroke: item.textBackgroundStrokeColor ? new ol.style.Stroke({
+                        color: item.textBackgroundStrokeColor,
+                        width: item.textBackgroundStrokeWidth
+                    }) : null,
+                }));
+            }
+
+            feature.setStyle(style);
+
+            features.push(feature);
+        }
+
+        var vectorSource = new ol.source.Vector({
+            features: features
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource
+        });
+        return vectorLayer;
+    }
+
+	    createshipwrecksLayer(shipwrecks) {
+        var features = [];
+
+        for (var i = 0; i < shipwrecks.length; i++) {
+            var item = shipwrecks[i];
+            var longitude = item.x;
+            var latitude = item.z;
+
+            var feature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], this.dataProjection, this.viewProjection))
+            });
+
+            var style = new ol.style.Style();
+            if (item.image)
+                style.setImage(new ol.style.Icon({
+                    src: item.image,
+                    anchor: item.imageAnchor,
+                    scale: item.imageScale
+                }));
+
+            if (item.text) {
+                style.setText(new ol.style.Text({
+                    text: item.text,
+                    font: item.font,
+                    offsetX: item.offsetX,
+                    offsetY: item.offsetY,
+                    fill: item.textColor ? new ol.style.Fill({
+                        color: item.textColor
+                    }) : null,
+                    padding: item.textPadding ?? [2, 4, 2, 4],
+                    stroke: item.textStrokeColor ? new ol.style.Stroke({
+                        color: item.textStrokeColor,
+                        width: item.textStrokeWidth
+                    }) : null,
+                    backgroundFill: item.textBackgroundColor ? new ol.style.Fill({
+                        color: item.textBackgroundColor
+                    }) : null,
+                    backgroundStroke: item.textBackgroundStrokeColor ? new ol.style.Stroke({
+                        color: item.textBackgroundStrokeColor,
+                        width: item.textBackgroundStrokeWidth
+                    }) : null,
+                }));
+            }
+
+            feature.setStyle(style);
+
+            features.push(feature);
+        }
+
+        var vectorSource = new ol.source.Vector({
+            features: features
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource
+        });
+        return vectorLayer;
+    }
+
+	    createtemplesLayer(temples) {
+        var features = [];
+
+        for (var i = 0; i < temples.length; i++) {
+            var item = temples[i];
+            var longitude = item.x;
+            var latitude = item.z;
+
+            var feature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], this.dataProjection, this.viewProjection))
+            });
+
+            var style = new ol.style.Style();
+            if (item.image)
+                style.setImage(new ol.style.Icon({
+                    src: item.image,
+                    anchor: item.imageAnchor,
+                    scale: item.imageScale
+                }));
+
+            if (item.text) {
+                style.setText(new ol.style.Text({
+                    text: item.text,
+                    font: item.font,
+                    offsetX: item.offsetX,
+                    offsetY: item.offsetY,
+                    fill: item.textColor ? new ol.style.Fill({
+                        color: item.textColor
+                    }) : null,
+                    padding: item.textPadding ?? [2, 4, 2, 4],
+                    stroke: item.textStrokeColor ? new ol.style.Stroke({
+                        color: item.textStrokeColor,
+                        width: item.textStrokeWidth
+                    }) : null,
+                    backgroundFill: item.textBackgroundColor ? new ol.style.Fill({
+                        color: item.textBackgroundColor
+                    }) : null,
+                    backgroundStroke: item.textBackgroundStrokeColor ? new ol.style.Stroke({
+                        color: item.textBackgroundStrokeColor,
+                        width: item.textBackgroundStrokeWidth
+                    }) : null,
+                }));
+            }
+
+            feature.setStyle(style);
+
+            features.push(feature);
+        }
+
+        var vectorSource = new ol.source.Vector({
+            features: features
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource
+        });
+        return vectorLayer;
+    }
+
+	    createportalsLayer(portals) {
+        var features = [];
+
+        for (var i = 0; i < portals.length; i++) {
+            var item = portals[i];
+            var longitude = item.x;
+            var latitude = item.z;
+
+            var feature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], this.dataProjection, this.viewProjection))
+            });
+
+            var style = new ol.style.Style();
+            if (item.image)
+                style.setImage(new ol.style.Icon({
+                    src: item.image,
+                    anchor: item.imageAnchor,
+                    scale: item.imageScale
+                }));
+
+            if (item.text) {
+                style.setText(new ol.style.Text({
+                    text: item.text,
+                    font: item.font,
+                    offsetX: item.offsetX,
+                    offsetY: item.offsetY,
+                    fill: item.textColor ? new ol.style.Fill({
+                        color: item.textColor
+                    }) : null,
+                    padding: item.textPadding ?? [2, 4, 2, 4],
+                    stroke: item.textStrokeColor ? new ol.style.Stroke({
+                        color: item.textStrokeColor,
+                        width: item.textStrokeWidth
+                    }) : null,
+                    backgroundFill: item.textBackgroundColor ? new ol.style.Fill({
+                        color: item.textBackgroundColor
+                    }) : null,
+                    backgroundStroke: item.textBackgroundStrokeColor ? new ol.style.Stroke({
+                        color: item.textBackgroundStrokeColor,
+                        width: item.textBackgroundStrokeWidth
+                    }) : null,
+                }));
+            }
+
+            feature.setStyle(style);
+
+            features.push(feature);
+        }
+
+        var vectorSource = new ol.source.Vector({
+            features: features
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource
+        });
+        return vectorLayer;
+    }
+
+	    createundergroundLayer(underground) {
+        var features = [];
+
+        for (var i = 0; i < underground.length; i++) {
+            var item = underground[i];
+            var longitude = item.x;
+            var latitude = item.z;
+
+            var feature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], this.dataProjection, this.viewProjection))
+            });
+
+            var style = new ol.style.Style();
+            if (item.image)
+                style.setImage(new ol.style.Icon({
+                    src: item.image,
+                    anchor: item.imageAnchor,
+                    scale: item.imageScale
+                }));
+
+            if (item.text) {
+                style.setText(new ol.style.Text({
+                    text: item.text,
+                    font: item.font,
+                    offsetX: item.offsetX,
+                    offsetY: item.offsetY,
+                    fill: item.textColor ? new ol.style.Fill({
+                        color: item.textColor
+                    }) : null,
+                    padding: item.textPadding ?? [2, 4, 2, 4],
+                    stroke: item.textStrokeColor ? new ol.style.Stroke({
+                        color: item.textStrokeColor,
+                        width: item.textStrokeWidth
+                    }) : null,
+                    backgroundFill: item.textBackgroundColor ? new ol.style.Fill({
+                        color: item.textBackgroundColor
+                    }) : null,
+                    backgroundStroke: item.textBackgroundStrokeColor ? new ol.style.Stroke({
+                        color: item.textBackgroundStrokeColor,
+                        width: item.textBackgroundStrokeWidth
+                    }) : null,
+                }));
+            }
+
+            feature.setStyle(style);
+
+            features.push(feature);
+        }
+
+        var vectorSource = new ol.source.Vector({
+            features: features
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource
+        });
+        return vectorLayer;
+    }
+
+	    createplayerbuildLayer(playerbuild) {
+        var features = [];
+
+        for (var i = 0; i < playerbuild.length; i++) {
+            var item = playerbuild[i];
+            var longitude = item.x;
+            var latitude = item.z;
+
+            var feature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], this.dataProjection, this.viewProjection))
+            });
+
+            var style = new ol.style.Style();
+            if (item.image)
+                style.setImage(new ol.style.Icon({
+                    src: item.image,
+                    anchor: item.imageAnchor,
+                    scale: item.imageScale
+                }));
+
+            if (item.text) {
+                style.setText(new ol.style.Text({
+                    text: item.text,
+                    font: item.font,
+                    offsetX: item.offsetX,
+                    offsetY: item.offsetY,
+                    fill: item.textColor ? new ol.style.Fill({
+                        color: item.textColor
+                    }) : null,
+                    padding: item.textPadding ?? [2, 4, 2, 4],
+                    stroke: item.textStrokeColor ? new ol.style.Stroke({
+                        color: item.textStrokeColor,
+                        width: item.textStrokeWidth
+                    }) : null,
+                    backgroundFill: item.textBackgroundColor ? new ol.style.Fill({
+                        color: item.textBackgroundColor
+                    }) : null,
+                    backgroundStroke: item.textBackgroundStrokeColor ? new ol.style.Stroke({
+                        color: item.textBackgroundStrokeColor,
+                        width: item.textBackgroundStrokeWidth
+                    }) : null,
+                }));
+            }
+
+            feature.setStyle(style);
+
+            features.push(feature);
+        }
+
+        var vectorSource = new ol.source.Vector({
+            features: features
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource
+        });
+        return vectorLayer;
+    }
+
+	    createlandscapesLayer(landscapes) {
+        var features = [];
+
+        for (var i = 0; i < landscapes.length; i++) {
+            var item = landscapes[i];
+            var longitude = item.x;
+            var latitude = item.z;
+
+            var feature = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.transform([longitude, latitude], this.dataProjection, this.viewProjection))
+            });
+
+            var style = new ol.style.Style();
+            if (item.image)
+                style.setImage(new ol.style.Icon({
+                    src: item.image,
+                    anchor: item.imageAnchor,
+                    scale: item.imageScale
+                }));
+
+            if (item.text) {
+                style.setText(new ol.style.Text({
+                    text: item.text,
+                    font: item.font,
+                    offsetX: item.offsetX,
+                    offsetY: item.offsetY,
+                    fill: item.textColor ? new ol.style.Fill({
+                        color: item.textColor
+                    }) : null,
+                    padding: item.textPadding ?? [2, 4, 2, 4],
+                    stroke: item.textStrokeColor ? new ol.style.Stroke({
+                        color: item.textStrokeColor,
+                        width: item.textStrokeWidth
+                    }) : null,
+                    backgroundFill: item.textBackgroundColor ? new ol.style.Fill({
+                        color: item.textBackgroundColor
+                    }) : null,
+                    backgroundStroke: item.textBackgroundStrokeColor ? new ol.style.Stroke({
+                        color: item.textBackgroundStrokeColor,
+                        width: item.textBackgroundStrokeWidth
+                    }) : null,
+                }));
+            }
+
+            feature.setStyle(style);
+
+            features.push(feature);
+        }
+
+        var vectorSource = new ol.source.Vector({
+            features: features
+        });
+
+        var vectorLayer = new ol.layer.Vector({
+            source: vectorSource
+        });
+        return vectorLayer;
+    }
+
+ createspawnpointLayer(spawnpoint) {
+        var features = [];
+
+        for (var i = 0; i < spawnpoint.length; i++) {
+            var item = spawnpoint[i];
             var longitude = item.x;
             var latitude = item.z;
 
@@ -619,17 +1159,97 @@ class Unmined {
                     })
             }
 
-            if (this.markersLayer) {
+            contextmenu.push({
+                classname: this.#options.showvillages ? 'menuitem-checked' : 'menuitem-unchecked',
+                text: 'Show villages',
+                callback: () => {
+                    if (this.villagesLayer) {
+                        this.togglevillages();
+                    }
+                }
+            })  
+
+            contextmenu.push({
+                classname: this.#options.showpillager ? 'menuitem-checked' : 'menuitem-unchecked',
+                text: 'Show pillager',
+                callback: () => {
+                    if (this.pillagerLayer) {
+                        this.togglepillager();
+                    }
+                }
+            })
+
+            contextmenu.push({
+                classname: this.#options.showshipwrecks ? 'menuitem-checked' : 'menuitem-unchecked',
+                text: 'Show shipwrecks',
+                callback: () => {
+                    if (this.shipwrecksLayer) {
+                        this.toggleshipwrecks();
+                    }
+                }
+            })
+
+			contextmenu.push({
+				classname: this.#options.showtemples ? 'menuitem-checked' : 'menuitem-unchecked',
+				text: 'Show temples',
+				callback: () => {
+                    if (this.templesLayer) {
+                        this.toggletemples();
+                        }
+                    }
+                })
+
+			contextmenu.push({
+				classname: this.#options.showportals ? 'menuitem-checked' : 'menuitem-unchecked',
+				text: 'Show portals',
+				callback: () => {
+                    if (this.portalsLayer) {
+                        this.toggleportals();
+                        }
+                    }
+				})
+
+			contextmenu.push({
+				classname: this.#options.showunderground ? 'menuitem-checked' : 'menuitem-unchecked',
+				text: 'Show underground',
+				callback: () => {
+                    if (this.undergroundLayer) {
+                        this.toggleunderground();
+                        }
+                    }
+				})
+
+			contextmenu.push({
+				classname: this.#options.showplayerbuild ? 'menuitem-checked' : 'menuitem-unchecked',
+				text: 'Show playerbuild',
+				callback: () => {
+                    if (this.playerbuildLayer) {
+                        this.toggleplayerbuild();
+                        }
+                    }
+				})
+
+			contextmenu.push({
+				classname: this.#options.showlandscapes ? 'menuitem-checked' : 'menuitem-unchecked',
+				text: 'Show landscapes',
+				callback: () => {
+                    if (this.landscapesLayer) {
+                        this.togglelandscapes();
+                    }
+                }
+			})
+
+            if (this.spawnpointLayer) {
                 contextmenu.push(
                     {
-                        classname: this.#options.showMarkers ? 'menuitem-checked' : 'menuitem-unchecked',
-                        text: 'Show markers',
-                        callback: () => this.toggleMarkers()
+                        classname: this.#options.showSpawnpoint ? 'menuitem-checked' : 'menuitem-unchecked',
+                        text: 'Show spawnpoint',
+                        callback: () => this.toggleSpawnpoint()
                     })
             }
 
 
-            if (this.markersLayer || this.playerMarkersLayer) {
+            if (this.spawnpointLayer || this.playerMarkersLayer) {
                 contextmenu.push('-');
             }
 
@@ -690,9 +1310,57 @@ class Unmined {
         this.saveSettings();
     }
 
-    toggleMarkers() {
-        this.#options.showMarkers = !this.#options.showMarkers;
-        this.updateMarkersLayer();
+    togglevillages() {
+        this.#options.showvillages = !this.#options.showvillages;
+        this.updatevillagesLayer();
+        this.saveSettings();
+    }
+	
+	togglepillager() {
+		this.#options.showpillager = !this.#options.showpillager;
+		this.updatepillagerLayer();
+        this.saveSettings();
+	}
+
+	toggleshipwrecks() {
+		this.#options.showshipwrecks = !this.#options.showshipwrecks;
+        this.updateshipwrecksLayer();
+        this.saveSettings();
+	}
+
+	toggletemples() {
+		this.#options.showtemples = !this.#options.showtemples;
+		this.updatetemplesLayer();
+        this.saveSettings();
+	}
+
+	toggleportals() {
+		this.#options.showportals = !this.#options.showportals;
+		this.updateportalsLayer();
+        this.saveSettings();
+	}
+
+	toggleunderground() {
+		this.#options.showunderground = !this.#options.showunderground;
+		this.updateundergroundLayer();
+        this.saveSettings();
+	}
+
+	toggleplayerbuild() {
+		this.#options.showplayerbuild = !this.#options.showplayerbuild;
+		this.updateplayerbuildLayer();
+        this.saveSettings();
+	}
+
+	togglelandscapes() {
+		this.#options.showlandscapes = !this.#options.showlandscapes;
+		this.updatelandscapesLayer();
+        this.saveSettings();
+	}
+	
+	toggleSpawnpoint() {
+        this.#options.showSpawnpoint = !this.#options.showSpawnpoint;
+        this.updateSpawnpointLayer();
         this.saveSettings();
     }
 
@@ -718,7 +1386,15 @@ class Unmined {
         this.#options.showGrid = mapSettings.showGrid ?? this.#options.showGrid;
         this.#options.binaryGrid = mapSettings.binaryGrid ?? this.#options.binaryGrid;
         this.#options.denseGrid = mapSettings.denseGrid ?? this.#options.denseGrid;
-        this.#options.showMarkers = mapSettings.showMarkers ?? this.#options.showMarkers;
+        this.#options.showvillages = mapSettings.showvillages ?? this.#options.showvillages;
+        this.#options.showpillager = mapSettings.showpillager ?? this.#options.showpillager;
+        this.#options.showshipwrecks = mapSettings.showshipwrecks ?? this.#options.showshipwrecks;
+        this.#options.showtemples = mapSettings.showtemples ?? this.#options.showtemples;
+        this.#options.showportals = mapSettings.showportals ?? this.#options.showportals;
+        this.#options.showunderground = mapSettings.showunderground ?? this.#options.showunderground;
+        this.#options.showplayerbuild = mapSettings.showplayerbuild ?? this.#options.showplayerbuild;
+        this.#options.showlandscapes = mapSettings.showlandscapes ?? this.#options.showlandscapes;
+		this.#options.showSpawnpoint = mapSettings.showSpawnpoint ?? this.#options.showSpawnpoint;
         this.#options.showPlayers = mapSettings.showPlayers ?? this.#options.showPlayers;
 
     }
@@ -729,14 +1405,54 @@ class Unmined {
             showGrid: this.#options.showGrid,
             binaryGrid: this.#options.binaryGrid,
             denseGrid: this.#options.denseGrid,
-            showMarkers: this.#options.showMarkers,
+            showvillages: this.#options.showvillages,
+            showpillager: this.#options.showpillager,
+            showshipwrecks: this.#options.showshipwrecks,
+            showtemples: this.#options.showtemples,
+            showportals: this.#options.showportals,
+            showunderground: this.#options.showunderground,
+            showplayerbuild: this.#options.showplayerbuild,
+            showlandscapes: this.#options.showlandscapes,
+			showSpawnpoint: this.#options.showSpawnpoint,
             showPlayers: this.#options.showPlayers,
         }
         localStorage.setItem("mapSettings", JSON.stringify(mapSettings))
     }
 
-    updateMarkersLayer() {
-        this.markersLayer?.setVisible(this.#options.showMarkers);
+    updatevillagesLayer() {
+        this.villagesLayer?.setVisible(this.#options.showvillages);
+    }
+
+    updatepillagerLayer() { 
+        this.pillagerLayer?.setVisible(this.#options.showpillager);
+    }
+
+    updateshipwrecksLayer() { 
+        this.shipwrecksLayer?.setVisible(this.#options.showshipwrecks);
+    }
+
+    updatetemplesLayer() { 
+        this.templesLayer?.setVisible(this.#options.showtemples);
+    }
+
+    updateportalsLayer() { 
+        this.portalsLayer?.setVisible(this.#options.showportals);
+    }
+
+    updateundergroundLayer() { 
+        this.undergroundLayer?.setVisible(this.#options.showunderground);
+    }
+
+    updateplayerbuildLayer() { 
+        this.playerbuildLayer?.setVisible(this.#options.showplayerbuild);
+    }
+
+    updatelandscapesLayer() { 
+        this.landscapesLayer?.setVisible(this.#options.showlandscapes);
+    }
+	
+    updateSpawnpointLayer() {
+        this.spawnpointLayer?.setVisible(this.#options.showSpawnpoint);
     }
 
     updatePlayerMarkersLayer() {

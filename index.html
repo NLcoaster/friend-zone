@@ -25,8 +25,32 @@
     <script type="text/javascript" src="unmined.map.regions.js"></script>
     <script type="text/javascript" src="unmined.map.players.js"></script>
 
-    <!-- Custom markers -->
-    <script type="text/javascript" src="custom.markers.js"></script>
+    <!-- Custom spawnpoint =-->
+    <script type="text/javascript" src="custom.spawnpoint.js"></script>
+	
+	 <!-- Custom villages -->
+    <script type="text/javascript" src="custom.villages.js"></script>
+	
+	<!-- Custom pillagers -->
+    <script type="text/javascript" src="custom.pillager.js"></script>
+	
+	<!-- Custom shipwrecks -->
+    <script type="text/javascript" src="custom.shipwrecks.js"></script>
+	
+	<!-- Custom Temples -->
+    <script type="text/javascript" src="custom.temples.js"></script>
+	
+	<!-- Custom portals -->
+    <script type="text/javascript" src="custom.portals.js"></script>
+	
+	<!-- Custom underground -->
+    <script type="text/javascript" src="custom.underground.js"></script>	
+	
+	<!-- Custom playerbuild -->
+    <script type="text/javascript" src="custom.playerbuild.js"></script>
+	
+	<!-- Custom landscapes -->
+    <script type="text/javascript" src="custom.landscapes.js"></script>
 
     <!-- uNmINeD JS and CSS -->
     <script type="text/javascript" src="unmined.js"></script>
@@ -41,18 +65,100 @@
 
     <script type="text/javascript">
 
-        document.title = UnminedMapProperties.worldName + " - " + document.title;
+document.title = UnminedMapProperties.worldName + " - " + document.title;
 
-        if (UnminedCustomMarkers && UnminedCustomMarkers.isEnabled && UnminedCustomMarkers.markers) {
-            UnminedMapProperties.markers = UnminedMapProperties.markers.concat(UnminedCustomMarkers.markers);
-        }
-        
-        if (UnminedPlayers && UnminedPlayers.length > 0) {
-            UnminedMapProperties.playerMarkers = Unmined.createPlayerMarkers(UnminedPlayers);
-        }
 
-        const mapElement = document.getElementById('map');
-        const unmined = new Unmined(mapElement, UnminedMapProperties, UnminedRegions);
+// Custom spawnpoint
+if (typeof UnminedCustomSpawnpoint !== "undefined" &&
+    UnminedCustomSpawnpoint.isEnabled &&
+    UnminedCustomSpawnpoint.spawnpoint) {
+
+    UnminedMapProperties.spawnpoint = UnminedCustomSpawnpoint.spawnpoint;
+}
+
+
+// Villages
+if (typeof UnminedCustomVillages !== "undefined" &&
+    UnminedCustomVillages.isEnabled &&
+    UnminedCustomVillages.villages) {
+
+    UnminedMapProperties.villages = UnminedCustomVillages.villages;
+}
+
+
+// Pillager
+if (typeof UnminedCustomPillager !== "undefined" &&
+	UnminedCustomPillager.isEnabled &&
+    UnminedCustomPillager.pillager) {
+	
+    UnminedMapProperties.pillager = UnminedCustomPillager.pillager;
+}
+
+
+// Shipwreck
+if (typeof UnminedCustomShipwrecks !== "undefined" &&
+    UnminedCustomShipwrecks.isEnabled &&
+    UnminedCustomShipwrecks.shipwrecks) {
+    
+    UnminedMapProperties.shipwrecks = UnminedCustomShipwrecks.shipwrecks;
+}
+
+
+// Temples
+if (typeof UnminedCustomTemples !== "undefined" &&
+    UnminedCustomTemples.isEnabled &&
+    UnminedCustomTemples.temples) {
+    
+    UnminedMapProperties.temples = UnminedCustomTemples.temples;
+}
+
+
+// Portals
+if (typeof UnminedCustomPortals !== "undefined" &&
+    UnminedCustomPortals.isEnabled &&
+    UnminedCustomPortals.portals) {
+    
+    UnminedMapProperties.portals = UnminedCustomPortals.portals;
+}
+
+
+// Underground
+if (typeof UnminedCustomUnderground !== "undefined" &&
+    UnminedCustomUnderground.isEnabled &&
+    UnminedCustomUnderground.underground) {
+    
+    UnminedMapProperties.underground = UnminedCustomUnderground.underground;
+}
+
+
+// Player build
+if (typeof UnminedCustomPlayerbuild !== "undefined" &&
+    UnminedCustomPlayerbuild.isEnabled &&
+    UnminedCustomPlayerbuild.playerbuild) {
+    
+    UnminedMapProperties.playerbuild = UnminedCustomPlayerbuild.playerbuild;
+}
+
+
+// Landscapes
+if (typeof UnminedCustomLandscapes !== "undefined" &&
+    UnminedCustomLandscapes.isEnabled &&
+    UnminedCustomLandscapes.landscapes) {
+    
+    UnminedMapProperties.landscapes = UnminedCustomLandscapes.landscapes;
+}
+
+
+// Players
+if (UnminedPlayers && UnminedPlayers.length > 0) {
+    UnminedMapProperties.playerMarkers =
+        Unmined.createPlayerMarkers(UnminedPlayers);
+}
+
+
+// Start map
+const mapElement = document.getElementById('map');
+const unmined = new Unmined(mapElement, UnminedMapProperties, UnminedRegions);
 
 
     </script>

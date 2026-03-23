@@ -1,0 +1,26 @@
+Villages
+	Igloo, Village, Abandoned Village
+Pillager
+	Pillager Outpost, Swamp Hut, Woodland Mansion
+Shipwrecks
+	Shipwrecks, Buried Treasure
+Temples
+	Desert Pyramid, Desert Well, Jungle Temple, Ocean Ruins, Ocean Monument,
+portals
+	Ruined Portal, Portal
+Underground
+	Ancient City, Mineshaft, Stronghold, Trail Ruins, Trail Chambers
+Player Build
+	everything thats build by players
+Landscapes
+	natural lakes, mountains etc
+	
+	
+Villages
+Pillager
+Shipwrecks
+Temples
+portals
+Underground
+Player Build
+Landscapes

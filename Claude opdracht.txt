@@ -1,0 +1,20 @@
+claude opdracht
+pas voordat je verstuurd wel de kolomen in de excel aan
+en de layernaam en plaatjenaam in de template
+
+---------------------------------------------
+
+kan je vanuit excel het onderstaande stuk vullen?
+
+// layernaam
+                {
+                    x: ,
+                    z: ,
+                    image: "playerimages/plaatjenaam.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.3,
+                },
+
+achter layernaam plaats je het cijfer uit de kolom nummer
+X:  vul je voor de komma de cijfers uit de tabel kolom X
+Z: zelfde maar dan met de cijfers uit tabel Kolom Z
