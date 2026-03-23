@@ -304,6 +304,16 @@ UnminedCustomPlayerbuild = {
                 offsetY: 20,
                 font: "bold 20px Calibri,sans serif",
             },
+                // copper harbor
+                    {
+                    x: -2144,
+                    z: -1300,
+                    text: "Copper Harbor",
+                    textColor: "black",
+                    offsetX: 0,
+                    offsetY: 0,
+                    font: "bold 12px Calibri,sans serif",
+                    },
         // quests
             //prisson
                 {

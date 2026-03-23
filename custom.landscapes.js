@@ -39,17 +39,48 @@ UnminedCustomLandscapes = {
     isEnabled: true,
 
     landscapes: [
-        //landscape names
-            // lake of no name
+        // landscape names
+            // lake of Mizu umi
                 {
                 x: -800,
                 z: 0,
-                text: "lake of no name",
+                text: "lake of Mizu umi",
                 textColor: "lime",
                 offsetX: 0,
                 offsetY: 0,
                 font: "bold 15px Calibri,sans serif",
                 },
+            // Røstànde
+                {
+                x: -2434,
+                z: -1344,
+                text: "Røstànde Sea",
+                textColor: "lime",
+                offsetX: 0,
+                offsetY: 0,
+                font: "bold 15px Calibri,sans serif",
+                },
+            // Tredabellos
+                {
+                x: -1702,
+                z: -1059,
+                text: "Tredabellos Sea",
+                textColor: "lime",
+                offsetX: 0,
+                offsetY: 0,
+                font: "bold 15px Calibri,sans serif",
+                },
+            // bortre punkten
+                {
+                x: -1560,
+                z: -1753,
+                text: "bortre punkten Sea",
+                textColor: "lime",
+                offsetX: 0,
+                offsetY: 0,
+                font: "bold 15px Calibri,sans serif",
+                },
+        // island
             // stufo island
                 {
                 x: 100,
