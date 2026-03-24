@@ -38,7 +38,47 @@
 
 <body>
     <div id="map"></div>
-
+<div style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 8px 16px;
+    z-index: 9999;
+    display: flex;
+    gap: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+">
+    <a href="../index.html" style="
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 18px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: bold;
+    ">🌍 Overworld</a>
+ 
+    <a href="../nether/index.html" style="
+        background-color: #b22222;
+        color: white;
+        padding: 8px 18px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: bold;
+    ">🔥 Nether</a>
+ 
+    <a href="../end/index.html" style="
+        background-color: #4b0082;
+        color: white;
+        padding: 8px 18px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: bold;
+    ">🌌 End</a>
     <script type="text/javascript">
 
         document.title = UnminedMapProperties.worldName + " - " + document.title;
