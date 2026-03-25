@@ -35,51 +35,14 @@
     </style>
 
 </head>
-
-<body>
     <div id="map"></div>
-<div style="
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #1a1a1a;
-    padding: 4px 8px;
-    z-index: 9999;
-    display: flex;
-    gap: 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-">
-    <a href="../index.html" style="
-        background-color: #4CAF50;
-        color: white;
-        padding: 4px 8px;
-        border-radius: 2px;
-        text-decoration: none;
-        font-family: sans-serif;
-        font-weight: bold;
-    "> Overworld</a>
- 
-    <a href="../Nether/index.html" style="
-        background-color: #b22222;
-        color: white;
-        padding: 4px 8px;
-        border-radius: 2px;
-        text-decoration: none;
-        font-family: sans-serif;
-        font-weight: bold;
-    "> Nether</a>
- 
-    <a href="../End/index.html" style="
-        background-color: #4b0082;
-        color: white;
-        padding: 4px 8px;
-        border-radius: 2px;
-        text-decoration: none;
-        font-family: sans-serif;
-        font-weight: bold;
-    "> End</a>
-</div>
+
+    <div class="dim-nav">
+        <a href="index.html" class="active"> Overworld</a>
+        <a href="Nether/index.html"> Nether</a>
+        <a href="End/index.html"> End</a>
+    </div>
+
     <script type="text/javascript">
 
         document.title = UnminedMapProperties.worldName + " - " + document.title;
