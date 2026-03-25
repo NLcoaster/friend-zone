@@ -3,11933 +3,3003 @@
 This is a JavaScript file you can edit to add custom markers to the map.
 uNmINeD does not overwrite this file during map generation.
 
-Steps:
-
-    1. Edit this file using Notepad or a code editor (do not use document editors like Microsoft Word)
-    2. Change the line "isEnabled: false," to "isEnabled: true," to display the markers
-    3. Change or remove the example markers
-    4. Add your own markers
-
-Marker format:
-
-    {
-        x: X coordinate of the marker (in Minecraft block units),
-        z: Z coordinate of the marker (in Minecraft block units),
-        image: marker image URL to display (in quotes),
-        imageScale: scale of the image (e.g. 1 = display full size, 0.5 = display half size),
-        imageAnchor: [0.5, 1] means the tip of the pin is at the center-bottom of the image (see OpenLayers documentation for more info),
-        text: marker text do display (in quotes),
-        textColor: text color in HTML/CSS format (in quotes),
-        offsetX: horizontal pixel offset of the text,
-        offsetY: vertical pixel offset of the text,
-        font: text font in HTML/CSS format (in quotes),
-    },
-
-Things to keep in mind:
-
-* There are opening and closing brackets for each marker "{" and "}"
-* Property names are case sensitive (i.e. "textColor" is okay, "TextColor" is not)
-* There is a comma (",") at the end of each line except the opening brackets ("{")
-
-You can use https://mapmarker.io/editor to generate custom pin images.
-Use the imageScale property if the pin image is too large.
+Coordinates are stored as [x, z] pairs for compactness.
+The shared marker properties (image, imageAnchor, imageScale) are defined
+once and applied to all markers automatically.
 
 */
 UnminedCustomShipwrecks = {
     isEnabled: true,
 
-    shipwrecks: [
-        //Shipwrecks 
-            //ship 1
-                {
-                    x: 6008,
-                    z: 5960,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 2
-                {
-                    x: 5944,
-                    z: -456,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 3
-                {
-                    x: 5896,
-                    z: 2168,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 4
-                {
-                    x: 5832,
-                    z: 5096,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 5
-                {
-                    x: 5800,
-                    z: 1256,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 6
-                {
-                    x: 5800,
-                    z: -152,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 7
-                {
-                    x: 5688,
-                    z: 5144,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 8
-                {
-                    x: 5672,
-                    z: 4328,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 9
-                {
-                    x: 5656,
-                    z: 5592,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 10
-                {
-                    x: 5608,
-                    z: 2072,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 11
-                {
-                    x: 5528,
-                    z: 1368,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 12
-                {
-                    x: 5416,
-                    z: -360,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 13
-                {
-                    x: 5384,
-                    z: 584,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 14
-                {
-                    x: 5096,
-                    z: -1000,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 15
-                {
-                    x: 5032,
-                    z: 1992,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 16
-                {
-                    x: 4744,
-                    z: 1672,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 17
-                {
-                    x: 4008,
-                    z: 2408,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 18
-                {
-                    x: 3960,
-                    z: 1848,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 19
-                {
-                    x: 3928,
-                    z: 3672,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 20
-                {
-                    x: 3912,
-                    z: 1976,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 21
-                {
-                    x: 3768,
-                    z: 4616,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 22
-                {
-                    x: 3720,
-                    z: 1432,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 23
-                {
-                    x: 3688,
-                    z: 2744,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 24
-                {
-                    x: 3656,
-                    z: 5640,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 25
-                {
-                    x: 3608,
-                    z: -4600,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 26
-                {
-                    x: 3560,
-                    z: 2600,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 27
-                {
-                    x: 3560,
-                    z: 1928,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 28
-                {
-                    x: 3560,
-                    z: -4200,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 29
-                {
-                    x: 3528,
-                    z: 1560,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 30
-                {
-                    x: 3528,
-                    z: -5576,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 31
-                {
-                    x: 3512,
-                    z: -2824,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 32
-                {
-                    x: 3480,
-                    z: 3368,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 33
-                {
-                    x: 3336,
-                    z: 5768,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 34
-                {
-                    x: 3320,
-                    z: 2808,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 35
-                {
-                    x: 3288,
-                    z: 2152,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 36
-                {
-                    x: 3272,
-                    z: 3112,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 37
-                {
-                    x: 3224,
-                    z: -2184,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 38
-                {
-                    x: 3208,
-                    z: 1352,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 39
-                {
-                    x: 3144,
-                    z: 4536,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 40
-                {
-                    x: 3144,
-                    z: 4040,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 41
-                {
-                    x: 3112,
-                    z: 4696,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 42
-                {
-                    x: 3096,
-                    z: -4728,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 43
-                {
-                    x: 3000,
-                    z: 5544,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 44
-                {
-                    x: 2968,
-                    z: 2760,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 45
-                {
-                    x: 2888,
-                    z: -1992,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 46
-                {
-                    x: 2888,
-                    z: -4904,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 47
-                {
-                    x: 2840,
-                    z: 3320,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 48
-                {
-                    x: 2808,
-                    z: 5880,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 49
-                {
-                    x: 2808,
-                    z: 1656,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 50
-                {
-                    x: 2776,
-                    z: 3544,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 51
-                {
-                    x: 2744,
-                    z: 3848,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 52
-                {
-                    x: 2712,
-                    z: 2104,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 53
-                {
-                    x: 2712,
-                    z: -4584,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 54
-                {
-                    x: 2696,
-                    z: -1880,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 55
-                {
-                    x: 2616,
-                    z: -2392,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 56
-                {
-                    x: 2520,
-                    z: 5672,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 57
-                {
-                    x: 2488,
-                    z: 2872,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 58
-                {
-                    x: 2456,
-                    z: -5352,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 59
-                {
-                    x: 2408,
-                    z: 1752,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 60
-                {
-                    x: 2392,
-                    z: 1976,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 61
-                {
-                    x: 2376,
-                    z: -2008,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 62
-                {
-                    x: 2360,
-                    z: 3192,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 63
-                {
-                    x: 2360,
-                    z: -328,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 64
-                {
-                    x: 2360,
-                    z: -4952,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 65
-                {
-                    x: 2344,
-                    z: 3608,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 66
-                {
-                    x: 2328,
-                    z: 5016,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 67
-                {
-                    x: 2328,
-                    z: 2552,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 68
-                {
-                    x: 2312,
-                    z: 4760,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 69
-                {
-                    x: 2216,
-                    z: 2712,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 70
-                {
-                    x: 2168,
-                    z: 5896,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 71
-                {
-                    x: 2168,
-                    z: 3752,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 72
-                {
-                    x: 2152,
-                    z: -1352,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 73
-                {
-                    x: 2136,
-                    z: 3880,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 74
-                {
-                    x: 2088,
-                    z: -728,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 75
-                {
-                    x: 2072,
-                    z: -232,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 76
-                {
-                    x: 2024,
-                    z: 3128,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 77
-                {
-                    x: 2024,
-                    z: 2408,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 78
-                {
-                    x: 2024,
-                    z: 1704,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 79
-                {
-                    x: 1992,
-                    z: 2184,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 80
-                {
-                    x: 1960,
-                    z: 4888,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 81
-                {
-                    x: 1960,
-                    z: 1240,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 82
-                {
-                    x: 1960,
-                    z: -2392,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 83
-                {
-                    x: 1928,
-                    z: 5128,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 84
-                {
-                    x: 1848,
-                    z: 4536,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },			
-			//ship 85
-                {
-                    x: 1784,
-                    z: 4776,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 86
-                {
-                    x: 1784,
-                    z: 1784,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 87
-                {
-                    x: 1784,
-                    z: 1320,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 88
-                {
-                    x: 1784,
-                    z: -2168,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 89
-                {
-                    x: 1752,
-                    z: -2952,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 90
-                {
-                    x: 1720,
-                    z: -5096,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 91
-                {
-                    x: 1672,
-                    z: -1912,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 92
-                {
-                    x: 1656,
-                    z: 776,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 93
-                {
-                    x: 1640,
-                    z: 280,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 94
-                {
-                    x: 1592,
-                    z: -1480,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 95
-                {
-                    x: 1560,
-                    z: -712,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },			
-			//ship 96
-                {
-                    x: 1464,
-                    z: 1272,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 97
-                {
-                    x: 1432,
-                    z: -5224,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 98
-                {
-                    x: 1416,
-                    z: 4424,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 99
-                {
-                    x: 1400,
-                    z: 72,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 100
-                {
-                    x: 1400,
-                    z: -2040,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 101
-                {
-                    x: 1384,
-                    z: 440,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 102
-                {
-                    x: 1304,
-                    z: 5624,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 103
-                {
-                    x: 1304,
-                    z: -984,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 104
-                {
-                    x: 1304,
-                    z: -1400,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 105
-                {
-                    x: 1272,
-                    z: 5288,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 106
-                {
-                    x: 1256,
-                    z: 904,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 107
-                {
-                    x: 1256,
-                    z: -1848,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 108
-                {
-                    x: 1256,
-                    z: -2952,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 109
-                {
-                    x: 1256,
-                    z: -3304,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 110
-                {
-                    x: 1224,
-                    z: -680,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 111
-                {
-                    x: 1208,
-                    z: 4104,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 112
-                {
-                    x: 1064,
-                    z: 5128,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 113
-                {
-                    x: 1048,
-                    z: -1816,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 114
-                {
-                    x: 1032,
-                    z: 648,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 115
-                {
-                    x: 1000,
-                    z: 5400,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 116
-                {
-                    x: 1000,
-                    z: -1496,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 117
-                {
-                    x: 1000,
-                    z: -2552,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 118
-                {
-                    x: 968,
-                    z: -2120,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 119
-                {
-                    x: 936,
-                    z: 4472,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },							
-			//ship 120
-                {
-                    x: 936,
-                    z: -3288,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 121
-                {
-                    x: 920,
-                    z: 5816,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 122
-                {
-                    x: 904,
-                    z: -1032,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },							
-			//ship 123
-                {
-                    x: 888,
-                    z: -5160,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 124
-                {
-                    x: 872,
-                    z: -376,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 125
-                {
-                    x: 872,
-                    z: -456,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 126
-                {
-                    x: 664,
-                    z: -4360,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 127
-                {
-                    x: 648,
-                    z: -3192,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 128
-                {
-                    x: 536,
-                    z: 1208,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 129
-                {
-                    x: 504,
-                    z: 5560,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 130
-                {
-                    x: 504,
-                    z: 968,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 131
-                {
-                    x: 504,
-                    z: -712,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 132
-                {
-                    x: 504,
-                    z: -4904,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 133
-                {
-                    x: 456,
-                    z: -3560,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 134
-                {
-                    x: 440,
-                    z: -968,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 135
-                {
-                    x: 424,
-                    z: -1496,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 136
-                {
-                    x: 424,
-                    z: -1608,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 137
-                {
-                    x: 392,
-                    z: -248,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 138
-                {
-                    x: 392,
-                    z: -2536,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 139
-                {
-                    x: 392,
-                    z: -5464,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 140
-                {
-                    x: 280,
-                    z: 24,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 141
-                {
-                    x: 216,
-                    z: -3144,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 142
-                {
-                    x: 216,
-                    z: -6056,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 143
-                {
-                    x: 200,
-                    z: 1208,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 144
-                {
-                    x: 184,
-                    z: -920,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 145
-                {
-                    x: 168,
-                    z: 1080,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //ship 146
-                {
-                    x: 168,
-                    z: -2632,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 147
-                {
-                    x: 168,
-                    z: -5192,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 148
-                {
-                    x: 152,
-                    z: -1640,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 149
-                {
-                    x: 152,
-                    z: -3736,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 150
-                {
-                    x: 136,
-                    z: 5288,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 151
-                {
-                    x: 104,
-                    z: 600,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 152
-                {
-                    x: 8,
-                    z: -2952,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 153
-                {
-                    x: -104,
-                    z: 824,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 154
-                {
-                    x: -104,
-                    z: -5912,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 155
-                {
-                    x: -200,
-                    z: -3320,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 156
-                {
-                    x: -248,
-                    z: -1784,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 157
-                {
-                    x: -248,
-                    z: -2488,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 158
-                {
-                    x: -280,
-                    z: -5560,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 159
-                {
-                    x: -488,
-                    z: 808,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 160
-                {
-                    x: -520,
-                    z: 1928,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 161
-                {
-                    x: -520,
-                    z: 1352,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 162
-                {
-                    x: -536,
-                    z: -2088,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 163
-                {
-                    x: -664,
-                    z: 72,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 164
-                {
-                    x: -744,
-                    z: -1752,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 165
-                {
-                    x: -856,
-                    z: 5128,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 166
-                {
-                    x: -888,
-                    z: 1688,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 167
-                {
-                    x: -968,
-                    z: 1016,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 168
-                {
-                    x: -1000,
-                    z: 4328,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 169
-                {
-                    x: -1016,
-                    z: 6008,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 170
-                {
-                    x: -1016,
-                    z: 5464,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 171
-                {
-                    x: -1112,
-                    z: 4856,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 172
-                {
-                    x: -1112,
-                    z: -3864,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 173
-                {
-                    x: -1224,
-                    z: -4408,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 174
-                {
-                    x: -1240,
-                    z: -1320,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 175
-                {
-                    x: -1272,
-                    z: 3096,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 176
-                {
-                    x: -1272,
-                    z: -4872,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 177
-                {
-                    x: -1384,
-                    z: 3576,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 178
-                {
-                    x: -1448,
-                    z: 4232,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 179
-                {
-                    x: -1480,
-                    z: 5304,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 180
-                {
-                    x: -1480,
-                    z: -2168,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 181
-                {
-                    x: -1512,
-                    z: 3912,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 182
-                {
-                    x: -1528,
-                    z: -165,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 183
-                {
-                    x: -1640,
-                    z: 2920,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 184
-                {
-                    x: -1672,
-                    z: -4376,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 185
-                {
-                    x: -1704,
-                    z: 3128,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 186
-                {
-                    x: -1720,
-                    z: 4296,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 187
-                {
-                    x: -1768,
-                    z: 5656,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 188
-                {
-                    x: -1768,
-                    z: 2328,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 189
-                {
-                    x: -1768,
-                    z: -2152,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 190
-                {
-                    x: -1784,
-                    z: -1672,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 191
-                {
-                    x: -1832,
-                    z: -5736,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 192
-                {
-                    x: -1880,
-                    z: 3944,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 193
-                {
-                    x: -1912,
-                    z: -904,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 194
-                {
-                    x: -1992,
-                    z: -3048,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 195
-                {
-                    x: -2040,
-                    z: -5192,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 196
-                {
-                    x: -2040,
-                    z: 2360,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 197
-                {
-                    x: -2072,
-                    z: -3448,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 198
-                {
-                    x: -2120,
-                    z: 4072,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 199
-                {
-                    x: -2152,
-                    z: -5576,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 200
-                {
-                    x: -2200,
-                    z: 4616,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 201
-                {
-                    x: -2216,
-                    z: 1784,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 202
-                {
-                    x: -2264,
-                    z: -376,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 203
-                {
-                    x: -2280,
-                    z: 5656,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 204
-                {
-                    x: -2280,
-                    z: 4296,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 205
-                {
-                    x: -2296,
-                    z: -1704,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 206
-                {
-                    x: -2392,
-                    z: 5064,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 207
-                {
-                    x: -2424,
-                    z: -2024,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 208
-                {
-                    x: -2440,
-                    z: -1640,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 209
-                {
-                    x: -2504,
-                    z: -344,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 210
-                {
-                    x: -2520,
-                    z: 4808,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 211
-                {
-                    x: -2520,
-                    z: -3048,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 212
-                {
-                    x: -2520,
-                    z: -4952,
-                    image: "shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 213
-                {
-                    x: -2536,
-                    z: 2712,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 214
-                {
-                    x: -2552,
-                    z: 1704,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },			
-			//ship 215
-                {
-                    x: -2600,
-                    z: -5464,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 216
-                {
-                    x: -2632,
-                    z: 2616,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 217
-                {
-                    x: -2664,
-                    z: -2248,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 218
-                {
-                    x: -2840,
-                    z: -5304,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 219
-                {
-                    x: -2856,
-                    z: 3544,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 220
-                {
-                    x: -2904,
-                    z: 2136,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 221
-                {
-                    x: -2920,
-                    z: -2760,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 222
-                {
-                    x: -3048,
-                    z: -3640,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 223
-                {
-                    x: -3144,
-                    z: 3512,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 224
-                {
-                    x: -3144,
-                    z: -3592,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 225
-                {
-                    x: -3400,
-                    z: 2808,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },			
-			//ship 226
-                {
-                    x: -3448,
-                    z: 3240,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 227
-                {
-                    x: -3560,
-                    z: 2872,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 228
-                {
-                    x: -3560,
-                    z: -472,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 229
-                {
-                    x: -3576,
-                    z: -3736,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 230
-                {
-                    x: -3624,
-                    z: 3944,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 231
-                {
-                    x: 3672,
-                    z: -3432,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 232
-                {
-                    x: 3688,
-                    z: 3256,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 233
-                {
-                    x: -3768,
-                    z: 3528,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 234
-                {
-                    x: -3992,
-                    z: -6024,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 235
-                {
-                    x: 4088,
-                    z: 3240,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 236
-                {
-                    x: -4296,
-                    z: -5576,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 237
-                {
-                    x: -4408,
-                    z: -1416,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 238
-                {
-                    x: -4408,
-                    z: -5368,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 239
-                {
-                    x: 4424,
-                    z: -5928,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 240
-                {
-                    x: 4440,
-                    z: 2232,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 241
-                {
-                    x: -4536,
-                    z: -2056,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 242
-                {
-                    x: -4600,
-                    z: -984,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 243
-                {
-                    x: -4712,
-                    z: 2136,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 244
-                {
-                    x: -4760,
-                    z: -4168,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 245
-                {
-                    x: -4792,
-                    z: -5624,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 246
-                {
-                    x: -4872,
-                    z: -744,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 247
-                {
-                    x: -4952,
-                    z: -4488,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 248
-                {
-                    x: -4968,
-                    z: 5640,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 249
-                {
-                    x: -5080,
-                    z: 5464,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },							
-			//ship 250
-                {
-                    x: -5128,
-                    z: -5536,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 251
-                {
-                    x: -5160,
-                    z: -3560,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 252
-                {
-                    x: -5208,
-                    z: -2184,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },							
-			//ship 253
-                {
-                    x: -5640,
-                    z: -5096,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 254
-                {
-                    x: -5520,
-                    z: -632,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 255
-                {
-                    x: -5752,
-                    z: 5768,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 256
-                {
-                    x: -5752,
-                    z: -5944,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 257
-                {
-                    x: -5896,
-                    z: 1384,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 258
-                {
-                    x: -5912,
-                    z: -6040,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-			//ship 259
-                {
-                    x: -5992,
-                    z: -2120,
-                    image: "playerimages/shipwreck.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-		//Burried Treasure
-            //Treasure 1
-                {
-                    x: 6024,
-                    z: 4616,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 2
-                {
-                    x: 5976,
-                    z: -1912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 3
-                {
-                    x: 5960,
-                    z: -1848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 4
-                {
-                    x: 5960,
-                    z: 1032,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 5
-                {
-                    x: 5960,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 6
-                {
-                    x: 5912,
-                    z: 5960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 7
-                {
-                    x: 5912,
-                    z: 5960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 8
-                {
-                    x: 5896,
-                    z: 2824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 9
-                {
-                    x: 5896,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 10
-                {
-                    x: 5896,
-                    z: 5512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 11
-                {
-                    x: 5896,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 12
-                {
-                    x: 5896,
-                    z: 5704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 13
-                {
-                    x: 5848,
-                    z: -1784,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 14
-                {
-                    x: 5848,
-                    z: 5704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 15
-                {
-                    x: 5832,
-                    z: 1288,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 16
-                {
-                    x: 5832,
-                    z: 2696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 17
-                {
-                    x: 5832,
-                    z: -5496,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 18
-                {
-                    x: 5784,
-                    z: -5432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 19
-                {
-                    x: 5768,
-                    z: 264,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 20
-                {
-                    x: 5768,
-                    z: 328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 21
-                {
-                    x: 5768,
-                    z: 1624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 22
-                {
-                    x: 5768,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 23
-                {
-                    x: 5720,
-                    z: 264,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 24
-                {
-                    x: 5704,
-                    z: 328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 25
-                {
-                    x: 5704,
-                    z: 1176,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 26
-                {
-                    x: 5704,
-                    z: 1608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 27
-                {
-                    x: 5704,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 28
-                {
-                    x: 5704,
-                    z: 2584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 29
-                {
-                    x: 5656,
-                    z: 392,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 30
-                {
-                    x: 5656,
-                    z: 1608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 31
-                {
-                    x: 5640,
-                    z: -1448,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 32
-                {
-                    x: 5640,
-                    z: 264,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 33
-                {
-                    x: 5640,
-                    z: 520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 34
-                {
-                    x: 5640,
-                    z: 584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 35
-                {
-                    x: 5640,
-                    z: 1160,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 36
-                {
-                    x: 5640,
-                    z: 1544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 37
-                {
-                    x: 5640,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 38
-                {
-                    x: 5640,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 39
-                {
-                    x: 5592,
-                    z: 520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 40
-                {
-                    x: 5592,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 41
-                {
-                    x: 5576,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 42
-                {
-                    x: 5576,
-                    z: 584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 43
-                {
-                    x: 5576,
-                    z: 1672,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 44
-                {
-                    x: 5576,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 45
-                {
-                    x: 5528,
-                    z: 456,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 46
-                {
-                    x: 5528,
-                    z: 5592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 47
-                {
-                    x: 5464,
-                    z: 840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 48
-                {
-                    x: 5464,
-                    z: 2440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 49
-                {
-                    x: 5448,
-                    z: -1336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 50
-                {
-                    x: 5448,
-                    z: 328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 51
-                {
-                    x: 5448,
-                    z: 2376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 52
-                {
-                    x: 5400,
-                    z: -120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 53
-                {
-                    x: 5384,
-                    z: 776,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 54
-                {
-                    x: 5320,
-                    z: -168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 55
-                {
-                    x: 5320,
-                    z: 280,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 56
-                {
-                    x: 5320,
-                    z: 2312,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 57
-                {
-                    x: 5256,
-                    z: -1336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 58
-                {
-                    x: 5256,
-                    z: 1224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 59
-                {
-                    x: 5256,
-                    z: 1176,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 60
-                {
-                    x: 5208,
-                    z: 328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 61
-                {
-                    x: 5192,
-                    z: -248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 62
-                {
-                    x: 5192,
-                    z: -168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 63
-                {
-                    x: 5128,
-                    z: -1272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 64
-                {
-                    x: 5128,
-                    z: 2376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 65
-                {
-                    x: 5128,
-                    z: 3608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 66
-                {
-                    x: 5128,
-                    z: 4184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 67
-                {
-                    x: 5128,
-                    z: 4232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 68
-                {
-                    x: 5128,
-                    z: 4376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 69
-                {
-                    x: 5080,
-                    z: 4296,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 70
-                {
-                    x: 5064,
-                    z: 904,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 71
-                {
-                    x: 5064,
-                    z: 1160,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 72
-                {
-                    x: 5064,
-                    z: 3592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 73
-                {
-                    x: 5064,
-                    z: 3848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 74
-                {
-                    x: 5064,
-                    z: 3928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 75
-                {
-                    x: 5064,
-                    z: 3976,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 76
-                {
-                    x: 5064,
-                    z: 4424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 77
-                {
-                    x: 5064,
-                    z: 4376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 78
-                {
-                    x: 5016,
-                    z: 3528,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 79
-                {
-                    x: 5016,
-                    z: 4232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 80
-                {
-                    x: 5000,
-                    z: -1400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 81
-                {
-                    x: 4952,
-                    z: 1288,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 82
-                {
-                    x: 4952,
-                    z: 3288,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 83
-                {
-                    x: 4936,
-                    z: 24,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 84
-                {
-                    x: 4936,
-                    z: 5512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 85
-                {
-                    x: 4888,
-                    z: 3784,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 86
-                {
-                    x: 4872,
-                    z: -184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 87
-                {
-                    x: 4872,
-                    z: 1240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 88
-                {
-                    x: 4872,
-                    z: 3848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 89
-                {
-                    x: 4872,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 90
-                {
-                    x: 4824,
-                    z: 1240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 91
-                {
-                    x: 4824,
-                    z: 5592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 92
-                {
-                    x: 4808,
-                    z: 712,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 93
-                {
-                    x: 4760,
-                    z: 5656,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 94
-                {
-                    x: 4744,
-                    z: -744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 95
-                {
-                    x: 4744,
-                    z: 5592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 96
-                {
-                    x: 4696,
-                    z: 200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 97
-                {
-                    x: 4680,
-                    z: 2440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 98
-                {
-                    x: 4680,
-                    z: -6008,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 99
-                {
-                    x: 4680,
-                    z: -5816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 100
-                {
-                    x: 4632,
-                    z: -5864,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 101
-                {
-                    x: 4616,
-                    z: 136,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 102
-                {
-                    x: 4616,
-                    z: 3544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 103
-                {
-                    x: 4616,
-                    z: 3336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 104
-                {
-                    x: 4568,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 105
-                {
-                    x: 4552,
-                    z: 264,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 106
-                {
-                    x: 4552,
-                    z: 328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 107
-                {
-                    x: 4552,
-                    z: 392,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 108
-                {
-                    x: 4552,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 109
-                {
-                    x: 4552,
-                    z: -5560,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 110
-                {
-                    x: 4552,
-                    z: -5496,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 111
-                {
-                    x: 4504,
-                    z: 5064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 112
-                {
-                    x: 4504,
-                    z: 5000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 113
-                {
-                    x: 4504,
-                    z: 3464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 114
-                {
-                    x: 4504,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 115
-                {
-                    x: 4504,
-                    z: -5816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 116
-                {
-                    x: 4488,
-                    z: 5512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 117
-                {
-                    x: 4488,
-                    z: 4744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 118
-                {
-                    x: 4488,
-                    z: 4808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 119
-                {
-                    x: 4488,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 120
-                {
-                    x: 4488,
-                    z: -5752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 121
-                {
-                    x: 4440,
-                    z: 5064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 122
-                {
-                    x: 4424,
-                    z: 2376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 123
-                {
-                    x: 4424,
-                    z: 2328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 124
-                {
-                    x: 4424,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 125
-                {
-                    x: 4424,
-                    z: -5752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 126
-                {
-                    x: 4424,
-                    z: -5560,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 127
-                {
-                    x: 4376,
-                    z: 5064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 128
-                {
-                    x: 4376,
-                    z: -5560,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 129
-                {
-                    x: 4360,
-                    z: 5000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 130
-                {
-                    x: 4360,
-                    z: 4760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 131
-                {
-                    x: 4360,
-                    z: 2376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 132
-                {
-                    x: 4360,
-                    z: 2328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 133
-                {
-                    x: 4360,
-                    z: -5624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 134
-                {
-                    x: 4360,
-                    z: 1496,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 135
-                {
-                    x: 4312,
-                    z: 2888,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 136
-                {
-                    x: 4296,
-                    z: 5512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 137
-                {
-                    x: 4296,
-                    z: 4760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 138
-                {
-                    x: 4296,
-                    z: 2840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 139
-                {
-                    x: 4296,
-                    z: 2248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 140
-                {
-                    x: 4296,
-                    z: 1496,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 141
-                {
-                    x: 4296,
-                    z: 1432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 142
-                {
-                    x: 4248,
-                    z: 2248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 143
-                {
-                    x: 4232,
-                    z: 4760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 144
-                {
-                    x: 4232,
-                    z: 1480,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 145
-                {
-                    x: 4168,
-                    z: 2696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 146
-                {
-                    x: 4168,
-                    z: 2312,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 147
-                {
-                    x: 4168,
-                    z: 2248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 148
-                {
-                    x: 4168,
-                    z: 1416,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 149
-                {
-                    x: 4104,
-                    z: 5512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 150
-                {
-                    x: 4104,
-                    z: 1432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 151
-                {
-                    x: 4056,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 152
-                {
-                    x: 4056,
-                    z: -2552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 153
-                {
-                    x: 4056,
-                    z: -2616,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 154
-                {
-                    x: 4056,
-                    z: -5432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 155
-                {
-                    x: 4040,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 156
-                {
-                    x: 4040,
-                    z: 3400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 157
-                {
-                    x: 4040,
-                    z: -760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 158
-                {
-                    x: 4040,
-                    z: 1416,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 159
-                {
-                    x: 3992,
-                    z: -4664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 160
-                {
-                    x: 3976,
-                    z: -2552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 161
-                {
-                    x: 3976,
-                    z: -5560,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 162
-                {
-                    x: 3976,
-                    z: -4280,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 163
-                {
-                    x: 3928,
-                    z: 5000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 164
-                {
-                    x: 3928,
-                    z: 4552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 165
-                {
-                    x: 3928,
-                    z: 3976,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 166
-                {
-                    x: 3928,
-                    z: -2552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 167
-                {
-                    x: 3912,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 168
-                {
-                    x: 3912,
-                    z: 6024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 169
-                {
-                    x: 3912,
-                    z: 3912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 170
-                {
-                    x: 3912,
-                    z: -5608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 171
-                {
-                    x: 3912,
-                    z: -4216,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 172
-                {
-                    x: 3864,
-                    z: 3912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 173
-                {
-                    x: 3848,
-                    z: 6024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 174
-                {
-                    x: 3848,
-                    z: 4744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 175
-                {
-                    x: 3848,
-                    z: 4440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 176
-                {
-                    x: 3848,
-                    z: 3848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 177
-                {
-                    x: 3848,
-                    z: -2680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 178
-                {
-                    x: 3848,
-                    z: -4792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 179
-                {
-                    x: 3800,
-                    z: 5592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 180
-                {
-                    x: 3800,
-                    z: 5448,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 181
-                {
-                    x: 3800,
-                    z: 4488,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 182
-                {
-                    x: 3800,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 183
-                {
-                    x: 3784,
-                    z: 5656,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 184
-                {
-                    x: 3736,
-                    z: -2808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 185
-                {
-                    x: 3720,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 186
-                {
-                    x: 3720,
-                    z: 5448,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 187
-                {
-                    x: 3720,
-                    z: 5960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 188
-                {
-                    x: 3720,
-                    z: 4552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 189
-                {
-                    x: 3720,
-                    z: 3848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 190
-                {
-                    x: 3672,
-                    z: 5960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 191
-                {
-                    x: 3672,
-                    z: -2296,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 192
-                {
-                    x: 3672,
-                    z: -2744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 193
-                {
-                    x: 3656,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 194
-                {
-                    x: 3656,
-                    z: 5912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 195
-                {
-                    x: 3656,
-                    z: 4680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 196
-                {
-                    x: 3656,
-                    z: -824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 197
-                {
-                    x: 3656,
-                    z: -2808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 198
-                {
-                    x: 3656,
-                    z: -3064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 199
-                {
-                    x: 3656,
-                    z: -3128,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 200
-                {
-                    x: 3656,
-                    z: -3176,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 201
-                {
-                    x: 3608,
-                    z: 5832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 202
-                {
-                    x: 3592,
-                    z: 6024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 203
-                {
-                    x: 3592,
-                    z: 5784,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 204
-                {
-                    x: 3592,
-                    z: 4680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 205
-                {
-                    x: 3592,
-                    z: 3912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 206
-                {
-                    x: 3592,
-                    z: -2680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 207
-                {
-                    x: 3592,
-                    z: -2744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 208
-                {
-                    x: 3592,
-                    z: -2808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 209
-                {
-                    x: 3592,
-                    z: -3000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 210
-                {
-                    x: 3592,
-                    z: -3256,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 211
-                {
-                    x: 3592,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 212
-                {
-                    x: 3544,
-                    z: 3848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 213
-                {
-                    x: 3544,
-                    z: -2296,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 214
-                {
-                    x: 3544,
-                    z: -5048,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 215
-                {
-                    x: 3528,
-                    z: 5832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 216
-                {
-                    x: 3528,
-                    z: 4680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 217
-                {
-                    x: 3528,
-                    z: 4744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 218
-                {
-                    x: 3528,
-                    z: -2680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 219
-                {
-                    x: 3528,
-                    z: -2744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 220
-                {
-                    x: 3528,
-                    z: -3048,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 221
-                {
-                    x: 3528,
-                    z: -3112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 222
-                {
-                    x: 3528,
-                    z: -3960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 223
-                {
-                    x: 3480,
-                    z: 5848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 224
-                {
-                    x: 3480,
-                    z: -2232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 225
-                {
-                    x: 3480,
-                    z: -3048,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 226
-                {
-                    x: 3464,
-                    z: 4104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 227
-                {
-                    x: 3464,
-                    z: -824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 228
-                {
-                    x: 3464,
-                    z: -3128,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 229
-                {
-                    x: 3464,
-                    z: 1096,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 230
-                {
-                    x: 3416,
-                    z: -824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 231
-                {
-                    x: 3400,
-                    z: -1128,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 232
-                {
-                    x: 3400,
-                    z: -1080,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 233
-                {
-                    x: 3400,
-                    z: -2168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 234
-                {
-                    x: 3400,
-                    z: -5496,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 235
-                {
-                    x: 3352,
-                    z: -2040,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 236
-                {
-                    x: 3336,
-                    z: -888,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 237
-                {
-                    x: 3336,
-                    z: -1016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 238
-                {
-                    x: 3336,
-                    z: -952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 239
-                {
-                    x: 3336,
-                    z: -1912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 240
-                {
-                    x: 3336,
-                    z: -4024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 241
-                {
-                    x: 3288,
-                    z: -1832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 242
-                {
-                    x: 3272,
-                    z: -1336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 243
-                {
-                    x: 3272,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 244
-                {
-                    x: 3272,
-                    z: -296,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 245
-                {
-                    x: 3272,
-                    z: -2984,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 246
-                {
-                    x: 3272,
-                    z: 2520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 247
-                {
-                    x: 3272,
-                    z: 1112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 248
-                {
-                    x: 3224,
-                    z: -1272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 249
-                {
-                    x: 3208,
-                    z: 5960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 250
-                {
-                    x: 3208,
-                    z: -2920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 251
-                {
-                    x: 3208,
-                    z: -3064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 252
-                {
-                    x: 3160,
-                    z: 5896,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 253
-                {
-                    x: 3160,
-                    z: 4360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 254
-                {
-                    x: 3160,
-                    z: -2936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 255
-                {
-                    x: 3160,
-                    z: -3048,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 256
-                {
-                    x: 3160,
-                    z: 1096,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 257
-                {
-                    x: 3144,
-                    z: 4424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 258
-                {
-                    x: 3144,
-                    z: 4504,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 259
-                {
-                    x: 3144,
-                    z: 4552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 260
-                {
-                    x: 3144,
-                    z: 4680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 261
-                {
-                    x: 3144,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 262
-                {
-                    x: 3144,
-                    z: -1080,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 263
-                {
-                    x: 3144,
-                    z: -4200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 264
-                {
-                    x: 3144,
-                    z: 904,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 265
-                {
-                    x: 3096,
-                    z: 4440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 266
-                {
-                    x: 3096,
-                    z: -888,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 267
-                {
-                    x: 3096,
-                    z: -2808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 268
-                {
-                    x: 3080,
-                    z: 4744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 269
-                {
-                    x: 3080,
-                    z: 4824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 270
-                {
-                    x: 3080,
-                    z: -1016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 271
-                {
-                    x: 3080,
-                    z: -616,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 272
-                {
-                    x: 3080,
-                    z: -2856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 273
-                {
-                    x: 3080,
-                    z: -2920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 274
-                {
-                    x: 3032,
-                    z: 5960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 275
-                {
-                    x: 3016,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 276
-                {
-                    x: 3016,
-                    z: -1016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 277
-                {
-                    x: 3016,
-                    z: -952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 278
-                {
-                    x: 3016,
-                    z: -888,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 279
-                {
-                    x: 3016,
-                    z: -760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 280
-                {
-                    x: 3016,
-                    z: -5240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 281
-                {
-                    x: 3016,
-                    z: -2872,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 282
-                {
-                    x: 3016,
-                    z: -2920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 283
-                {
-                    x: 3016,
-                    z: 840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 284
-                {
-                    x: 3016,
-                    z: 1288,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 285
-                {
-                    x: 2968,
-                    z: 4872,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 286
-                {
-                    x: 2968,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 287
-                {
-                    x: 2952,
-                    z: -888,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 288
-                {
-                    x: 2952,
-                    z: -376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 289
-                {
-                    x: 2952,
-                    z: -5176,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 290
-                {
-                    x: 2952,
-                    z: -2936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 291
-                {
-                    x: 2952,
-                    z: 1288,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 292
-                {
-                    x: 2888,
-                    z: 4824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 293
-                {
-                    x: 2888,
-                    z: 4936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 294
-                {
-                    x: 2888,
-                    z: -5112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 295
-                {
-                    x: 2888,
-                    z: -2360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 296
-                {
-                    x: 2888,
-                    z: -2936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 297
-                {
-                    x: 2888,
-                    z: 1240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 298
-                {
-                    x: 2840,
-                    z: 6024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 299
-                {
-                    x: 2840,
-                    z: -5368,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 300
-                {
-                    x: 2840,
-                    z: -3064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 301
-                {
-                    x: 2824,
-                    z: 4552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 302
-                {
-                    x: 2824,
-                    z: 4824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 303
-                {
-                    x: 2824,
-                    z: -376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 304
-                {
-                    x: 2824,
-                    z: -2488,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 305
-                {
-                    x: 2824,
-                    z: -2424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 306
-                {
-                    x: 2824,
-                    z: -2344,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 307
-                {
-                    x: 2824,
-                    z: -3128,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 308
-                {
-                    x: 2824,
-                    z: -3000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 309
-                {
-                    x: 2824,
-                    z: -2936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 310
-                {
-                    x: 2776,
-                    z: -2936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 311
-                {
-                    x: 2760,
-                    z: -2552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 312
-                {
-                    x: 2760,
-                    z: -2488,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 313
-                {
-                    x: 2760,
-                    z: -2360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 314
-                {
-                    x: 2760,
-                    z: -504,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 315
-                {
-                    x: 2712,
-                    z: -2424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 316
-                {
-                    x: 2712,
-                    z: -2360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 317
-                {
-                    x: 2712,
-                    z: -376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 318
-                {
-                    x: 2696,
-                    z: -2488,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 319
-                {
-                    x: 2696,
-                    z: -568,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 320
-                {
-                    x: 2696,
-                    z: -744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 321
-                {
-                    x: 2696,
-                    z: -1208,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 322
-                {
-                    x: 2632,
-                    z: -4664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 323
-                {
-                    x: 2632,
-                    z: -2728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 324
-                {
-                    x: 2568,
-                    z: -4600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 325
-                {
-                    x: 2568,
-                    z: -2744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 326
-                {
-                    x: 2568,
-                    z: -184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 327
-                {
-                    x: 2520,
-                    z: -2488,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 328
-                {
-                    x: 2504,
-                    z: -2744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 329
-                {
-                    x: 2504,
-                    z: -2680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 330
-                {
-                    x: 2504,
-                    z: -120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 331
-                {
-                    x: 2456,
-                    z: -5736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 332
-                {
-                    x: 2456,
-                    z: -2664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 333
-                {
-                    x: 2456,
-                    z: -552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 334
-                {
-                    x: 2440,
-                    z: 4680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 335
-                {
-                    x: 2440,
-                    z: -5800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 336
-                {
-                    x: 2392,
-                    z: -5752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 337
-                {
-                    x: 2392,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 338
-                {
-                    x: 2392,
-                    z: -440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 339
-                {
-                    x: 2376,
-                    z: 4680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 340
-                {
-                    x: 2312,
-                    z: -4728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 341
-                {
-                    x: 2312,
-                    z: -5224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 342
-                {
-                    x: 2312,
-                    z: -5736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 343
-                {
-                    x: 2312,
-                    z: -2744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 344
-                {
-                    x: 2312,
-                    z: -2744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 345
-                {
-                    x: 2312,
-                    z: -1080,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 346
-                {
-                    x: 2312,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 347
-                {
-                    x: 2248,
-                    z: -5736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 348
-                {
-                    x: 2248,
-                    z: -760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 349
-                {
-                    x: 2248,
-                    z: -1960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 350
-                {
-                    x: 2248,
-                    z: -1016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 351
-                {
-                    x: 2200,
-                    z: -5304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 352
-                {
-                    x: 2200,
-                    z: -1000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 353
-                {
-                    x: 2184,
-                    z: -5624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 354
-                {
-                    x: 2184,
-                    z: -5928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 355
-                {
-                    x: 2184,
-                    z: 600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 356
-                {
-                    x: 2184,
-                    z: 728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 357
-                {
-                    x: 2184,
-                    z: 776,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 358
-                {
-                    x: 2184,
-                    z: -1848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 359
-                {
-                    x: 2136,
-                    z: -5800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 360
-                {
-                    x: 2136,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 361
-                {
-                    x: 2136,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 362
-                {
-                    x: 2136,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 363
-                {
-                    x: 2136,
-                    z: 1544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 364
-                {
-                    x: 2136,
-                    z: -760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 365
-                {
-                    x: 2120,
-                    z: -5624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 366
-                {
-                    x: 2120,
-                    z: -5736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 367
-                {
-                    x: 2120,
-                    z: -6008,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 368
-                {
-                    x: 2120,
-                    z: -2664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 369
-                {
-                    x: 2120,
-                    z: -168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 370
-                {
-                    x: 2120,
-                    z: -1768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 371
-                {
-                    x: 2072,
-                    z: -1784,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 372
-                {
-                    x: 2056,
-                    z: -4920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 373
-                {
-                    x: 2056,
-                    z: -5624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 374
-                {
-                    x: 2056,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 375
-                {
-                    x: 2056,
-                    z: 1352,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 376
-                {
-                    x: 2008,
-                    z: 1432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 377
-                {
-                    x: 1992,
-                    z: -4920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 378
-                {
-                    x: 1992,
-                    z: 1352,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 379
-                {
-                    x: 1992,
-                    z: 8,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 380
-                {
-                    x: 1928,
-                    z: -4856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 381
-                {
-                    x: 1928,
-                    z: 3336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 382
-                {
-                    x: 1864,
-                    z: -4840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 383
-                {
-                    x: 1864,
-                    z: 3080,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 384
-                {
-                    x: 1864,
-                    z: -1528,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 385
-                {
-                    x: 1816,
-                    z: 2904,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 386
-                {
-                    x: 1800,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 387
-                {
-                    x: 1800,
-                    z: -4856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 388
-                {
-                    x: 1800,
-                    z: -3000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 389
-                {
-                    x: 1752,
-                    z: -5112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 390
-                {
-                    x: 1752,
-                    z: 3400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 391
-                {
-                    x: 1752,
-                    z: 3464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 392
-                {
-                    x: 1736,
-                    z: -4856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 393
-                {
-                    x: 1736,
-                    z: -2664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 394
-                {
-                    x: 1736,
-                    z: 2760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 395
-                {
-                    x: 1688,
-                    z: -2616,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 396
-                {
-                    x: 1688,
-                    z: 2760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 397
-                {
-                    x: 1688,
-                    z: 3400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 398
-                {
-                    x: 1688,
-                    z: 3464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 399
-                {
-                    x: 1672,
-                    z: 3352,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 400
-                {
-                    x: 1624,
-                    z: 3528,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 401
-                {
-                    x: 1624,
-                    z: 3592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 402
-                {
-                    x: 1608,
-                    z: -5352,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 403
-                {
-                    x: 1608,
-                    z: -4984,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 404
-                {
-                    x: 1608,
-                    z: 2952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 405
-                {
-                    x: 1608,
-                    z: 3400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 406
-                {
-                    x: 1560,
-                    z: 2952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 407
-                {
-                    x: 1560,
-                    z: 3656,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 408
-                {
-                    x: 1544,
-                    z: 2888,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 409
-                {
-                    x: 1544,
-                    z: 3016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 410
-                {
-                    x: 1544,
-                    z: 3160,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 411
-                {
-                    x: 1496,
-                    z: 2248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 412
-                {
-                    x: 1496,
-                    z: 3016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 413
-                {
-                    x: 1480,
-                    z: 2520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 414
-                {
-                    x: 1480,
-                    z: 2632,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 415
-                {
-                    x: 1480,
-                    z: 2888,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 416
-                {
-                    x: 1480,
-                    z: 2952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 417
-                {
-                    x: 1480,
-                    z: 3080,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 418
-                {
-                    x: 1480,
-                    z: 4120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 419
-                {
-                    x: 1416,
-                    z: -3128,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 420
-                {
-                    x: 1416,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 421
-                {
-                    x: 1416,
-                    z: 1800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 422
-                {
-                    x: 1416,
-                    z: 2200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 423
-                {
-                    x: 1416,
-                    z: 3736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 424
-                {
-                    x: 1416,
-                    z: 4104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 425
-                {
-                    x: 1416,
-                    z: 4056,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 426
-                {
-                    x: 1368,
-                    z: -5368,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 427
-                {
-                    x: 1368,
-                    z: 4680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 428
-                {
-                    x: 1352,
-                    z: -3320,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 429
-                {
-                    x: 1352,
-                    z: -3112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 430
-                {
-                    x: 1352,
-                    z: 1672,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 431
-                {
-                    x: 1352,
-                    z: 1800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 432
-                {
-                    x: 1352,
-                    z: 1752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 433
-                {
-                    x: 1352,
-                    z: 4808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 434
-                {
-                    x: 1304,
-                    z: -3176,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 435
-                {
-                    x: 1304,
-                    z: 1800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 436
-                {
-                    x: 1288,
-                    z: -4984,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 437
-                {
-                    x: 1288,
-                    z: -3384,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 438
-                {
-                    x: 1288,
-                    z: -3048,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 439
-                {
-                    x: 1288,
-                    z: 4744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 440
-                {
-                    x: 1288,
-                    z: 984,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 441
-                {
-                    x: 1240,
-                    z: -2808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 442
-                {
-                    x: 1240,
-                    z: 3016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 443
-                {
-                    x: 1224,
-                    z: -5096,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 444
-                {
-                    x: 1224,
-                    z: -4984,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 445
-                {
-                    x: 1224,
-                    z: 2056,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 446
-                {
-                    x: 1224,
-                    z: 3080,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 447
-                {
-                    x: 1224,
-                    z: 1112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 448
-                {
-                    x: 1176,
-                    z: 2952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 449
-                {
-                    x: 1176,
-                    z: 4248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 450
-                {
-                    x: 1176,
-                    z: 920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 451
-                {
-                    x: 1160,
-                    z: -2856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 452
-                {
-                    x: 1160,
-                    z: -2808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                }, 
-            //Treasure 453
-                {
-                    x: 1160,
-                    z: 2056,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 454
-                {
-                    x: 1160,
-                    z: 2440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 455
-                {
-                    x: 1160,
-                    z: 840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 456
-                {
-                    x: 1112,
-                    z: -2856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 457
-                {
-                    x: 1112,
-                    z: -2792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 458
-                {
-                    x: 1112,
-                    z: 1864,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 459
-                {
-                    x: 1112,
-                    z: 1928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 460
-                {
-                    x: 1112,
-                    z: 2312,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 461
-                {
-                    x: 1096,
-                    z: -5176,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 462
-                {
-                    x: 1096,
-                    z: 2264,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 463
-                {
-                    x: 1096,
-                    z: 4184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 464
-                {
-                    x: 1096,
-                    z: 4360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 465
-                {
-                    x: 1096,
-                    z: 4424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 466
-                {
-                    x: 1096,
-                    z: 4488,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 467
-                {
-                    x: 1048,
-                    z: -3496,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 468
-                {
-                    x: 1048,
-                    z: 1544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 469
-                {
-                    x: 1032,
-                    z: -5160,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 470
-                {
-                    x: 1032,
-                    z: -2616,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 471
-                {
-                    x: 1032,
-                    z: 4296,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 472
-                {
-                    x: 984,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 473
-                {
-                    x: 968,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 474
-                {
-                    x: 968,
-                    z: -5560,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 475
-                {
-                    x: 968,
-                    z: -5240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 476
-                {
-                    x: 968,
-                    z: -3688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 477
-                {
-                    x: 968,
-                    z: -2600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 478
-                {
-                    x: 968,
-                    z: 3224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 479
-                {
-                    x: 968,
-                    z: 3272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 480
-                {
-                    x: 920,
-                    z: 3544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 481
-                {
-                    x: 920,
-                    z: 3592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 482
-                {
-                    x: 904,
-                    z: -5560,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 483
-                {
-                    x: 904,
-                    z: -2664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 484
-                {
-                    x: 904,
-                    z: 1480,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 485
-                {
-                    x: 904,
-                    z: 2248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 486
-                {
-                    x: 904,
-                    z: 3784,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 487
-                {
-                    x: 856,
-                    z: -5928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 488
-                {
-                    x: 856,
-                    z: -2856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 489
-                {
-                    x: 856,
-                    z: -2856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 490
-                {
-                    x: 840,
-                    z: -3768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 491
-                {
-                    x: 840,
-                    z: -3176,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 492
-                {
-                    x: 840,
-                    z: 3208,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 493
-                {
-                    x: 840,
-                    z: 3864,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 494
-                {
-                    x: 840,
-                    z: 3976,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 495
-                {
-                    x: 792,
-                    z: -1400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 496
-                {
-                    x: 776,
-                    z: -4536,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 497
-                {
-                    x: 776,
-                    z: -4472,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 498
-                {
-                    x: 776,
-                    z: -4408,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 499
-                {
-                    x: 776,
-                    z: -4600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 500
-                {
-                    x: 776,
-                    z: -1448,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 501
-                {
-                    x: 776,
-                    z: 3720,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 502
-                {
-                    x: 776,
-                    z: 3864,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 503
-                {
-                    x: 776,
-                    z: 4040,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 504
-                {
-                    x: 728,
-                    z: -4280,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 505
-                {
-                    x: 728,
-                    z: -2856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 506
-                {
-                    x: 728,
-                    z: 4104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 507
-                {
-                    x: 712,
-                    z: -5432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 508
-                {
-                    x: 712,
-                    z: -4216,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 509
-                {
-                    x: 712,
-                    z: -1336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 510
-                {
-                    x: 664,
-                    z: -5480,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 511
-                {
-                    x: 664,
-                    z: -1336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 512
-                {
-                    x: 648,
-                    z: -5432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 513
-                {
-                    x: 648,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 514
-                {
-                    x: 648,
-                    z: -1208,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 515
-                {
-                    x: 648,
-                    z: 2696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 516
-                {
-                    x: 600,
-                    z: -4024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 517
-                {
-                    x: 600,
-                    z: -1272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 518
-                {
-                    x: 600,
-                    z: 3208,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 519
-                {
-                    x: 600,
-                    z: 3336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 520
-                {
-                    x: 584,
-                    z: -5624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 521
-                {
-                    x: 584,
-                    z: -1336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 522
-                {
-                    x: 584,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 523
-                {
-                    x: 584,
-                    z: -1400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 524
-                {
-                    x: 536,
-                    z: -4920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 525
-                {
-                    x: 536,
-                    z: 1416,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 526
-                {
-                    x: 520,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 527
-                {
-                    x: 520,
-                    z: -5624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 528
-                {
-                    x: 520,
-                    z: -5048,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 529
-                {
-                    x: 520,
-                    z: -3768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 530
-                {
-                    x: 520,
-                    z: -1192,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 531
-                {
-                    x: 520,
-                    z: -1256,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 532
-                {
-                    x: 520,
-                    z: 5128,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 533
-                {
-                    x: 472,
-                    z: 1608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 534
-                {
-                    x: 456,
-                    z: -5800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 535
-                {
-                    x: 456,
-                    z: -5736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 536
-                {
-                    x: 456,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 537
-                {
-                    x: 456,
-                    z: -5608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 538
-                {
-                    x: 456,
-                    z: -5496,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 539
-                {
-                    x: 456,
-                    z: 1544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 540
-                {
-                    x: 456,
-                    z: 1480,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 541
-                {
-                    x: 408,
-                    z: -4920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 542
-                {
-                    x: 392,
-                    z: -5816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 543
-                {
-                    x: 392,
-                    z: -5752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 544
-                {
-                    x: 392,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 545
-                {
-                    x: 392,
-                    z: -5304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 546
-                {
-                    x: 392,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 547
-                {
-                    x: 344,
-                    z: 1800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 548
-                {
-                    x: 344,
-                    z: 4360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 549
-                {
-                    x: 328,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 550
-                {
-                    x: 328,
-                    z: 2056,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 551
-                {
-                    x: 328,
-                    z: 5272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 552
-                {
-                    x: 280,
-                    z: -4792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 553
-                {
-                    x: 280,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 554
-                {
-                    x: 280,
-                    z: 5064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 555
-                {
-                    x: 264,
-                    z: -5496,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 556
-                {
-                    x: 264,
-                    z: 4808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 557
-                {
-                    x: 264,
-                    z: 5320,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 558
-                {
-                    x: 264,
-                    z: 5384,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 559
-                {
-                    x: 216,
-                    z: -5304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 560
-                {
-                    x: 216,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 561
-                {
-                    x: 200,
-                    z: -5544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 562
-                {
-                    x: 200,
-                    z: -5480,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 563
-                {
-                    x: 200,
-                    z: -5368,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 564
-                {
-                    x: 200,
-                    z: -4728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 565
-                {
-                    x: 200,
-                    z: -4600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 566
-                {
-                    x: 200,
-                    z: 1624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 567
-                {
-                    x: 200,
-                    z: 5064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 568
-                {
-                    x: 200,
-                    z: 5336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 569
-                {
-                    x: 152,
-                    z: -5288,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 570
-                {
-                    x: 152,
-                    z: -1192,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 571
-                {
-                    x: 152,
-                    z: 968,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 572
-                {
-                    x: 152,
-                    z: 4488,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 573
-                {
-                    x: 136,
-                    z: -5368,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 574
-                {
-                    x: 136,
-                    z: -3832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 575
-                {
-                    x: 136,
-                    z: -3768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 576
-                {
-                    x: 136,
-                    z: -3704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 577
-                {
-                    x: 136,
-                    z: 2504,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 578
-                {
-                    x: 88,
-                    z: 2440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 579
-                {
-                    x: 72,
-                    z: -4920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 580
-                {
-                    x: 72,
-                    z: -4152,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 581
-                {
-                    x: 8,
-                    z: -104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 582
-                {
-                    x: 8,
-                    z: 5272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 583
-                {
-                    x: -40,
-                    z: 8,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 584
-                {
-                    x: -40,
-                    z: -56,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 585
-                {
-                    x: -56,
-                    z: -120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 586
-                {
-                    x: -56,
-                    z: -3576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 587
-                {
-                    x: -56,
-                    z: -4840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 588
-                {
-                    x: -120,
-                    z: 1352,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 589
-                {
-                    x: -120,
-                    z: -4904,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 590
-                {
-                    x: -168,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 591
-                {
-                    x: -184,
-                    z: 1288,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 592
-                {
-                    x: -184,
-                    z: 200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 593
-                {
-                    x: -184,
-                    z: 8,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 594
-                {
-                    x: -184,
-                    z: 88,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 595
-                {
-                    x: -184,
-                    z: 136,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 596
-                {
-                    x: -184,
-                    z: -1528,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 597
-                {
-                    x: -248,
-                    z: 1928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 598
-                {
-                    x: -248,
-                    z: 1224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 599
-                {
-                    x: -248,
-                    z: 344,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 600
-                {
-                    x: -248,
-                    z: -1448,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 601
-                {
-                    x: -248,
-                    z: -4920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 602
-                {
-                    x: -296,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 603
-                {
-                    x: -312,
-                    z: 2328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 604
-                {
-                    x: -312,
-                    z: 2392,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 605
-                {
-                    x: -312,
-                    z: 1224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 606
-                {
-                    x: -312,
-                    z: -2424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 607
-                {
-                    x: -312,
-                    z: -3192,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 608
-                {
-                    x: -312,
-                    z: -3256,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 609
-                {
-                    x: -360,
-                    z: 1544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 610
-                {
-                    x: -376,
-                    z: 1240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 611
-                {
-                    x: -376,
-                    z: 24,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 612
-                {
-                    x: -376,
-                    z: 72,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 613
-                {
-                    x: -376,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 614
-                {
-                    x: -376,
-                    z: -3192,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 615
-                {
-                    x: -376,
-                    z: -4984,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 616
-                {
-                    x: -424,
-                    z: -3128,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 617
-                {
-                    x: -440,
-                    z: 1544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 618
-                {
-                    x: -440,
-                    z: 1224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 619
-                {
-                    x: -440,
-                    z: 968,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 620
-                {
-                    x: -440,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 621
-                {
-                    x: -440,
-                    z: -3192,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 622
-                {
-                    x: -440,
-                    z: -5800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 623
-                {
-                    x: -504,
-                    z: 1240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 624
-                {
-                    x: -504,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 625
-                {
-                    x: -504,
-                    z: -2744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 626
-                {
-                    x: -504,
-                    z: -5816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 627
-                {
-                    x: -504,
-                    z: -5752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 628
-                {
-                    x: -568,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 629
-                {
-                    x: -568,
-                    z: 2568,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 630
-                {
-                    x: -568,
-                    z: 1160,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 631
-                {
-                    x: -568,
-                    z: 136,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 632
-                {
-                    x: -568,
-                    z: -56,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 633
-                {
-                    x: -616,
-                    z: -56,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 634
-                {
-                    x: -632,
-                    z: 5064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 635
-                {
-                    x: -632,
-                    z: 4360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 636
-                {
-                    x: -632,
-                    z: -2168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 637
-                {
-                    x: -632,
-                    z: -2728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 638
-                {
-                    x: -632,
-                    z: -3128,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 639
-                {
-                    x: -680,
-                    z: 4232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 640
-                {
-                    x: -680,
-                    z: 2376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 641
-                {
-                    x: -680,
-                    z: -2168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 642
-                {
-                    x: -680,
-                    z: -2936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 643
-                {
-                    x: -680,
-                    z: -3064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 644
-                {
-                    x: -680,
-                    z: -4712,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 645
-                {
-                    x: -696,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 646
-                {
-                    x: -696,
-                    z: 2328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 647
-                {
-                    x: -696,
-                    z: 1224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 648
-                {
-                    x: -696,
-                    z: 968,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 649
-                {
-                    x: -696,
-                    z: 600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 650
-                {
-                    x: -696,
-                    z: -2728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 651
-                {
-                    x: -696,
-                    z: -3000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 652
-                {
-                    x: -696,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 653
-                {
-                    x: -696,
-                    z: -6056,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 654
-                {
-                    x: -744,
-                    z: 2184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 655
-                {
-                    x: -760,
-                    z: 5448,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 656
-                {
-                    x: -760,
-                    z: 4232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 657
-                {
-                    x: -760,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 658
-                {
-                    x: -760,
-                    z: 1160,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 659
-                {
-                    x: -760,
-                    z: 1112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 660
-                {
-                    x: -760,
-                    z: 584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 661
-                {
-                    x: -760,
-                    z: 648,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 662
-                {
-                    x: -760,
-                    z: 776,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 663
-                {
-                    x: -760,
-                    z: 520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 664
-                {
-                    x: -760,
-                    z: -2168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 665
-                {
-                    x: -808,
-                    z: 216,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 666
-                {
-                    x: -808,
-                    z: -5176,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 667
-                {
-                    x: -824,
-                    z: 4104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 668
-                {
-                    x: -824,
-                    z: 2136,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 669
-                {
-                    x: -824,
-                    z: 584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 670
-                {
-                    x: -824,
-                    z: 520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 671
-                {
-                    x: -824,
-                    z: 264,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 672
-                {
-                    x: -824,
-                    z: -1720,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 673
-                {
-                    x: -824,
-                    z: -1896,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 674
-                {
-                    x: -824,
-                    z: -2232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 675
-                {
-                    x: -872,
-                    z: -568,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 676
-                {
-                    x: -888,
-                    z: 5960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 677
-                {
-                    x: -888,
-                    z: 5896,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 678
-                {
-                    x: -888,
-                    z: 5832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 679
-                {
-                    x: -888,
-                    z: 1992,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 680
-                {
-                    x: -888,
-                    z: 1928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 681
-                {
-                    x: -888,
-                    z: 1240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 682
-                {
-                    x: -888,
-                    z: 1032,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 683
-                {
-                    x: -888,
-                    z: 1032,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 684
-                {
-                    x: -888,
-                    z: 264,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 685
-                {
-                    x: -888,
-                    z: -616,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 686
-                {
-                    x: -888,
-                    z: -696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 687
-                {
-                    x: -888,
-                    z: -1640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 688
-                {
-                    x: -888,
-                    z: -2232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 689
-                {
-                    x: -936,
-                    z: 5848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 690
-                {
-                    x: -936,
-                    z: 2184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 691
-                {
-                    x: -936,
-                    z: 1944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 692
-                {
-                    x: -936,
-                    z: 1352,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 693
-                {
-                    x: -936,
-                    z: -824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 694
-                {
-                    x: -952,
-                    z: 5704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 695
-                {
-                    x: -952,
-                    z: 4104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 696
-                {
-                    x: -952,
-                    z: 3336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 697
-                {
-                    x: -952,
-                    z: 1432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 698
-                {
-                    x: -952,
-                    z: 1224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 699
-                {
-                    x: -952,
-                    z: 1096,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 700
-                {
-                    x: -952,
-                    z: 392,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 701
-                {
-                    x: -952,
-                    z: 216,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 702
-                {
-                    x: -952,
-                    z: -504,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 703
-                {
-                    x: -952,
-                    z: -872,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 704
-                {
-                    x: -952,
-                    z: -2296,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 705
-                {
-                    x: -952,
-                    z: -2360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 706
-                {
-                    x: -1000,
-                    z: 1560,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 707
-                {
-                    x: -1000,
-                    z: -1592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 708
-                {
-                    x: -1016,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 709
-                {
-                    x: -1016,
-                    z: 3272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 710
-                {
-                    x: -1016,
-                    z: 2184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 711
-                {
-                    x: -1016,
-                    z: 200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 712
-                {
-                    x: -1016,
-                    z: -312,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 713
-                {
-                    x: -1016,
-                    z: -376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 714
-                {
-                    x: -1016,
-                    z: -696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 715
-                {
-                    x: -1016,
-                    z: -808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 716
-                {
-                    x: -1016,
-                    z: -888,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 717
-                {
-                    x: -1016,
-                    z: -952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 718
-                {
-                    x: -1016,
-                    z: -4728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 719
-                {
-                    x: -1016,
-                    z: -4344,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 720
-                {
-                    x: -1064,
-                    z: 3912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 721
-                {
-                    x: -1064,
-                    z: 2184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 722
-                {
-                    x: -1064,
-                    z: 1608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 723
-                {
-                    x: -1064,
-                    z: -952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 724
-                {
-                    x: -1064,
-                    z: -5032,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 725
-                {
-                    x: -1080,
-                    z: 2248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 726
-                {
-                    x: -1080,
-                    z: 1928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 727
-                {
-                    x: -1080,
-                    z: -56,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 728
-                {
-                    x: -1080,
-                    z: -248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 729
-                {
-                    x: -1080,
-                    z: -760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 730
-                {
-                    x: -1080,
-                    z: -4792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 731
-                {
-                    x: -1144,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 732
-                {
-                    x: -1144,
-                    z: 3976,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 733
-                {
-                    x: -1144,
-                    z: -184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 734
-                {
-                    x: -1144,
-                    z: -1656,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 735
-                {
-                    x: -1144,
-                    z: -4728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 736
-                {
-                    x: -1144,
-                    z: -4344,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 737
-                {
-                    x: -1144,
-                    z: -4280,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 738
-                {
-                    x: -1192,
-                    z: 4104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 739
-                {
-                    x: -1192,
-                    z: -5096,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 740
-                {
-                    x: -1208,
-                    z: 3016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 741
-                {
-                    x: -1208,
-                    z: 520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 742
-                {
-                    x: -1208,
-                    z: 584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 743
-                {
-                    x: -1208,
-                    z: -1720,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 744
-                {
-                    x: -1208,
-                    z: -4152,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 745
-                {
-                    x: -1256,
-                    z: -5608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 746
-                {
-                    x: -1272,
-                    z: 1944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 747
-                {
-                    x: -1336,
-                    z: -1272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 748
-                {
-                    x: -1336,
-                    z: 1112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 749
-                {
-                    x: -1384,
-                    z: -760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 750
-                {
-                    x: -1400,
-                    z: -696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 751
-                {
-                    x: -1400,
-                    z: -1272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 752
-                {
-                    x: -1400,
-                    z: -2360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 753
-                {
-                    x: -1400,
-                    z: -2472,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 754
-                {
-                    x: -1400,
-                    z: -5624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 755
-                {
-                    x: -1400,
-                    z: 1992,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 756
-                {
-                    x: -1448,
-                    z: -2168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 757
-                {
-                    x: -1448,
-                    z: -2552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 758
-                {
-                    x: -1448,
-                    z: 1480,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 759
-                {
-                    x: -1464,
-                    z: -2296,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 760
-                {
-                    x: -1464,
-                    z: -2616,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 761
-                {
-                    x: -1464,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 762
-                {
-                    x: -1464,
-                    z: -5752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 763
-                {
-                    x: -1464,
-                    z: -5800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 764
-                {
-                    x: -1464,
-                    z: 5192,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 765
-                {
-                    x: -1464,
-                    z: 1112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 766
-                {
-                    x: -1512,
-                    z: -2232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 767
-                {
-                    x: -1512,
-                    z: -2536,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 768
-                {
-                    x: -1512,
-                    z: 1032,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 769
-                {
-                    x: -1576,
-                    z: -1208,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 770
-                {
-                    x: -1576,
-                    z: -4776,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 771
-                {
-                    x: -1576,
-                    z: -4904,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 772
-                {
-                    x: -1576,
-                    z: 1560,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 773
-                {
-                    x: -1592,
-                    z: -4728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 774
-                {
-                    x: -1592,
-                    z: -4968,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 775
-                {
-                    x: -1592,
-                    z: 840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 776
-                {
-                    x: -1640,
-                    z: -1272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 777
-                {
-                    x: -1640,
-                    z: -4536,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 778
-                {
-                    x: -1640,
-                    z: 1608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 779
-                {
-                    x: -1656,
-                    z: -5736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 780
-                {
-                    x: -1656,
-                    z: -5240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 781
-                {
-                    x: -1656,
-                    z: 1688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 782
-                {
-                    x: -1720,
-                    z: -2424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 783
-                {
-                    x: -1720,
-                    z: -5176,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 784
-                {
-                    x: -1720,
-                    z: 792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 785
-                {
-                    x: -1784,
-                    z: -2232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 786
-                {
-                    x: -1784,
-                    z: -5816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 787
-                {
-                    x: -1784,
-                    z: -5048,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 788
-                {
-                    x: -1848,
-                    z: -1912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 789
-                {
-                    x: -1848,
-                    z: -2408,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 790
-                {
-                    x: -1848,
-                    z: -2936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 791
-                {
-                    x: -1848,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 792
-                {
-                    x: -1848,
-                    z: 5960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 793
-                {
-                    x: -1848,
-                    z: 5832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 794
-                {
-                    x: -1848,
-                    z: 5784,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 795
-                {
-                    x: -1896,
-                    z: -2872,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 796
-                {
-                    x: -1912,
-                    z: -3000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 797
-                {
-                    x: -1912,
-                    z: -1016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 798
-                {
-                    x: -1960,
-                    z: -4856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 799
-                {
-                    x: -1960,
-                    z: -4648,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 800
-                {
-                    x: -1976,
-                    z: -2936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 801
-                {
-                    x: -1976,
-                    z: -4536,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 802
-                {
-                    x: -1976,
-                    z: -4600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 803
-                {
-                    x: -1976,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 804
-                {
-                    x: -1976,
-                    z: -3448,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 805
-                {
-                    x: -1976,
-                    z: -3576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 806
-                {
-                    x: -2024,
-                    z: -2472,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 807
-                {
-                    x: -2024,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 808
-                {
-                    x: -2040,
-                    z: -2808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 809
-                {
-                    x: -2040,
-                    z: -2680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 810
-                {
-                    x: -2104,
-                    z: -2424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 811
-                {
-                    x: -2104,
-                    z: -1256,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 812
-                {
-                    x: -2104,
-                    z: -2040,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 813
-                {
-                    x: -2104,
-                    z: -2104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 814
-                {
-                    x: -2152,
-                    z: 5512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 815
-                {
-                    x: -2168,
-                    z: -4520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 816
-                {
-                    x: -2168,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 817
-                {
-                    x: -2168,
-                    z: 5464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 818
-                {
-                    x: -2168,
-                    z: 1352,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 819
-                {
-                    x: -2168,
-                    z: -1512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 820
-                {
-                    x: -2168,
-                    z: -5992,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 821
-                {
-                    x: -2216,
-                    z: 5512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 822
-                {
-                    x: -2216,
-                    z: 200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 823
-                {
-                    x: -2216,
-                    z: -1592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 824
-                {
-                    x: -2232,
-                    z: -2552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 825
-                {
-                    x: -2232,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 826
-                {
-                    x: -2232,
-                    z: 5448,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 827
-                {
-                    x: -2232,
-                    z: 5400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 828
-                {
-                    x: -2232,
-                    z: 3720,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 829
-                {
-                    x: -2232,
-                    z: 3928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 830
-                {
-                    x: -2232,
-                    z: -1400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 831
-                {
-                    x: -2232,
-                    z: -1912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 832
-                {
-                    x: -2232,
-                    z: -3768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 833
-                {
-                    x: -2232,
-                    z: -4792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 834
-                {
-                    x: -2280,
-                    z: 5320,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 835
-                {
-                    x: -2280,
-                    z: 3848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 836
-                {
-                    x: -2280,
-                    z: -1592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 837
-                {
-                    x: -2280,
-                    z: -4904,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 838
-                {
-                    x: -2280,
-                    z: -5224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 839
-                {
-                    x: -2296,
-                    z: 5384,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 840
-                {
-                    x: -2296,
-                    z: 5656,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 841
-                {
-                    x: -2296,
-                    z: 5528,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 842
-                {
-                    x: -2296,
-                    z: 584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 843
-                {
-                    x: -2296,
-                    z: -1064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 844
-                {
-                    x: -2296,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 845
-                {
-                    x: -2296,
-                    z: -1512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 846
-                {
-                    x: -2296,
-                    z: -1720,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 847
-                {
-                    x: -2296,
-                    z: -1656,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 848
-                {
-                    x: -2296,
-                    z: -3832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 849
-                {
-                    x: -2296,
-                    z: -3880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 850
-                {
-                    x: -2296,
-                    z: -4792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 851
-                {
-                    x: -2344,
-                    z: 5320,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 852
-                {
-                    x: -2344,
-                    z: 5464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 853
-                {
-                    x: -2344,
-                    z: -4792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 854
-                {
-                    x: -2360,
-                    z: 3800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 855
-                {
-                    x: -2360,
-                    z: 3848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 856
-                {
-                    x: -2360,
-                    z: 3992,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 857
-                {
-                    x: -2360,
-                    z: 216,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 858
-                {
-                    x: -2360,
-                    z: -2024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 859
-                {
-                    x: -2360,
-                    z: -4856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 860
-                {
-                    x: -2408,
-                    z: 5704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 861
-                {
-                    x: -2408,
-                    z: -56,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 862
-                {
-                    x: -2408,
-                    z: -4840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 863
-                {
-                    x: -2424,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 864
-                {
-                    x: -2424,
-                    z: 3336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 865
-                {
-                    x: -2424,
-                    z: -2024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 866
-                {
-                    x: -2424,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 867
-                {
-                    x: -2424,
-                    z: -4904,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 868
-                {
-                    x: -2472,
-                    z: 5704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 869
-                {
-                    x: -2472,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 870
-                {
-                    x: -2472,
-                    z: 3336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 871
-                {
-                    x: -2472,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 872
-                {
-                    x: -2488,
-                    z: 3720,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 873
-                {
-                    x: -2488,
-                    z: 1672,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 874
-                {
-                    x: -2488,
-                    z: 8,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 875
-                {
-                    x: -2488,
-                    z: -56,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 876
-                {
-                    x: -2488,
-                    z: -1016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 877
-                {
-                    x: -2488,
-                    z: -2040,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 878
-                {
-                    x: -2552,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 879
-                {
-                    x: -2552,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 880
-                {
-                    x: -2552,
-                    z: 88,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 881
-                {
-                    x: -2552,
-                    z: -1976,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 882
-                {
-                    x: -2552,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 883
-                {
-                    x: -2600,
-                    z: 1864,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 884
-                {
-                    x: -2600,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 885
-                {
-                    x: -2600,
-                    z: -2104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 886
-                {
-                    x: -2616,
-                    z: 5256,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 887
-                {
-                    x: -2616,
-                    z: 5208,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 888
-                {
-                    x: -2616,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 889
-                {
-                    x: -2616,
-                    z: 1800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 890
-                {
-                    x: -2616,
-                    z: 136,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 891
-                {
-                    x: -2616,
-                    z: -1528,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 892
-                {
-                    x: -2616,
-                    z: -2040,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 893
-                {
-                    x: -2616,
-                    z: -2232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 894
-                {
-                    x: -2616,
-                    z: -4920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 895
-                {
-                    x: -2616,
-                    z: -4968,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 896
-                {
-                    x: -2664,
-                    z: -1512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 897
-                {
-                    x: -2664,
-                    z: -2168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 898
-                {
-                    x: -2680,
-                    z: 5272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 899
-                {
-                    x: -2680,
-                    z: 4424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 900
-                {
-                    x: -2680,
-                    z: 3912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 901
-                {
-                    x: -2680,
-                    z: 4104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 902
-                {
-                    x: -2680,
-                    z: 1928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 903
-                {
-                    x: -2680,
-                    z: 1800,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 904
-                {
-                    x: -2680,
-                    z: 1864,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 905
-                {
-                    x: -2680,
-                    z: 200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 906
-                {
-                    x: -2680,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 907
-                {
-                    x: -2680,
-                    z: -2232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 908
-                {
-                    x: -2680,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 909
-                {
-                    x: -2680,
-                    z: -4920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 910
-                {
-                    x: -2680,
-                    z: -4856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 911
-                {
-                    x: -2680,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 912
-                {
-                    x: -2728,
-                    z: 3976,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 913
-                {
-                    x: -2728,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 914
-                {
-                    x: -2744,
-                    z: 4744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 915
-                {
-                    x: -2744,
-                    z: 4680,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 916
-                {
-                    x: -2744,
-                    z: 4568,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 917
-                {
-                    x: -2744,
-                    z: 3032,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 918
-                {
-                    x: -2744,
-                    z: -232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 919
-                {
-                    x: -2744,
-                    z: -4920,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 920
-                {
-                    x: -2808,
-                    z: 2568,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 921
-                {
-                    x: -2808,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 922
-                {
-                    x: -2808,
-                    z: 1816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 923
-                {
-                    x: -2808,
-                    z: 200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 924
-                {
-                    x: -2808,
-                    z: -1400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 925
-                {
-                    x: -2808,
-                    z: -4024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 926
-                {
-                    x: -2808,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 927
-                {
-                    x: -2856,
-                    z: -4024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 928
-                {
-                    x: -2872,
-                    z: 4120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 929
-                {
-                    x: -2872,
-                    z: 1864,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 930
-                {
-                    x: -2872,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 931
-                {
-                    x: -2872,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 932
-                {
-                    x: -2872,
-                    z: -6008,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 933
-                {
-                    x: -2920,
-                    z: -5672,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 934
-                {
-                    x: -2920,
-                    z: -5672,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 935
-                {
-                    x: -2920,
-                    z: -5992,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 936
-                {
-                    x: -2936,
-                    z: 4040,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 937
-                {
-                    x: -2936,
-                    z: 4120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 938
-                {
-                    x: -2936,
-                    z: 1928,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 939
-                {
-                    x: -2936,
-                    z: 1736,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 940
-                {
-                    x: -2984,
-                    z: 2120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 941
-                {
-                    x: -2984,
-                    z: 1544,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 942
-                {
-                    x: -2984,
-                    z: -4904,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 943
-                {
-                    x: -2984,
-                    z: -5416,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 944
-                {
-                    x: -2984,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 945
-                {
-                    x: -3000,
-                    z: 3976,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 946
-                {
-                    x: -3000,
-                    z: 3016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 947
-                {
-                    x: -3000,
-                    z: 3080,
-                    image: "playerimages/chest.png",
-                imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 948
-                {
-                    x: -3000,
-                    z: 200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 949
-                {
-                    x: -3000,
-                    z: -696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 950
-                {
-                    x: -3000,
-                    z: -5304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 951
-                {
-                    x: -3000,
-                    z: -5224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 952
-                {
-                    x: -3048,
-                    z: 3912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 953
-                {
-                    x: -3048,
-                    z: 1688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 954
-                {
-                    x: -3048,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 955
-                {
-                    x: -3048,
-                    z: -5112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 956
-                {
-                    x: -3048,
-                    z: -5880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 957
-                {
-                    x: -3064,
-                    z: 4120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 958
-                {
-                    x: -3064,
-                    z: 4168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 959
-                {
-                    x: -3064,
-                    z: 3144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 960
-                {
-                    x: -3064,
-                    z: 1816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 961
-                {
-                    x: -3064,
-                    z: -4984,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 962
-                {
-                    x: -3064,
-                    z: -5304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 963
-                {
-                    x: -3112,
-                    z: -5368,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 964
-                {
-                    x: -3128,
-                    z: 2696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 965
-                {
-                    x: -3128,
-                    z: 88,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 966
-                {
-                    x: -3128,
-                    z: -56,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 967
-                {
-                    x: -3128,
-                    z: -1016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 968
-                {
-                    x: -3128,
-                    z: -936,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 969
-                {
-                    x: -3192,
-                    z: 2760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 970
-                {
-                    x: -3192,
-                    z: -312,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 971
-                {
-                    x: -3240,
-                    z: -696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 972
-                {
-                    x: -3240,
-                    z: -4072,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 973
-                {
-                    x: -3256,
-                    z: 2824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 974
-                {
-                    x: -3256,
-                    z: 280,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 975
-                {
-                    x: -3304,
-                    z: 264,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 976
-                {
-                    x: -3320,
-                    z: 3144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 977
-                {
-                    x: -3320,
-                    z: 3144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 978
-                {
-                    x: -3368,
-                    z: 2904,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 979
-                {
-                    x: -3384,
-                    z: 2504,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 980
-                {
-                    x: -3384,
-                    z: -1016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 981
-                {
-                    x: -3448,
-                    z: 2520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 982
-                {
-                    x: -3448,
-                    z: 328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 983
-                {
-                    x: -3496,
-                    z: 328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 984
-                {
-                    x: -3512,
-                    z: 3976,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 985
-                {
-                    x: -3512,
-                    z: 88,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 986
-                {
-                    x: -3560,
-                    z: 72,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 987
-                {
-                    x: -3560,
-                    z: -3896,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 988
-                {
-                    x: -3576,
-                    z: -232,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 989
-                {
-                    x: -3576,
-                    z: 328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 990
-                {
-                    x: -3640,
-                    z: 200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 991
-                {
-                    x: -3640,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 992
-                {
-                    x: -3704,
-                    z: -104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 993
-                {
-                    x: -3704,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 994
-                {
-                    x: -3752,
-                    z: -3704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 995
-                {
-                    x: -3768,
-                    z: -184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 996
-                {
-                    x: -3768,
-                    z: -3752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 997
-                {
-                    x: -3816,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 998
-                {
-                    x: -3832,
-                    z: -120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 999
-                {
-                    x: -3880,
-                    z: 3016,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1000
-                {
-                    x: -3880,
-                    z: -3240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1001
-                {
-                    x: -3896,
-                    z: -248,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1002
-                {
-                    x: -3944,
-                    z: -3432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1003
-                {
-                    x: -3960,
-                    z: -4856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1004
-                {
-                    x: -4024,
-                    z: -5560,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1005
-                {
-                    x: -4088,
-                    z: 2824,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1006
-                {
-                    x: -4088,
-                    z: -360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1007
-                {
-                    x: -4136,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1008
-                {
-                    x: -4136,
-                    z: 3272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1009
-                {
-                    x: -4152,
-                    z: -360,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1010
-                {
-                    x: -4200,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1011
-                {
-                    x: -4216,
-                    z: -1464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1012
-                {
-                    x: -4264,
-                    z: 2136,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1013
-                {
-                    x: -4264,
-                    z: 2072,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1014
-                {
-                    x: -4264,
-                    z: -3960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1015
-                {
-                    x: -4264,
-                    z: -3768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1016
-                {
-                    x: -4328,
-                    z: 8,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1017
-                {
-                    x: -4328,
-                    z: -3880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1018
-                {
-                    x: -4328,
-                    z: -3768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1019
-                {
-                    x: -4344,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1020
-                {
-                    x: -4344,
-                    z: 2968,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1021
-                {
-                    x: -4344,
-                    z: 3032,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1022
-                {
-                    x: -4344,
-                    z: -616,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1023
-                {
-                    x: -4344,
-                    z: -56,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1024
-                {
-                    x: -4344,
-                    z: -120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1025
-                {
-                    x: -4344,
-                    z: -184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1026
-                {
-                    x: -4344,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1027
-                {
-                    x: -4392,
-                    z: 2120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1028
-                {
-                    x: -4392,
-                    z: -1272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1029
-                {
-                    x: -4392,
-                    z: -3768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1030
-                {
-                    x: -4408,
-                    z: 2696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1031
-                {
-                    x: -4408,
-                    z: -184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1032
-                {
-                    x: -4408,
-                    z: 8,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1033
-                {
-                    x: -4408,
-                    z: -3896,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1034
-                {
-                    x: -4472,
-                    z: -568,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1035
-                {
-                    x: -4472,
-                    z: -312,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1036
-                {
-                    x: -4472,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1037
-                {
-                    x: -4472,
-                    z: -2152,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1038
-                {
-                    x: -4472,
-                    z: -3752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1039
-                {
-                    x: -4472,
-                    z: -3816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1040
-                {
-                    x: -4472,
-                    z: -3896,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1041
-                {
-                    x: -4520,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1042
-                {
-                    x: -4520,
-                    z: -3832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1043
-                {
-                    x: -4536,
-                    z: 2584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1044
-                {
-                    x: -4536,
-                    z: -568,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1045
-                {
-                    x: -4536,
-                    z: -1976,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1046
-                {
-                    x: -4536,
-                    z: -6008,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1047
-                {
-                    x: -4536,
-                    z: -3768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1048
-                {
-                    x: -4536,
-                    z: -3880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1049
-                {
-                    x: -4584,
-                    z: -3832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1050
-                {
-                    x: -4600,
-                    z: 5784,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1051
-                {
-                    x: -4600,
-                    z: 5704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1052
-                {
-                    x: -4600,
-                    z: 2440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1053
-                {
-                    x: -4600,
-                    z: -376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1054
-                {
-                    x: -4600,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1055
-                {
-                    x: -4600,
-                    z: -1192,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1056
-                {
-                    x: -4600,
-                    z: -1448,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1057
-                {
-                    x: -4600,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1058
-                {
-                    x: -4600,
-                    z: -3768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1059
-                {
-                    x: -4600,
-                    z: -3704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1060
-                {
-                    x: -4648,
-                    z: -1400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1061
-                {
-                    x: -4648,
-                    z: -3816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1062
-                {
-                    x: -4664,
-                    z: 5704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1063
-                {
-                    x: -4664,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1064
-                {
-                    x: -4664,
-                    z: 2632,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1065
-                {
-                    x: -4664,
-                    z: 2568,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1066
-                {
-                    x: -4664,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1067
-                {
-                    x: -4664,
-                    z: -1192,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1068
-                {
-                    x: -4664,
-                    z: -2424,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1069
-                {
-                    x: -4664,
-                    z: -5944,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1070
-                {
-                    x: -4664,
-                    z: -3624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1071
-                {
-                    x: -4664,
-                    z: -3576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1072
-                {
-                    x: -4712,
-                    z: 2632,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1073
-                {
-                    x: -4728,
-                    z: 5656,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1074
-                {
-                    x: -4728,
-                    z: -632,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1075
-                {
-                    x: -4728,
-                    z: -2408,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1076
-                {
-                    x: -4728,
-                    z: -3576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1077
-                {
-                    x: -4792,
-                    z: 5320,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1078
-                {
-                    x: -4792,
-                    z: 5896,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1079
-                {
-                    x: -4792,
-                    z: -440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1080
-                {
-                    x: -4792,
-                    z: -760,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1081
-                {
-                    x: -4792,
-                    z: -888,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1082
-                {
-                    x: -4792,
-                    z: -952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1083
-                {
-                    x: -4792,
-                    z: -3512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1084
-                {
-                    x: -4792,
-                    z: -3384,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1085
-                {
-                    x: -4792,
-                    z: -3320,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1086
-                {
-                    x: -4840,
-                    z: -5624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1087
-                {
-                    x: -4840,
-                    z: -5752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1088
-                {
-                    x: -4856,
-                    z: 5768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1089
-                {
-                    x: -4856,
-                    z: 2632,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1090
-                {
-                    x: -4856,
-                    z: -440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1091
-                {
-                    x: -4856,
-                    z: -1656,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1092
-                {
-                    x: -4856,
-                    z: -5816,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1093
-                {
-                    x: -4904,
-                    z: 5768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1094
-                {
-                    x: -4904,
-                    z: 728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1095
-                {
-                    x: -4904,
-                    z: -440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1096
-                {
-                    x: -4904,
-                    z: -4024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1097
-                {
-                    x: -4920,
-                    z: 5704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1098
-                {
-                    x: -4920,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1099
-                {
-                    x: -4920,
-                    z: 2456,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1100
-                {
-                    x: -4920,
-                    z: 2376,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1101
-                {
-                    x: -4968,
-                    z: 2328,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1102
-                {
-                    x: -4984,
-                    z: 5464,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1103
-                {
-                    x: -4984,
-                    z: 648,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1104
-                {
-                    x: -4984,
-                    z: -1848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1105
-                {
-                    x: -4984,
-                    z: -1912,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1106
-                {
-                    x: -4984,
-                    z: -3896,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1107
-                {
-                    x: -5032,
-                    z: -744,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1108
-                {
-                    x: -5032,
-                    z: -4728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1109
-                {
-                    x: -5048,
-                    z: 2264,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1110
-                {
-                    x: -5048,
-                    z: 2184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1111
-                {
-                    x: -5048,
-                    z: -696,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1112
-                {
-                    x: -5048,
-                    z: -1320,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1113
-                {
-                    x: -5048,
-                    z: -1400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1114
-                {
-                    x: -5048,
-                    z: -5608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1115
-                {
-                    x: -5048,
-                    z: -4648,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1116
-                {
-                    x: -5096,
-                    z: 5960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1117
-                {
-                    x: -5112,
-                    z: 1032,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1118
-                {
-                    x: -5112,
-                    z: -1272,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1119
-                {
-                    x: -5112,
-                    z: -4408,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1120
-                {
-                    x: -5112,
-                    z: -4584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1121
-                {
-                    x: -5112,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1122
-                {
-                    x: -5112,
-                    z: -4024,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1123
-                {
-                    x: -5176,
-                    z: 520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1124
-                {
-                    x: -5176,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1125
-                {
-                    x: -5176,
-                    z: -2280,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1126
-                {
-                    x: -5176,
-                    z: -3512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1127
-                {
-                    x: -5176,
-                    z: -5432,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1128
-                {
-                    x: -5176,
-                    z: -4472,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1129
-                {
-                    x: -5176,
-                    z: -4840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1130
-                {
-                    x: -5176,
-                    z: -4200,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1131
-                {
-                    x: -5240,
-                    z: 5320,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1132
-                {
-                    x: -5240,
-                    z: 2120,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1133
-                {
-                    x: -5240,
-                    z: 664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1134
-                {
-                    x: -5240,
-                    z: 520,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1135
-                {
-                    x: -5240,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1136
-                {
-                    x: -5240,
-                    z: -4392,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1137
-                {
-                    x: -5240,
-                    z: -4344,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1138
-                {
-                    x: -5240,
-                    z: -4792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1139
-                {
-                    x: -5288,
-                    z: 536,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1140
-                {
-                    x: -5288,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1141
-                {
-                    x: -5304,
-                    z: -1000,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1142
-                {
-                    x: -5304,
-                    z: -952,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1143
-                {
-                    x: -5304,
-                    z: -4664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1144
-                {
-                    x: -5304,
-                    z: -4856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1145
-                {
-                    x: -5368,
-                    z: 456,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1146
-                {
-                    x: -5368,
-                    z: -1960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1147
-                {
-                    x: -5368,
-                    z: -3960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1148
-                {
-                    x: -5368,
-                    z: -4600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1149
-                {
-                    x: -5368,
-                    z: -4648,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1150
-                {
-                    x: -5368,
-                    z: -4712,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1151
-                {
-                    x: -5368,
-                    z: -4856,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1152
-                {
-                    x: -5416,
-                    z: 5384,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1153
-                {
-                    x: -5416,
-                    z: -4728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1154
-                {
-                    x: -5432,
-                    z: 648,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1155
-                {
-                    x: -5432,
-                    z: -2168,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1156
-                {
-                    x: -5432,
-                    z: -4600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1157
-                {
-                    x: -5432,
-                    z: -4664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1158
-                {
-                    x: -5480,
-                    z: -2728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1159
-                {
-                    x: -5496,
-                    z: -1128,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1160
-                {
-                    x: -5496,
-                    z: -1400,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1161
-                {
-                    x: -5496,
-                    z: -1848,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1162
-                {
-                    x: -5496,
-                    z: -2552,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1163
-                {
-                    x: -5496,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1164
-                {
-                    x: -5544,
-                    z: -1768,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1165
-                {
-                    x: -5560,
-                    z: 584,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1166
-                {
-                    x: -5560,
-                    z: -1064,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1167
-                {
-                    x: -5560,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1168
-                {
-                    x: -5560,
-                    z: -1336,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1169
-                {
-                    x: -5560,
-                    z: -3960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1170
-                {
-                    x: -5560,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1171
-                {
-                    x: -5560,
-                    z: -4152,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1172
-                {
-                    x: -5624,
-                    z: 5512,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1173
-                {
-                    x: -5624,
-                    z: -1144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1174
-                {
-                    x: -5624,
-                    z: -3960,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1175
-                {
-                    x: -5624,
-                    z: -4600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1176
-                {
-                    x: -5672,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1177
-                {
-                    x: -5688,
-                    z: 1672,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1178
-                {
-                    x: -5688,
-                    z: -3640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1179
-                {
-                    x: -5688,
-                    z: -3832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1180
-                {
-                    x: -5688,
-                    z: -3880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1181
-                {
-                    x: -5688,
-                    z: -4472,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1182
-                {
-                    x: -5752,
-                    z: 5832,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1183
-                {
-                    x: -5752,
-                    z: 5528,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1184
-                {
-                    x: -5752,
-                    z: 1880,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1185
-                {
-                    x: -5752,
-                    z: 1416,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1186
-                {
-                    x: -5752,
-                    z: 1608,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1187
-                {
-                    x: -5752,
-                    z: -3896,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1188
-                {
-                    x: -5752,
-                    z: -4600,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1189
-                {
-                    x: -5752,
-                    z: -4840,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1190
-                {
-                    x: -5752,
-                    z: -5224,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1191
-                {
-                    x: -5800,
-                    z: 5576,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1192
-                {
-                    x: -5800,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1193
-                {
-                    x: -5816,
-                    z: 1304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1194
-                {
-                    x: -5816,
-                    z: -3304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1195
-                {
-                    x: -5816,
-                    z: -4664,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1196
-                {
-                    x: -5816,
-                    z: -4728,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1197
-                {
-                    x: -5816,
-                    z: -5304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1198
-                {
-                    x: -5816,
-                    z: -5416,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1199
-                {
-                    x: -5864,
-                    z: 2056,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1200
-                {
-                    x: -5864,
-                    z: -184,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1201
-                {
-                    x: -5864,
-                    z: -3320,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1202
-                {
-                    x: -5864,
-                    z: -4792,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1203
-                {
-                    x: -5880,
-                    z: 5592,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1204
-                {
-                    x: -5880,
-                    z: -2104,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1205
-                {
-                    x: -5880,
-                    z: -2808,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1206
-                {
-                    x: -5880,
-                    z: -4088,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1207
-                {
-                    x: -5880,
-                    z: -4712,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1208
-                {
-                    x: -5880,
-                    z: -5304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1209
-                {
-                    x: -5880,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1210
-                {
-                    x: -5880,
-                    z: -5752,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1211
-                {
-                    x: -5928,
-                    z: -2040,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1212
-                {
-                    x: -5944,
-                    z: 5640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1213
-                {
-                    x: -5944,
-                    z: 1992,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1214
-                {
-                    x: -5944,
-                    z: -3704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1215
-                {
-                    x: -5944,
-                    z: -5624,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1216
-                {
-                    x: -5992,
-                    z: -3112,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1217
-                {
-                    x: -5992,
-                    z: -3240,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1218
-                {
-                    x: -5992,
-                    z: -3704,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1219
-                {
-                    x: -5992,
-                    z: -5688,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1220
-                {
-                    x: -6008,
-                    z: 5192,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1221
-                {
-                    x: -6008,
-                    z: 5144,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1222
-                {
-                    x: -6008,
-                    z: 5656,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1223
-                {
-                    x: -6008,
-                    z: 2056,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1224
-                {
-                    x: -6008,
-                    z: 1288,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1225
-                {
-                    x: -6008,
-                    z: -440,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1226
-                {
-                    x: -6008,
-                    z: -3640,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-            //Treasure 1227
-                {
-                    x: -6008,
-                    z: -5304,
-                    image: "playerimages/chest.png",
-                    imageAnchor: [0.5, 1],
-                    imageScale: 0.3,
-                },
-    //do not delete the following two closing brackets
-    ]
-};
+    shipwrecks: (() => {
+        const shipwreckCoords = [
+            // ship 1
+            [6008, 5960],
+            // ship 2
+            [5944, -456],
+            // ship 3
+            [5896, 2168],
+            // ship 4
+            [5832, 5096],
+            // ship 5
+            [5800, 1256],
+            // ship 6
+            [5800, -152],
+            // ship 7
+            [5688, 5144],
+            // ship 8
+            [5672, 4328],
+            // ship 9
+            [5656, 5592],
+            // ship 10
+            [5608, 2072],
+            // ship 11
+            [5528, 1368],
+            // ship 12
+            [5416, -360],
+            // ship 13
+            [5384, 584],
+            // ship 14
+            [5096, -1000],
+            // ship 15
+            [5032, 1992],
+            // ship 16
+            [4744, 1672],
+            // ship 17
+            [4008, 2408],
+            // ship 18
+            [3960, 1848],
+            // ship 19
+            [3928, 3672],
+            // ship 20
+            [3912, 1976],
+            // ship 21
+            [3768, 4616],
+            // ship 22
+            [3720, 1432],
+            // ship 23
+            [3688, 2744],
+            // ship 24
+            [3656, 5640],
+            // ship 25
+            [3608, -4600],
+            // ship 26
+            [3560, 2600],
+            // ship 27
+            [3560, 1928],
+            // ship 28
+            [3560, -4200],
+            // ship 29
+            [3528, 1560],
+            // ship 30
+            [3528, -5576],
+            // ship 31
+            [3512, -2824],
+            // ship 32
+            [3480, 3368],
+            // ship 33
+            [3336, 5768],
+            // ship 34
+            [3320, 2808],
+            // ship 35
+            [3288, 2152],
+            // ship 36
+            [3272, 3112],
+            // ship 37
+            [3224, -2184],
+            // ship 38
+            [3208, 1352],
+            // ship 39
+            [3144, 4536],
+            // ship 40
+            [3144, 4040],
+            // ship 41
+            [3112, 4696],
+            // ship 42
+            [3096, -4728],
+            // ship 43
+            [3000, 5544],
+            // ship 44
+            [2968, 2760],
+            // ship 45
+            [2888, -1992],
+            // ship 46
+            [2888, -4904],
+            // ship 47
+            [2840, 3320],
+            // ship 48
+            [2808, 5880],
+            // ship 49
+            [2808, 1656],
+            // ship 50
+            [2776, 3544],
+            // ship 51
+            [2744, 3848],
+            // ship 52
+            [2712, 2104],
+            // ship 53
+            [2712, -4584],
+            // ship 54
+            [2696, -1880],
+            // ship 55
+            [2616, -2392],
+            // ship 56
+            [2520, 5672],
+            // ship 57
+            [2488, 2872],
+            // ship 58
+            [2456, -5352],
+            // ship 59
+            [2408, 1752],
+            // ship 60
+            [2392, 1976],
+            // ship 61
+            [2376, -2008],
+            // ship 62
+            [2360, 3192],
+            // ship 63
+            [2360, -328],
+            // ship 64
+            [2360, -4952],
+            // ship 65
+            [2344, 3608],
+            // ship 66
+            [2328, 5016],
+            // ship 67
+            [2328, 2552],
+            // ship 68
+            [2312, 4760],
+            // ship 69
+            [2216, 2712],
+            // ship 70
+            [2168, 5896],
+            // ship 71
+            [2168, 3752],
+            // ship 72
+            [2152, -1352],
+            // ship 73
+            [2136, 3880],
+            // ship 74
+            [2088, -728],
+            // ship 75
+            [2072, -232],
+            // ship 76
+            [2024, 3128],
+            // ship 77
+            [2024, 2408],
+            // ship 78
+            [2024, 1704],
+            // ship 79
+            [1992, 2184],
+            // ship 80
+            [1960, 4888],
+            // ship 81
+            [1960, 1240],
+            // ship 82
+            [1960, -2392],
+            // ship 83
+            [1928, 5128],
+            // ship 84
+            [1848, 4536],
+            // ship 85
+            [1784, 4776],
+            // ship 86
+            [1784, 1784],
+            // ship 87
+            [1784, 1320],
+            // ship 88
+            [1784, -2168],
+            // ship 89
+            [1752, -2952],
+            // ship 90
+            [1720, -5096],
+            // ship 91
+            [1672, -1912],
+            // ship 92
+            [1656, 776],
+            // ship 93
+            [1640, 280],
+            // ship 94
+            [1592, -1480],
+            // ship 95
+            [1560, -712],
+            // ship 96
+            [1464, 1272],
+            // ship 97
+            [1432, -5224],
+            // ship 98
+            [1416, 4424],
+            // ship 99
+            [1400, 72],
+            // ship 100
+            [1400, -2040],
+            // ship 101
+            [1384, 440],
+            // ship 102
+            [1304, 5624],
+            // ship 103
+            [1304, -984],
+            // ship 104
+            [1304, -1400],
+            // ship 105
+            [1272, 5288],
+            // ship 106
+            [1256, 904],
+            // ship 107
+            [1256, -1848],
+            // ship 108
+            [1256, -2952],
+            // ship 109
+            [1256, -3304],
+            // ship 110
+            [1224, -680],
+            // ship 111
+            [1208, 4104],
+            // ship 112
+            [1064, 5128],
+            // ship 113
+            [1048, -1816],
+            // ship 114
+            [1032, 648],
+            // ship 115
+            [1000, 5400],
+            // ship 116
+            [1000, -1496],
+            // ship 117
+            [1000, -2552],
+            // ship 118
+            [968, -2120],
+            // ship 119
+            [936, 4472],
+            // ship 120
+            [936, -3288],
+            // ship 121
+            [920, 5816],
+            // ship 122
+            [904, -1032],
+            // ship 123
+            [888, -5160],
+            // ship 124
+            [872, -376],
+            // ship 125
+            [872, -456],
+            // ship 126
+            [664, -4360],
+            // ship 127
+            [648, -3192],
+            // ship 128
+            [536, 1208],
+            // ship 129
+            [504, 5560],
+            // ship 130
+            [504, 968],
+            // ship 131
+            [504, -712],
+            // ship 132
+            [504, -4904],
+            // ship 133
+            [456, -3560],
+            // ship 134
+            [440, -968],
+            // ship 135
+            [424, -1496],
+            // ship 136
+            [424, -1608],
+            // ship 137
+            [392, -248],
+            // ship 138
+            [392, -2536],
+            // ship 139
+            [392, -5464],
+            // ship 140
+            [280, 24],
+            // ship 141
+            [216, -3144],
+            // ship 142
+            [216, -6056],
+            // ship 143
+            [200, 1208],
+            // ship 144
+            [184, -920],
+            // ship 145
+            [168, 1080],
+            // ship 146
+            [168, -2632],
+            // ship 147
+            [168, -5192],
+            // ship 148
+            [152, -1640],
+            // ship 149
+            [152, -3736],
+            // ship 150
+            [136, 5288],
+            // ship 151
+            [104, 600],
+            // ship 152
+            [8, -2952],
+            // ship 153
+            [-104, 824],
+            // ship 154
+            [-104, -5912],
+            // ship 155
+            [-200, -3320],
+            // ship 156
+            [-248, -1784],
+            // ship 157
+            [-248, -2488],
+            // ship 158
+            [-280, -5560],
+            // ship 159
+            [-488, 808],
+            // ship 160
+            [-520, 1928],
+            // ship 161
+            [-520, 1352],
+            // ship 162
+            [-536, -2088],
+            // ship 163
+            [-664, 72],
+            // ship 164
+            [-744, -1752],
+            // ship 165
+            [-856, 5128],
+            // ship 166
+            [-888, 1688],
+            // ship 167
+            [-968, 1016],
+            // ship 168
+            [-1000, 4328],
+            // ship 169
+            [-1016, 6008],
+            // ship 170
+            [-1016, 5464],
+            // ship 171
+            [-1112, 4856],
+            // ship 172
+            [-1112, -3864],
+            // ship 173
+            [-1224, -4408],
+            // ship 174
+            [-1240, -1320],
+            // ship 175
+            [-1272, 3096],
+            // ship 176
+            [-1272, -4872],
+            // ship 177
+            [-1384, 3576],
+            // ship 178
+            [-1448, 4232],
+            // ship 179
+            [-1480, 5304],
+            // ship 180
+            [-1480, -2168],
+            // ship 181
+            [-1512, 3912],
+            // ship 182
+            [-1528, -165],
+            // ship 183
+            [-1640, 2920],
+            // ship 184
+            [-1672, -4376],
+            // ship 185
+            [-1704, 3128],
+            // ship 186
+            [-1720, 4296],
+            // ship 187
+            [-1768, 5656],
+            // ship 188
+            [-1768, 2328],
+            // ship 189
+            [-1768, -2152],
+            // ship 190
+            [-1784, -1672],
+            // ship 191
+            [-1832, -5736],
+            // ship 192
+            [-1880, 3944],
+            // ship 193
+            [-1912, -904],
+            // ship 194
+            [-1992, -3048],
+            // ship 195
+            [-2040, -5192],
+            // ship 196
+            [-2040, 2360],
+            // ship 197
+            [-2072, -3448],
+            // ship 198
+            [-2120, 4072],
+            // ship 199
+            [-2152, -5576],
+            // ship 200
+            [-2200, 4616],
+            // ship 201
+            [-2216, 1784],
+            // ship 202
+            [-2264, -376],
+            // ship 203
+            [-2280, 5656],
+            // ship 204
+            [-2280, 4296],
+            // ship 205
+            [-2296, -1704],
+            // ship 206
+            [-2392, 5064],
+            // ship 207
+            [-2424, -2024],
+            // ship 208
+            [-2440, -1640],
+            // ship 209
+            [-2504, -344],
+            // ship 210
+            [-2520, 4808],
+            // ship 211
+            [-2520, -3048],
+            // ship 212
+            [-2520, -4952],
+            // ship 213
+            [-2536, 2712],
+            // ship 214
+            [-2552, 1704],
+            // ship 215
+            [-2600, -5464],
+            // ship 216
+            [-2632, 2616],
+            // ship 217
+            [-2664, -2248],
+            // ship 218
+            [-2840, -5304],
+            // ship 219
+            [-2856, 3544],
+            // ship 220
+            [-2904, 2136],
+            // ship 221
+            [-2920, -2760],
+            // ship 222
+            [-3048, -3640],
+            // ship 223
+            [-3144, 3512],
+            // ship 224
+            [-3144, -3592],
+            // ship 225
+            [-3400, 2808],
+            // ship 226
+            [-3448, 3240],
+            // ship 227
+            [-3560, 2872],
+            // ship 228
+            [-3560, -472],
+            // ship 229
+            [-3576, -3736],
+            // ship 230
+            [-3624, 3944],
+            // ship 231
+            [3672, -3432],
+            // ship 232
+            [3688, 3256],
+            // ship 233
+            [-3768, 3528],
+            // ship 234
+            [-3992, -6024],
+            // ship 235
+            [4088, 3240],
+            // ship 236
+            [-4296, -5576],
+            // ship 237
+            [-4408, -1416],
+            // ship 238
+            [-4408, -5368],
+            // ship 239
+            [4424, -5928],
+            // ship 240
+            [4440, 2232],
+            // ship 241
+            [-4536, -2056],
+            // ship 242
+            [-4600, -984],
+            // ship 243
+            [-4712, 2136],
+            // ship 244
+            [-4760, -4168],
+            // ship 245
+            [-4792, -5624],
+            // ship 246
+            [-4872, -744],
+            // ship 247
+            [-4952, -4488],
+            // ship 248
+            [-4968, 5640],
+            // ship 249
+            [-5080, 5464],
+            // ship 250
+            [-5128, -5536],
+            // ship 251
+            [-5160, -3560],
+            // ship 252
+            [-5208, -2184],
+            // ship 253
+            [-5640, -5096],
+            // ship 254
+            [-5520, -632],
+            // ship 255
+            [-5752, 5768],
+            // ship 256
+            [-5752, -5944],
+            // ship 257
+            [-5896, 1384],
+            // ship 258
+            [-5912, -6040],
+            // ship 259
+            [-5992, -2120],
+        ];
 
+        const treasureCoords = [
+            // Treasure 1
+            [6024, 4616],
+            // Treasure 2
+            [5976, -1912],
+            // Treasure 3
+            [5960, -1848],
+            // Treasure 4
+            [5960, 1032],
+            // Treasure 5
+            [5960, 5576],
+            // Treasure 6
+            [5912, 5960],
+            // Treasure 7
+            [5912, 5960],
+            // Treasure 8
+            [5896, 2824],
+            // Treasure 9
+            [5896, 5576],
+            // Treasure 10
+            [5896, 5512],
+            // Treasure 11
+            [5896, 5640],
+            // Treasure 12
+            [5896, 5704],
+            // Treasure 13
+            [5848, -1784],
+            // Treasure 14
+            [5848, 5704],
+            // Treasure 15
+            [5832, 1288],
+            // Treasure 16
+            [5832, 2696],
+            // Treasure 17
+            [5832, -5496],
+            // Treasure 18
+            [5784, -5432],
+            // Treasure 19
+            [5768, 264],
+            // Treasure 20
+            [5768, 328],
+            // Treasure 21
+            [5768, 1624],
+            // Treasure 22
+            [5768, 1736],
+            // Treasure 23
+            [5720, 264],
+            // Treasure 24
+            [5704, 328],
+            // Treasure 25
+            [5704, 1176],
+            // Treasure 26
+            [5704, 1608],
+            // Treasure 27
+            [5704, 1736],
+            // Treasure 28
+            [5704, 2584],
+            // Treasure 29
+            [5656, 392],
+            // Treasure 30
+            [5656, 1608],
+            // Treasure 31
+            [5640, -1448],
+            // Treasure 32
+            [5640, 264],
+            // Treasure 33
+            [5640, 520],
+            // Treasure 34
+            [5640, 584],
+            // Treasure 35
+            [5640, 1160],
+            // Treasure 36
+            [5640, 1544],
+            // Treasure 37
+            [5640, 1736],
+            // Treasure 38
+            [5640, 4168],
+            // Treasure 39
+            [5592, 520],
+            // Treasure 40
+            [5592, 4168],
+            // Treasure 41
+            [5576, -1464],
+            // Treasure 42
+            [5576, 584],
+            // Treasure 43
+            [5576, 1672],
+            // Treasure 44
+            [5576, 5640],
+            // Treasure 45
+            [5528, 456],
+            // Treasure 46
+            [5528, 5592],
+            // Treasure 47
+            [5464, 840],
+            // Treasure 48
+            [5464, 2440],
+            // Treasure 49
+            [5448, -1336],
+            // Treasure 50
+            [5448, 328],
+            // Treasure 51
+            [5448, 2376],
+            // Treasure 52
+            [5400, -120],
+            // Treasure 53
+            [5384, 776],
+            // Treasure 54
+            [5320, -168],
+            // Treasure 55
+            [5320, 280],
+            // Treasure 56
+            [5320, 2312],
+            // Treasure 57
+            [5256, -1336],
+            // Treasure 58
+            [5256, 1224],
+            // Treasure 59
+            [5256, 1176],
+            // Treasure 60
+            [5208, 328],
+            // Treasure 61
+            [5192, -248],
+            // Treasure 62
+            [5192, -168],
+            // Treasure 63
+            [5128, -1272],
+            // Treasure 64
+            [5128, 2376],
+            // Treasure 65
+            [5128, 3608],
+            // Treasure 66
+            [5128, 4184],
+            // Treasure 67
+            [5128, 4232],
+            // Treasure 68
+            [5128, 4376],
+            // Treasure 69
+            [5080, 4296],
+            // Treasure 70
+            [5064, 904],
+            // Treasure 71
+            [5064, 1160],
+            // Treasure 72
+            [5064, 3592],
+            // Treasure 73
+            [5064, 3848],
+            // Treasure 74
+            [5064, 3928],
+            // Treasure 75
+            [5064, 3976],
+            // Treasure 76
+            [5064, 4424],
+            // Treasure 77
+            [5064, 4376],
+            // Treasure 78
+            [5016, 3528],
+            // Treasure 79
+            [5016, 4232],
+            // Treasure 80
+            [5000, -1400],
+            // Treasure 81
+            [4952, 1288],
+            // Treasure 82
+            [4952, 3288],
+            // Treasure 83
+            [4936, 24],
+            // Treasure 84
+            [4936, 5512],
+            // Treasure 85
+            [4888, 3784],
+            // Treasure 86
+            [4872, -184],
+            // Treasure 87
+            [4872, 1240],
+            // Treasure 88
+            [4872, 3848],
+            // Treasure 89
+            [4872, 5576],
+            // Treasure 90
+            [4824, 1240],
+            // Treasure 91
+            [4824, 5592],
+            // Treasure 92
+            [4808, 712],
+            // Treasure 93
+            [4760, 5656],
+            // Treasure 94
+            [4744, -744],
+            // Treasure 95
+            [4744, 5592],
+            // Treasure 96
+            [4696, 200],
+            // Treasure 97
+            [4680, 2440],
+            // Treasure 98
+            [4680, -6008],
+            // Treasure 99
+            [4680, -5816],
+            // Treasure 100
+            [4632, -5864],
+            // Treasure 101
+            [4616, 136],
+            // Treasure 102
+            [4616, 3544],
+            // Treasure 103
+            [4616, 3336],
+            // Treasure 104
+            [4568, 5576],
+            // Treasure 105
+            [4552, 264],
+            // Treasure 106
+            [4552, 328],
+            // Treasure 107
+            [4552, 392],
+            // Treasure 108
+            [4552, -5944],
+            // Treasure 109
+            [4552, -5560],
+            // Treasure 110
+            [4552, -5496],
+            // Treasure 111
+            [4504, 5064],
+            // Treasure 112
+            [4504, 5000],
+            // Treasure 113
+            [4504, 3464],
+            // Treasure 114
+            [4504, -5944],
+            // Treasure 115
+            [4504, -5816],
+            // Treasure 116
+            [4488, 5512],
+            // Treasure 117
+            [4488, 4744],
+            // Treasure 118
+            [4488, 4808],
+            // Treasure 119
+            [4488, -5880],
+            // Treasure 120
+            [4488, -5752],
+            // Treasure 121
+            [4440, 5064],
+            // Treasure 122
+            [4424, 2376],
+            // Treasure 123
+            [4424, 2328],
+            // Treasure 124
+            [4424, -5880],
+            // Treasure 125
+            [4424, -5752],
+            // Treasure 126
+            [4424, -5560],
+            // Treasure 127
+            [4376, 5064],
+            // Treasure 128
+            [4376, -5560],
+            // Treasure 129
+            [4360, 5000],
+            // Treasure 130
+            [4360, 4760],
+            // Treasure 131
+            [4360, 2376],
+            // Treasure 132
+            [4360, 2328],
+            // Treasure 133
+            [4360, -5624],
+            // Treasure 134
+            [4360, 1496],
+            // Treasure 135
+            [4312, 2888],
+            // Treasure 136
+            [4296, 5512],
+            // Treasure 137
+            [4296, 4760],
+            // Treasure 138
+            [4296, 2840],
+            // Treasure 139
+            [4296, 2248],
+            // Treasure 140
+            [4296, 1496],
+            // Treasure 141
+            [4296, 1432],
+            // Treasure 142
+            [4248, 2248],
+            // Treasure 143
+            [4232, 4760],
+            // Treasure 144
+            [4232, 1480],
+            // Treasure 145
+            [4168, 2696],
+            // Treasure 146
+            [4168, 2312],
+            // Treasure 147
+            [4168, 2248],
+            // Treasure 148
+            [4168, 1416],
+            // Treasure 149
+            [4104, 5512],
+            // Treasure 150
+            [4104, 1432],
+            // Treasure 151
+            [4056, 5576],
+            // Treasure 152
+            [4056, -2552],
+            // Treasure 153
+            [4056, -2616],
+            // Treasure 154
+            [4056, -5432],
+            // Treasure 155
+            [4040, 5640],
+            // Treasure 156
+            [4040, 3400],
+            // Treasure 157
+            [4040, -760],
+            // Treasure 158
+            [4040, 1416],
+            // Treasure 159
+            [3992, -4664],
+            // Treasure 160
+            [3976, -2552],
+            // Treasure 161
+            [3976, -5560],
+            // Treasure 162
+            [3976, -4280],
+            // Treasure 163
+            [3928, 5000],
+            // Treasure 164
+            [3928, 4552],
+            // Treasure 165
+            [3928, 3976],
+            // Treasure 166
+            [3928, -2552],
+            // Treasure 167
+            [3912, 5576],
+            // Treasure 168
+            [3912, 6024],
+            // Treasure 169
+            [3912, 3912],
+            // Treasure 170
+            [3912, -5608],
+            // Treasure 171
+            [3912, -4216],
+            // Treasure 172
+            [3864, 3912],
+            // Treasure 173
+            [3848, 6024],
+            // Treasure 174
+            [3848, 4744],
+            // Treasure 175
+            [3848, 4440],
+            // Treasure 176
+            [3848, 3848],
+            // Treasure 177
+            [3848, -2680],
+            // Treasure 178
+            [3848, -4792],
+            // Treasure 179
+            [3800, 5592],
+            // Treasure 180
+            [3800, 5448],
+            // Treasure 181
+            [3800, 4488],
+            // Treasure 182
+            [3800, -5688],
+            // Treasure 183
+            [3784, 5656],
+            // Treasure 184
+            [3736, -2808],
+            // Treasure 185
+            [3720, 5640],
+            // Treasure 186
+            [3720, 5448],
+            // Treasure 187
+            [3720, 5960],
+            // Treasure 188
+            [3720, 4552],
+            // Treasure 189
+            [3720, 3848],
+            // Treasure 190
+            [3672, 5960],
+            // Treasure 191
+            [3672, -2296],
+            // Treasure 192
+            [3672, -2744],
+            // Treasure 193
+            [3656, 5576],
+            // Treasure 194
+            [3656, 5912],
+            // Treasure 195
+            [3656, 4680],
+            // Treasure 196
+            [3656, -824],
+            // Treasure 197
+            [3656, -2808],
+            // Treasure 198
+            [3656, -3064],
+            // Treasure 199
+            [3656, -3128],
+            // Treasure 200
+            [3656, -3176],
+            // Treasure 201
+            [3608, 5832],
+            // Treasure 202
+            [3592, 6024],
+            // Treasure 203
+            [3592, 5784],
+            // Treasure 204
+            [3592, 4680],
+            // Treasure 205
+            [3592, 3912],
+            // Treasure 206
+            [3592, -2680],
+            // Treasure 207
+            [3592, -2744],
+            // Treasure 208
+            [3592, -2808],
+            // Treasure 209
+            [3592, -3000],
+            // Treasure 210
+            [3592, -3256],
+            // Treasure 211
+            [3592, -5688],
+            // Treasure 212
+            [3544, 3848],
+            // Treasure 213
+            [3544, -2296],
+            // Treasure 214
+            [3544, -5048],
+            // Treasure 215
+            [3528, 5832],
+            // Treasure 216
+            [3528, 4680],
+            // Treasure 217
+            [3528, 4744],
+            // Treasure 218
+            [3528, -2680],
+            // Treasure 219
+            [3528, -2744],
+            // Treasure 220
+            [3528, -3048],
+            // Treasure 221
+            [3528, -3112],
+            // Treasure 222
+            [3528, -3960],
+            // Treasure 223
+            [3480, 5848],
+            // Treasure 224
+            [3480, -2232],
+            // Treasure 225
+            [3480, -3048],
+            // Treasure 226
+            [3464, 4104],
+            // Treasure 227
+            [3464, -824],
+            // Treasure 228
+            [3464, -3128],
+            // Treasure 229
+            [3464, 1096],
+            // Treasure 230
+            [3416, -824],
+            // Treasure 231
+            [3400, -1128],
+            // Treasure 232
+            [3400, -1080],
+            // Treasure 233
+            [3400, -2168],
+            // Treasure 234
+            [3400, -5496],
+            // Treasure 235
+            [3352, -2040],
+            // Treasure 236
+            [3336, -888],
+            // Treasure 237
+            [3336, -1016],
+            // Treasure 238
+            [3336, -952],
+            // Treasure 239
+            [3336, -1912],
+            // Treasure 240
+            [3336, -4024],
+            // Treasure 241
+            [3288, -1832],
+            // Treasure 242
+            [3272, -1336],
+            // Treasure 243
+            [3272, -1464],
+            // Treasure 244
+            [3272, -296],
+            // Treasure 245
+            [3272, -2984],
+            // Treasure 246
+            [3272, 2520],
+            // Treasure 247
+            [3272, 1112],
+            // Treasure 248
+            [3224, -1272],
+            // Treasure 249
+            [3208, 5960],
+            // Treasure 250
+            [3208, -2920],
+            // Treasure 251
+            [3208, -3064],
+            // Treasure 252
+            [3160, 5896],
+            // Treasure 253
+            [3160, 4360],
+            // Treasure 254
+            [3160, -2936],
+            // Treasure 255
+            [3160, -3048],
+            // Treasure 256
+            [3160, 1096],
+            // Treasure 257
+            [3144, 4424],
+            // Treasure 258
+            [3144, 4504],
+            // Treasure 259
+            [3144, 4552],
+            // Treasure 260
+            [3144, 4680],
+            // Treasure 261
+            [3144, -1144],
+            // Treasure 262
+            [3144, -1080],
+            // Treasure 263
+            [3144, -4200],
+            // Treasure 264
+            [3144, 904],
+            // Treasure 265
+            [3096, 4440],
+            // Treasure 266
+            [3096, -888],
+            // Treasure 267
+            [3096, -2808],
+            // Treasure 268
+            [3080, 4744],
+            // Treasure 269
+            [3080, 4824],
+            // Treasure 270
+            [3080, -1016],
+            // Treasure 271
+            [3080, -616],
+            // Treasure 272
+            [3080, -2856],
+            // Treasure 273
+            [3080, -2920],
+            // Treasure 274
+            [3032, 5960],
+            // Treasure 275
+            [3016, -1144],
+            // Treasure 276
+            [3016, -1016],
+            // Treasure 277
+            [3016, -952],
+            // Treasure 278
+            [3016, -888],
+            // Treasure 279
+            [3016, -760],
+            // Treasure 280
+            [3016, -5240],
+            // Treasure 281
+            [3016, -2872],
+            // Treasure 282
+            [3016, -2920],
+            // Treasure 283
+            [3016, 840],
+            // Treasure 284
+            [3016, 1288],
+            // Treasure 285
+            [2968, 4872],
+            // Treasure 286
+            [2968, -1144],
+            // Treasure 287
+            [2952, -888],
+            // Treasure 288
+            [2952, -376],
+            // Treasure 289
+            [2952, -5176],
+            // Treasure 290
+            [2952, -2936],
+            // Treasure 291
+            [2952, 1288],
+            // Treasure 292
+            [2888, 4824],
+            // Treasure 293
+            [2888, 4936],
+            // Treasure 294
+            [2888, -5112],
+            // Treasure 295
+            [2888, -2360],
+            // Treasure 296
+            [2888, -2936],
+            // Treasure 297
+            [2888, 1240],
+            // Treasure 298
+            [2840, 6024],
+            // Treasure 299
+            [2840, -5368],
+            // Treasure 300
+            [2840, -3064],
+            // Treasure 301
+            [2824, 4552],
+            // Treasure 302
+            [2824, 4824],
+            // Treasure 303
+            [2824, -376],
+            // Treasure 304
+            [2824, -2488],
+            // Treasure 305
+            [2824, -2424],
+            // Treasure 306
+            [2824, -2344],
+            // Treasure 307
+            [2824, -3128],
+            // Treasure 308
+            [2824, -3000],
+            // Treasure 309
+            [2824, -2936],
+            // Treasure 310
+            [2776, -2936],
+            // Treasure 311
+            [2760, -2552],
+            // Treasure 312
+            [2760, -2488],
+            // Treasure 313
+            [2760, -2360],
+            // Treasure 314
+            [2760, -504],
+            // Treasure 315
+            [2712, -2424],
+            // Treasure 316
+            [2712, -2360],
+            // Treasure 317
+            [2712, -376],
+            // Treasure 318
+            [2696, -2488],
+            // Treasure 319
+            [2696, -568],
+            // Treasure 320
+            [2696, -744],
+            // Treasure 321
+            [2696, -1208],
+            // Treasure 322
+            [2632, -4664],
+            // Treasure 323
+            [2632, -2728],
+            // Treasure 324
+            [2568, -4600],
+            // Treasure 325
+            [2568, -2744],
+            // Treasure 326
+            [2568, -184],
+            // Treasure 327
+            [2520, -2488],
+            // Treasure 328
+            [2504, -2744],
+            // Treasure 329
+            [2504, -2680],
+            // Treasure 330
+            [2504, -120],
+            // Treasure 331
+            [2456, -5736],
+            // Treasure 332
+            [2456, -2664],
+            // Treasure 333
+            [2456, -552],
+            // Treasure 334
+            [2440, 4680],
+            // Treasure 335
+            [2440, -5800],
+            // Treasure 336
+            [2392, -5752],
+            // Treasure 337
+            [2392, -5880],
+            // Treasure 338
+            [2392, -440],
+            // Treasure 339
+            [2376, 4680],
+            // Treasure 340
+            [2312, -4728],
+            // Treasure 341
+            [2312, -5224],
+            // Treasure 342
+            [2312, -5736],
+            // Treasure 343
+            [2312, -2744],
+            // Treasure 344
+            [2312, -2744],
+            // Treasure 345
+            [2312, -1080],
+            // Treasure 346
+            [2312, -1144],
+            // Treasure 347
+            [2248, -5736],
+            // Treasure 348
+            [2248, -760],
+            // Treasure 349
+            [2248, -1960],
+            // Treasure 350
+            [2248, -1016],
+            // Treasure 351
+            [2200, -5304],
+            // Treasure 352
+            [2200, -1000],
+            // Treasure 353
+            [2184, -5624],
+            // Treasure 354
+            [2184, -5928],
+            // Treasure 355
+            [2184, 600],
+            // Treasure 356
+            [2184, 728],
+            // Treasure 357
+            [2184, 776],
+            // Treasure 358
+            [2184, -1848],
+            // Treasure 359
+            [2136, -5800],
+            // Treasure 360
+            [2136, -5880],
+            // Treasure 361
+            [2136, -5688],
+            // Treasure 362
+            [2136, -5944],
+            // Treasure 363
+            [2136, 1544],
+            // Treasure 364
+            [2136, -760],
+            // Treasure 365
+            [2120, -5624],
+            // Treasure 366
+            [2120, -5736],
+            // Treasure 367
+            [2120, -6008],
+            // Treasure 368
+            [2120, -2664],
+            // Treasure 369
+            [2120, -168],
+            // Treasure 370
+            [2120, -1768],
+            // Treasure 371
+            [2072, -1784],
+            // Treasure 372
+            [2056, -4920],
+            // Treasure 373
+            [2056, -5624],
+            // Treasure 374
+            [2056, -5944],
+            // Treasure 375
+            [2056, 1352],
+            // Treasure 376
+            [2008, 1432],
+            // Treasure 377
+            [1992, -4920],
+            // Treasure 378
+            [1992, 1352],
+            // Treasure 379
+            [1992, 8],
+            // Treasure 380
+            [1928, -4856],
+            // Treasure 381
+            [1928, 3336],
+            // Treasure 382
+            [1864, -4840],
+            // Treasure 383
+            [1864, 3080],
+            // Treasure 384
+            [1864, -1528],
+            // Treasure 385
+            [1816, 2904],
+            // Treasure 386
+            [1800, 5640],
+            // Treasure 387
+            [1800, -4856],
+            // Treasure 388
+            [1800, -3000],
+            // Treasure 389
+            [1752, -5112],
+            // Treasure 390
+            [1752, 3400],
+            // Treasure 391
+            [1752, 3464],
+            // Treasure 392
+            [1736, -4856],
+            // Treasure 393
+            [1736, -2664],
+            // Treasure 394
+            [1736, 2760],
+            // Treasure 395
+            [1688, -2616],
+            // Treasure 396
+            [1688, 2760],
+            // Treasure 397
+            [1688, 3400],
+            // Treasure 398
+            [1688, 3464],
+            // Treasure 399
+            [1672, 3352],
+            // Treasure 400
+            [1624, 3528],
+            // Treasure 401
+            [1624, 3592],
+            // Treasure 402
+            [1608, -5352],
+            // Treasure 403
+            [1608, -4984],
+            // Treasure 404
+            [1608, 2952],
+            // Treasure 405
+            [1608, 3400],
+            // Treasure 406
+            [1560, 2952],
+            // Treasure 407
+            [1560, 3656],
+            // Treasure 408
+            [1544, 2888],
+            // Treasure 409
+            [1544, 3016],
+            // Treasure 410
+            [1544, 3160],
+            // Treasure 411
+            [1496, 2248],
+            // Treasure 412
+            [1496, 3016],
+            // Treasure 413
+            [1480, 2520],
+            // Treasure 414
+            [1480, 2632],
+            // Treasure 415
+            [1480, 2888],
+            // Treasure 416
+            [1480, 2952],
+            // Treasure 417
+            [1480, 3080],
+            // Treasure 418
+            [1480, 4120],
+            // Treasure 419
+            [1416, -3128],
+            // Treasure 420
+            [1416, 1736],
+            // Treasure 421
+            [1416, 1800],
+            // Treasure 422
+            [1416, 2200],
+            // Treasure 423
+            [1416, 3736],
+            // Treasure 424
+            [1416, 4104],
+            // Treasure 425
+            [1416, 4056],
+            // Treasure 426
+            [1368, -5368],
+            // Treasure 427
+            [1368, 4680],
+            // Treasure 428
+            [1352, -3320],
+            // Treasure 429
+            [1352, -3112],
+            // Treasure 430
+            [1352, 1672],
+            // Treasure 431
+            [1352, 1800],
+            // Treasure 432
+            [1352, 1752],
+            // Treasure 433
+            [1352, 4808],
+            // Treasure 434
+            [1304, -3176],
+            // Treasure 435
+            [1304, 1800],
+            // Treasure 436
+            [1288, -4984],
+            // Treasure 437
+            [1288, -3384],
+            // Treasure 438
+            [1288, -3048],
+            // Treasure 439
+            [1288, 4744],
+            // Treasure 440
+            [1288, 984],
+            // Treasure 441
+            [1240, -2808],
+            // Treasure 442
+            [1240, 3016],
+            // Treasure 443
+            [1224, -5096],
+            // Treasure 444
+            [1224, -4984],
+            // Treasure 445
+            [1224, 2056],
+            // Treasure 446
+            [1224, 3080],
+            // Treasure 447
+            [1224, 1112],
+            // Treasure 448
+            [1176, 2952],
+            // Treasure 449
+            [1176, 4248],
+            // Treasure 450
+            [1176, 920],
+            // Treasure 451
+            [1160, -2856],
+            // Treasure 452
+            [1160, -2808],
+            // Treasure 453
+            [1160, 2056],
+            // Treasure 454
+            [1160, 2440],
+            // Treasure 455
+            [1160, 840],
+            // Treasure 456
+            [1112, -2856],
+            // Treasure 457
+            [1112, -2792],
+            // Treasure 458
+            [1112, 1864],
+            // Treasure 459
+            [1112, 1928],
+            // Treasure 460
+            [1112, 2312],
+            // Treasure 461
+            [1096, -5176],
+            // Treasure 462
+            [1096, 2264],
+            // Treasure 463
+            [1096, 4184],
+            // Treasure 464
+            [1096, 4360],
+            // Treasure 465
+            [1096, 4424],
+            // Treasure 466
+            [1096, 4488],
+            // Treasure 467
+            [1048, -3496],
+            // Treasure 468
+            [1048, 1544],
+            // Treasure 469
+            [1032, -5160],
+            // Treasure 470
+            [1032, -2616],
+            // Treasure 471
+            [1032, 4296],
+            // Treasure 472
+            [984, -5944],
+            // Treasure 473
+            [968, -5880],
+            // Treasure 474
+            [968, -5560],
+            // Treasure 475
+            [968, -5240],
+            // Treasure 476
+            [968, -3688],
+            // Treasure 477
+            [968, -2600],
+            // Treasure 478
+            [968, 3224],
+            // Treasure 479
+            [968, 3272],
+            // Treasure 480
+            [920, 3544],
+            // Treasure 481
+            [920, 3592],
+            // Treasure 482
+            [904, -5560],
+            // Treasure 483
+            [904, -2664],
+            // Treasure 484
+            [904, 1480],
+            // Treasure 485
+            [904, 2248],
+            // Treasure 486
+            [904, 3784],
+            // Treasure 487
+            [856, -5928],
+            // Treasure 488
+            [856, -2856],
+            // Treasure 489
+            [856, -2856],
+            // Treasure 490
+            [840, -3768],
+            // Treasure 491
+            [840, -3176],
+            // Treasure 492
+            [840, 3208],
+            // Treasure 493
+            [840, 3864],
+            // Treasure 494
+            [840, 3976],
+            // Treasure 495
+            [792, -1400],
+            // Treasure 496
+            [776, -4536],
+            // Treasure 497
+            [776, -4472],
+            // Treasure 498
+            [776, -4408],
+            // Treasure 499
+            [776, -4600],
+            // Treasure 500
+            [776, -1448],
+            // Treasure 501
+            [776, 3720],
+            // Treasure 502
+            [776, 3864],
+            // Treasure 503
+            [776, 4040],
+            // Treasure 504
+            [728, -4280],
+            // Treasure 505
+            [728, -2856],
+            // Treasure 506
+            [728, 4104],
+            // Treasure 507
+            [712, -5432],
+            // Treasure 508
+            [712, -4216],
+            // Treasure 509
+            [712, -1336],
+            // Treasure 510
+            [664, -5480],
+            // Treasure 511
+            [664, -1336],
+            // Treasure 512
+            [648, -5432],
+            // Treasure 513
+            [648, -1464],
+            // Treasure 514
+            [648, -1208],
+            // Treasure 515
+            [648, 2696],
+            // Treasure 516
+            [600, -4024],
+            // Treasure 517
+            [600, -1272],
+            // Treasure 518
+            [600, 3208],
+            // Treasure 519
+            [600, 3336],
+            // Treasure 520
+            [584, -5624],
+            // Treasure 521
+            [584, -1336],
+            // Treasure 522
+            [584, -1144],
+            // Treasure 523
+            [584, -1400],
+            // Treasure 524
+            [536, -4920],
+            // Treasure 525
+            [536, 1416],
+            // Treasure 526
+            [520, -5688],
+            // Treasure 527
+            [520, -5624],
+            // Treasure 528
+            [520, -5048],
+            // Treasure 529
+            [520, -3768],
+            // Treasure 530
+            [520, -1192],
+            // Treasure 531
+            [520, -1256],
+            // Treasure 532
+            [520, 5128],
+            // Treasure 533
+            [472, 1608],
+            // Treasure 534
+            [456, -5800],
+            // Treasure 535
+            [456, -5736],
+            // Treasure 536
+            [456, -5688],
+            // Treasure 537
+            [456, -5608],
+            // Treasure 538
+            [456, -5496],
+            // Treasure 539
+            [456, 1544],
+            // Treasure 540
+            [456, 1480],
+            // Treasure 541
+            [408, -4920],
+            // Treasure 542
+            [392, -5816],
+            // Treasure 543
+            [392, -5752],
+            // Treasure 544
+            [392, -5688],
+            // Treasure 545
+            [392, -5304],
+            // Treasure 546
+            [392, 1736],
+            // Treasure 547
+            [344, 1800],
+            // Treasure 548
+            [344, 4360],
+            // Treasure 549
+            [328, 1736],
+            // Treasure 550
+            [328, 2056],
+            // Treasure 551
+            [328, 5272],
+            // Treasure 552
+            [280, -4792],
+            // Treasure 553
+            [280, 1736],
+            // Treasure 554
+            [280, 5064],
+            // Treasure 555
+            [264, -5496],
+            // Treasure 556
+            [264, 4808],
+            // Treasure 557
+            [264, 5320],
+            // Treasure 558
+            [264, 5384],
+            // Treasure 559
+            [216, -5304],
+            // Treasure 560
+            [216, 4168],
+            // Treasure 561
+            [200, -5544],
+            // Treasure 562
+            [200, -5480],
+            // Treasure 563
+            [200, -5368],
+            // Treasure 564
+            [200, -4728],
+            // Treasure 565
+            [200, -4600],
+            // Treasure 566
+            [200, 1624],
+            // Treasure 567
+            [200, 5064],
+            // Treasure 568
+            [200, 5336],
+            // Treasure 569
+            [152, -5288],
+            // Treasure 570
+            [152, -1192],
+            // Treasure 571
+            [152, 968],
+            // Treasure 572
+            [152, 4488],
+            // Treasure 573
+            [136, -5368],
+            // Treasure 574
+            [136, -3832],
+            // Treasure 575
+            [136, -3768],
+            // Treasure 576
+            [136, -3704],
+            // Treasure 577
+            [136, 2504],
+            // Treasure 578
+            [88, 2440],
+            // Treasure 579
+            [72, -4920],
+            // Treasure 580
+            [72, -4152],
+            // Treasure 581
+            [8, -104],
+            // Treasure 582
+            [8, 5272],
+            // Treasure 583
+            [-40, 8],
+            // Treasure 584
+            [-40, -56],
+            // Treasure 585
+            [-56, -120],
+            // Treasure 586
+            [-56, -3576],
+            // Treasure 587
+            [-56, -4840],
+            // Treasure 588
+            [-120, 1352],
+            // Treasure 589
+            [-120, -4904],
+            // Treasure 590
+            [-168, -1464],
+            // Treasure 591
+            [-184, 1288],
+            // Treasure 592
+            [-184, 200],
+            // Treasure 593
+            [-184, 8],
+            // Treasure 594
+            [-184, 88],
+            // Treasure 595
+            [-184, 136],
+            // Treasure 596
+            [-184, -1528],
+            // Treasure 597
+            [-248, 1928],
+            // Treasure 598
+            [-248, 1224],
+            // Treasure 599
+            [-248, 344],
+            // Treasure 600
+            [-248, -1448],
+            // Treasure 601
+            [-248, -4920],
+            // Treasure 602
+            [-296, -1464],
+            // Treasure 603
+            [-312, 2328],
+            // Treasure 604
+            [-312, 2392],
+            // Treasure 605
+            [-312, 1224],
+            // Treasure 606
+            [-312, -2424],
+            // Treasure 607
+            [-312, -3192],
+            // Treasure 608
+            [-312, -3256],
+            // Treasure 609
+            [-360, 1544],
+            // Treasure 610
+            [-376, 1240],
+            // Treasure 611
+            [-376, 24],
+            // Treasure 612
+            [-376, 72],
+            // Treasure 613
+            [-376, -1464],
+            // Treasure 614
+            [-376, -3192],
+            // Treasure 615
+            [-376, -4984],
+            // Treasure 616
+            [-424, -3128],
+            // Treasure 617
+            [-440, 1544],
+            // Treasure 618
+            [-440, 1224],
+            // Treasure 619
+            [-440, 968],
+            // Treasure 620
+            [-440, -1464],
+            // Treasure 621
+            [-440, -3192],
+            // Treasure 622
+            [-440, -5800],
+            // Treasure 623
+            [-504, 1240],
+            // Treasure 624
+            [-504, -1464],
+            // Treasure 625
+            [-504, -2744],
+            // Treasure 626
+            [-504, -5816],
+            // Treasure 627
+            [-504, -5752],
+            // Treasure 628
+            [-568, 4168],
+            // Treasure 629
+            [-568, 2568],
+            // Treasure 630
+            [-568, 1160],
+            // Treasure 631
+            [-568, 136],
+            // Treasure 632
+            [-568, -56],
+            // Treasure 633
+            [-616, -56],
+            // Treasure 634
+            [-632, 5064],
+            // Treasure 635
+            [-632, 4360],
+            // Treasure 636
+            [-632, -2168],
+            // Treasure 637
+            [-632, -2728],
+            // Treasure 638
+            [-632, -3128],
+            // Treasure 639
+            [-680, 4232],
+            // Treasure 640
+            [-680, 2376],
+            // Treasure 641
+            [-680, -2168],
+            // Treasure 642
+            [-680, -2936],
+            // Treasure 643
+            [-680, -3064],
+            // Treasure 644
+            [-680, -4712],
+            // Treasure 645
+            [-696, 4168],
+            // Treasure 646
+            [-696, 2328],
+            // Treasure 647
+            [-696, 1224],
+            // Treasure 648
+            [-696, 968],
+            // Treasure 649
+            [-696, 600],
+            // Treasure 650
+            [-696, -2728],
+            // Treasure 651
+            [-696, -3000],
+            // Treasure 652
+            [-696, -5880],
+            // Treasure 653
+            [-696, -6056],
+            // Treasure 654
+            [-744, 2184],
+            // Treasure 655
+            [-760, 5448],
+            // Treasure 656
+            [-760, 4232],
+            // Treasure 657
+            [-760, 4168],
+            // Treasure 658
+            [-760, 1160],
+            // Treasure 659
+            [-760, 1112],
+            // Treasure 660
+            [-760, 584],
+            // Treasure 661
+            [-760, 648],
+            // Treasure 662
+            [-760, 776],
+            // Treasure 663
+            [-760, 520],
+            // Treasure 664
+            [-760, -2168],
+            // Treasure 665
+            [-808, 216],
+            // Treasure 666
+            [-808, -5176],
+            // Treasure 667
+            [-824, 4104],
+            // Treasure 668
+            [-824, 2136],
+            // Treasure 669
+            [-824, 584],
+            // Treasure 670
+            [-824, 520],
+            // Treasure 671
+            [-824, 264],
+            // Treasure 672
+            [-824, -1720],
+            // Treasure 673
+            [-824, -1896],
+            // Treasure 674
+            [-824, -2232],
+            // Treasure 675
+            [-872, -568],
+            // Treasure 676
+            [-888, 5960],
+            // Treasure 677
+            [-888, 5896],
+            // Treasure 678
+            [-888, 5832],
+            // Treasure 679
+            [-888, 1992],
+            // Treasure 680
+            [-888, 1928],
+            // Treasure 681
+            [-888, 1240],
+            // Treasure 682
+            [-888, 1032],
+            // Treasure 683
+            [-888, 1032],
+            // Treasure 684
+            [-888, 264],
+            // Treasure 685
+            [-888, -616],
+            // Treasure 686
+            [-888, -696],
+            // Treasure 687
+            [-888, -1640],
+            // Treasure 688
+            [-888, -2232],
+            // Treasure 689
+            [-936, 5848],
+            // Treasure 690
+            [-936, 2184],
+            // Treasure 691
+            [-936, 1944],
+            // Treasure 692
+            [-936, 1352],
+            // Treasure 693
+            [-936, -824],
+            // Treasure 694
+            [-952, 5704],
+            // Treasure 695
+            [-952, 4104],
+            // Treasure 696
+            [-952, 3336],
+            // Treasure 697
+            [-952, 1432],
+            // Treasure 698
+            [-952, 1224],
+            // Treasure 699
+            [-952, 1096],
+            // Treasure 700
+            [-952, 392],
+            // Treasure 701
+            [-952, 216],
+            // Treasure 702
+            [-952, -504],
+            // Treasure 703
+            [-952, -872],
+            // Treasure 704
+            [-952, -2296],
+            // Treasure 705
+            [-952, -2360],
+            // Treasure 706
+            [-1000, 1560],
+            // Treasure 707
+            [-1000, -1592],
+            // Treasure 708
+            [-1016, 4168],
+            // Treasure 709
+            [-1016, 3272],
+            // Treasure 710
+            [-1016, 2184],
+            // Treasure 711
+            [-1016, 200],
+            // Treasure 712
+            [-1016, -312],
+            // Treasure 713
+            [-1016, -376],
+            // Treasure 714
+            [-1016, -696],
+            // Treasure 715
+            [-1016, -808],
+            // Treasure 716
+            [-1016, -888],
+            // Treasure 717
+            [-1016, -952],
+            // Treasure 718
+            [-1016, -4728],
+            // Treasure 719
+            [-1016, -4344],
+            // Treasure 720
+            [-1064, 3912],
+            // Treasure 721
+            [-1064, 2184],
+            // Treasure 722
+            [-1064, 1608],
+            // Treasure 723
+            [-1064, -952],
+            // Treasure 724
+            [-1064, -5032],
+            // Treasure 725
+            [-1080, 2248],
+            // Treasure 726
+            [-1080, 1928],
+            // Treasure 727
+            [-1080, -56],
+            // Treasure 728
+            [-1080, -248],
+            // Treasure 729
+            [-1080, -760],
+            // Treasure 730
+            [-1080, -4792],
+            // Treasure 731
+            [-1144, 4168],
+            // Treasure 732
+            [-1144, 3976],
+            // Treasure 733
+            [-1144, -184],
+            // Treasure 734
+            [-1144, -1656],
+            // Treasure 735
+            [-1144, -4728],
+            // Treasure 736
+            [-1144, -4344],
+            // Treasure 737
+            [-1144, -4280],
+            // Treasure 738
+            [-1192, 4104],
+            // Treasure 739
+            [-1192, -5096],
+            // Treasure 740
+            [-1208, 3016],
+            // Treasure 741
+            [-1208, 520],
+            // Treasure 742
+            [-1208, 584],
+            // Treasure 743
+            [-1208, -1720],
+            // Treasure 744
+            [-1208, -4152],
+            // Treasure 745
+            [-1256, -5608],
+            // Treasure 746
+            [-1272, 1944],
+            // Treasure 747
+            [-1336, -1272],
+            // Treasure 748
+            [-1336, 1112],
+            // Treasure 749
+            [-1384, -760],
+            // Treasure 750
+            [-1400, -696],
+            // Treasure 751
+            [-1400, -1272],
+            // Treasure 752
+            [-1400, -2360],
+            // Treasure 753
+            [-1400, -2472],
+            // Treasure 754
+            [-1400, -5624],
+            // Treasure 755
+            [-1400, 1992],
+            // Treasure 756
+            [-1448, -2168],
+            // Treasure 757
+            [-1448, -2552],
+            // Treasure 758
+            [-1448, 1480],
+            // Treasure 759
+            [-1464, -2296],
+            // Treasure 760
+            [-1464, -2616],
+            // Treasure 761
+            [-1464, -5688],
+            // Treasure 762
+            [-1464, -5752],
+            // Treasure 763
+            [-1464, -5800],
+            // Treasure 764
+            [-1464, 5192],
+            // Treasure 765
+            [-1464, 1112],
+            // Treasure 766
+            [-1512, -2232],
+            // Treasure 767
+            [-1512, -2536],
+            // Treasure 768
+            [-1512, 1032],
+            // Treasure 769
+            [-1576, -1208],
+            // Treasure 770
+            [-1576, -4776],
+            // Treasure 771
+            [-1576, -4904],
+            // Treasure 772
+            [-1576, 1560],
+            // Treasure 773
+            [-1592, -4728],
+            // Treasure 774
+            [-1592, -4968],
+            // Treasure 775
+            [-1592, 840],
+            // Treasure 776
+            [-1640, -1272],
+            // Treasure 777
+            [-1640, -4536],
+            // Treasure 778
+            [-1640, 1608],
+            // Treasure 779
+            [-1656, -5736],
+            // Treasure 780
+            [-1656, -5240],
+            // Treasure 781
+            [-1656, 1688],
+            // Treasure 782
+            [-1720, -2424],
+            // Treasure 783
+            [-1720, -5176],
+            // Treasure 784
+            [-1720, 792],
+            // Treasure 785
+            [-1784, -2232],
+            // Treasure 786
+            [-1784, -5816],
+            // Treasure 787
+            [-1784, -5048],
+            // Treasure 788
+            [-1848, -1912],
+            // Treasure 789
+            [-1848, -2408],
+            // Treasure 790
+            [-1848, -2936],
+            // Treasure 791
+            [-1848, -5880],
+            // Treasure 792
+            [-1848, 5960],
+            // Treasure 793
+            [-1848, 5832],
+            // Treasure 794
+            [-1848, 5784],
+            // Treasure 795
+            [-1896, -2872],
+            // Treasure 796
+            [-1912, -3000],
+            // Treasure 797
+            [-1912, -1016],
+            // Treasure 798
+            [-1960, -4856],
+            // Treasure 799
+            [-1960, -4648],
+            // Treasure 800
+            [-1976, -2936],
+            // Treasure 801
+            [-1976, -4536],
+            // Treasure 802
+            [-1976, -4600],
+            // Treasure 803
+            [-1976, 5640],
+            // Treasure 804
+            [-1976, -3448],
+            // Treasure 805
+            [-1976, -3576],
+            // Treasure 806
+            [-2024, -2472],
+            // Treasure 807
+            [-2024, 5640],
+            // Treasure 808
+            [-2040, -2808],
+            // Treasure 809
+            [-2040, -2680],
+            // Treasure 810
+            [-2104, -2424],
+            // Treasure 811
+            [-2104, -1256],
+            // Treasure 812
+            [-2104, -2040],
+            // Treasure 813
+            [-2104, -2104],
+            // Treasure 814
+            [-2152, 5512],
+            // Treasure 815
+            [-2168, -4520],
+            // Treasure 816
+            [-2168, 5576],
+            // Treasure 817
+            [-2168, 5464],
+            // Treasure 818
+            [-2168, 1352],
+            // Treasure 819
+            [-2168, -1512],
+            // Treasure 820
+            [-2168, -5992],
+            // Treasure 821
+            [-2216, 5512],
+            // Treasure 822
+            [-2216, 200],
+            // Treasure 823
+            [-2216, -1592],
+            // Treasure 824
+            [-2232, -2552],
+            // Treasure 825
+            [-2232, 5640],
+            // Treasure 826
+            [-2232, 5448],
+            // Treasure 827
+            [-2232, 5400],
+            // Treasure 828
+            [-2232, 3720],
+            // Treasure 829
+            [-2232, 3928],
+            // Treasure 830
+            [-2232, -1400],
+            // Treasure 831
+            [-2232, -1912],
+            // Treasure 832
+            [-2232, -3768],
+            // Treasure 833
+            [-2232, -4792],
+            // Treasure 834
+            [-2280, 5320],
+            // Treasure 835
+            [-2280, 3848],
+            // Treasure 836
+            [-2280, -1592],
+            // Treasure 837
+            [-2280, -4904],
+            // Treasure 838
+            [-2280, -5224],
+            // Treasure 839
+            [-2296, 5384],
+            // Treasure 840
+            [-2296, 5656],
+            // Treasure 841
+            [-2296, 5528],
+            // Treasure 842
+            [-2296, 584],
+            // Treasure 843
+            [-2296, -1064],
+            // Treasure 844
+            [-2296, -1464],
+            // Treasure 845
+            [-2296, -1512],
+            // Treasure 846
+            [-2296, -1720],
+            // Treasure 847
+            [-2296, -1656],
+            // Treasure 848
+            [-2296, -3832],
+            // Treasure 849
+            [-2296, -3880],
+            // Treasure 850
+            [-2296, -4792],
+            // Treasure 851
+            [-2344, 5320],
+            // Treasure 852
+            [-2344, 5464],
+            // Treasure 853
+            [-2344, -4792],
+            // Treasure 854
+            [-2360, 3800],
+            // Treasure 855
+            [-2360, 3848],
+            // Treasure 856
+            [-2360, 3992],
+            // Treasure 857
+            [-2360, 216],
+            // Treasure 858
+            [-2360, -2024],
+            // Treasure 859
+            [-2360, -4856],
+            // Treasure 860
+            [-2408, 5704],
+            // Treasure 861
+            [-2408, -56],
+            // Treasure 862
+            [-2408, -4840],
+            // Treasure 863
+            [-2424, 4168],
+            // Treasure 864
+            [-2424, 3336],
+            // Treasure 865
+            [-2424, -2024],
+            // Treasure 866
+            [-2424, -4088],
+            // Treasure 867
+            [-2424, -4904],
+            // Treasure 868
+            [-2472, 5704],
+            // Treasure 869
+            [-2472, 4168],
+            // Treasure 870
+            [-2472, 3336],
+            // Treasure 871
+            [-2472, -4088],
+            // Treasure 872
+            [-2488, 3720],
+            // Treasure 873
+            [-2488, 1672],
+            // Treasure 874
+            [-2488, 8],
+            // Treasure 875
+            [-2488, -56],
+            // Treasure 876
+            [-2488, -1016],
+            // Treasure 877
+            [-2488, -2040],
+            // Treasure 878
+            [-2552, 4168],
+            // Treasure 879
+            [-2552, 1736],
+            // Treasure 880
+            [-2552, 88],
+            // Treasure 881
+            [-2552, -1976],
+            // Treasure 882
+            [-2552, -4088],
+            // Treasure 883
+            [-2600, 1864],
+            // Treasure 884
+            [-2600, -1144],
+            // Treasure 885
+            [-2600, -2104],
+            // Treasure 886
+            [-2616, 5256],
+            // Treasure 887
+            [-2616, 5208],
+            // Treasure 888
+            [-2616, 4168],
+            // Treasure 889
+            [-2616, 1800],
+            // Treasure 890
+            [-2616, 136],
+            // Treasure 891
+            [-2616, -1528],
+            // Treasure 892
+            [-2616, -2040],
+            // Treasure 893
+            [-2616, -2232],
+            // Treasure 894
+            [-2616, -4920],
+            // Treasure 895
+            [-2616, -4968],
+            // Treasure 896
+            [-2664, -1512],
+            // Treasure 897
+            [-2664, -2168],
+            // Treasure 898
+            [-2680, 5272],
+            // Treasure 899
+            [-2680, 4424],
+            // Treasure 900
+            [-2680, 3912],
+            // Treasure 901
+            [-2680, 4104],
+            // Treasure 902
+            [-2680, 1928],
+            // Treasure 903
+            [-2680, 1800],
+            // Treasure 904
+            [-2680, 1864],
+            // Treasure 905
+            [-2680, 200],
+            // Treasure 906
+            [-2680, -1464],
+            // Treasure 907
+            [-2680, -2232],
+            // Treasure 908
+            [-2680, -4088],
+            // Treasure 909
+            [-2680, -4920],
+            // Treasure 910
+            [-2680, -4856],
+            // Treasure 911
+            [-2680, -5944],
+            // Treasure 912
+            [-2728, 3976],
+            // Treasure 913
+            [-2728, -5944],
+            // Treasure 914
+            [-2744, 4744],
+            // Treasure 915
+            [-2744, 4680],
+            // Treasure 916
+            [-2744, 4568],
+            // Treasure 917
+            [-2744, 3032],
+            // Treasure 918
+            [-2744, -232],
+            // Treasure 919
+            [-2744, -4920],
+            // Treasure 920
+            [-2808, 2568],
+            // Treasure 921
+            [-2808, 1736],
+            // Treasure 922
+            [-2808, 1816],
+            // Treasure 923
+            [-2808, 200],
+            // Treasure 924
+            [-2808, -1400],
+            // Treasure 925
+            [-2808, -4024],
+            // Treasure 926
+            [-2808, -5944],
+            // Treasure 927
+            [-2856, -4024],
+            // Treasure 928
+            [-2872, 4120],
+            // Treasure 929
+            [-2872, 1864],
+            // Treasure 930
+            [-2872, 1736],
+            // Treasure 931
+            [-2872, -5880],
+            // Treasure 932
+            [-2872, -6008],
+            // Treasure 933
+            [-2920, -5672],
+            // Treasure 934
+            [-2920, -5672],
+            // Treasure 935
+            [-2920, -5992],
+            // Treasure 936
+            [-2936, 4040],
+            // Treasure 937
+            [-2936, 4120],
+            // Treasure 938
+            [-2936, 1928],
+            // Treasure 939
+            [-2936, 1736],
+            // Treasure 940
+            [-2984, 2120],
+            // Treasure 941
+            [-2984, 1544],
+            // Treasure 942
+            [-2984, -4904],
+            // Treasure 943
+            [-2984, -5416],
+            // Treasure 944
+            [-2984, -5880],
+            // Treasure 945
+            [-3000, 3976],
+            // Treasure 946
+            [-3000, 3016],
+            // Treasure 947
+            [-3000, 3080],
+            // Treasure 948
+            [-3000, 200],
+            // Treasure 949
+            [-3000, -696],
+            // Treasure 950
+            [-3000, -5304],
+            // Treasure 951
+            [-3000, -5224],
+            // Treasure 952
+            [-3048, 3912],
+            // Treasure 953
+            [-3048, 1688],
+            // Treasure 954
+            [-3048, -4088],
+            // Treasure 955
+            [-3048, -5112],
+            // Treasure 956
+            [-3048, -5880],
+            // Treasure 957
+            [-3064, 4120],
+            // Treasure 958
+            [-3064, 4168],
+            // Treasure 959
+            [-3064, 3144],
+            // Treasure 960
+            [-3064, 1816],
+            // Treasure 961
+            [-3064, -4984],
+            // Treasure 962
+            [-3064, -5304],
+            // Treasure 963
+            [-3112, -5368],
+            // Treasure 964
+            [-3128, 2696],
+            // Treasure 965
+            [-3128, 88],
+            // Treasure 966
+            [-3128, -56],
+            // Treasure 967
+            [-3128, -1016],
+            // Treasure 968
+            [-3128, -936],
+            // Treasure 969
+            [-3192, 2760],
+            // Treasure 970
+            [-3192, -312],
+            // Treasure 971
+            [-3240, -696],
+            // Treasure 972
+            [-3240, -4072],
+            // Treasure 973
+            [-3256, 2824],
+            // Treasure 974
+            [-3256, 280],
+            // Treasure 975
+            [-3304, 264],
+            // Treasure 976
+            [-3320, 3144],
+            // Treasure 977
+            [-3320, 3144],
+            // Treasure 978
+            [-3368, 2904],
+            // Treasure 979
+            [-3384, 2504],
+            // Treasure 980
+            [-3384, -1016],
+            // Treasure 981
+            [-3448, 2520],
+            // Treasure 982
+            [-3448, 328],
+            // Treasure 983
+            [-3496, 328],
+            // Treasure 984
+            [-3512, 3976],
+            // Treasure 985
+            [-3512, 88],
+            // Treasure 986
+            [-3560, 72],
+            // Treasure 987
+            [-3560, -3896],
+            // Treasure 988
+            [-3576, -232],
+            // Treasure 989
+            [-3576, 328],
+            // Treasure 990
+            [-3640, 200],
+            // Treasure 991
+            [-3640, -5688],
+            // Treasure 992
+            [-3704, -104],
+            // Treasure 993
+            [-3704, -5688],
+            // Treasure 994
+            [-3752, -3704],
+            // Treasure 995
+            [-3768, -184],
+            // Treasure 996
+            [-3768, -3752],
+            // Treasure 997
+            [-3816, -5688],
+            // Treasure 998
+            [-3832, -120],
+            // Treasure 999
+            [-3880, 3016],
+            // Treasure 1000
+            [-3880, -3240],
+            // Treasure 1001
+            [-3896, -248],
+            // Treasure 1002
+            [-3944, -3432],
+            // Treasure 1003
+            [-3960, -4856],
+            // Treasure 1004
+            [-4024, -5560],
+            // Treasure 1005
+            [-4088, 2824],
+            // Treasure 1006
+            [-4088, -360],
+            // Treasure 1007
+            [-4136, 5640],
+            // Treasure 1008
+            [-4136, 3272],
+            // Treasure 1009
+            [-4152, -360],
+            // Treasure 1010
+            [-4200, 5576],
+            // Treasure 1011
+            [-4216, -1464],
+            // Treasure 1012
+            [-4264, 2136],
+            // Treasure 1013
+            [-4264, 2072],
+            // Treasure 1014
+            [-4264, -3960],
+            // Treasure 1015
+            [-4264, -3768],
+            // Treasure 1016
+            [-4328, 8],
+            // Treasure 1017
+            [-4328, -3880],
+            // Treasure 1018
+            [-4328, -3768],
+            // Treasure 1019
+            [-4344, 5576],
+            // Treasure 1020
+            [-4344, 2968],
+            // Treasure 1021
+            [-4344, 3032],
+            // Treasure 1022
+            [-4344, -616],
+            // Treasure 1023
+            [-4344, -56],
+            // Treasure 1024
+            [-4344, -120],
+            // Treasure 1025
+            [-4344, -184],
+            // Treasure 1026
+            [-4344, -1144],
+            // Treasure 1027
+            [-4392, 2120],
+            // Treasure 1028
+            [-4392, -1272],
+            // Treasure 1029
+            [-4392, -3768],
+            // Treasure 1030
+            [-4408, 2696],
+            // Treasure 1031
+            [-4408, -184],
+            // Treasure 1032
+            [-4408, 8],
+            // Treasure 1033
+            [-4408, -3896],
+            // Treasure 1034
+            [-4472, -568],
+            // Treasure 1035
+            [-4472, -312],
+            // Treasure 1036
+            [-4472, -1144],
+            // Treasure 1037
+            [-4472, -2152],
+            // Treasure 1038
+            [-4472, -3752],
+            // Treasure 1039
+            [-4472, -3816],
+            // Treasure 1040
+            [-4472, -3896],
+            // Treasure 1041
+            [-4520, -5944],
+            // Treasure 1042
+            [-4520, -3832],
+            // Treasure 1043
+            [-4536, 2584],
+            // Treasure 1044
+            [-4536, -568],
+            // Treasure 1045
+            [-4536, -1976],
+            // Treasure 1046
+            [-4536, -6008],
+            // Treasure 1047
+            [-4536, -3768],
+            // Treasure 1048
+            [-4536, -3880],
+            // Treasure 1049
+            [-4584, -3832],
+            // Treasure 1050
+            [-4600, 5784],
+            // Treasure 1051
+            [-4600, 5704],
+            // Treasure 1052
+            [-4600, 2440],
+            // Treasure 1053
+            [-4600, -376],
+            // Treasure 1054
+            [-4600, -1144],
+            // Treasure 1055
+            [-4600, -1192],
+            // Treasure 1056
+            [-4600, -1448],
+            // Treasure 1057
+            [-4600, -5944],
+            // Treasure 1058
+            [-4600, -3768],
+            // Treasure 1059
+            [-4600, -3704],
+            // Treasure 1060
+            [-4648, -1400],
+            // Treasure 1061
+            [-4648, -3816],
+            // Treasure 1062
+            [-4664, 5704],
+            // Treasure 1063
+            [-4664, 5640],
+            // Treasure 1064
+            [-4664, 2632],
+            // Treasure 1065
+            [-4664, 2568],
+            // Treasure 1066
+            [-4664, -1144],
+            // Treasure 1067
+            [-4664, -1192],
+            // Treasure 1068
+            [-4664, -2424],
+            // Treasure 1069
+            [-4664, -5944],
+            // Treasure 1070
+            [-4664, -3624],
+            // Treasure 1071
+            [-4664, -3576],
+            // Treasure 1072
+            [-4712, 2632],
+            // Treasure 1073
+            [-4728, 5656],
+            // Treasure 1074
+            [-4728, -632],
+            // Treasure 1075
+            [-4728, -2408],
+            // Treasure 1076
+            [-4728, -3576],
+            // Treasure 1077
+            [-4792, 5320],
+            // Treasure 1078
+            [-4792, 5896],
+            // Treasure 1079
+            [-4792, -440],
+            // Treasure 1080
+            [-4792, -760],
+            // Treasure 1081
+            [-4792, -888],
+            // Treasure 1082
+            [-4792, -952],
+            // Treasure 1083
+            [-4792, -3512],
+            // Treasure 1084
+            [-4792, -3384],
+            // Treasure 1085
+            [-4792, -3320],
+            // Treasure 1086
+            [-4840, -5624],
+            // Treasure 1087
+            [-4840, -5752],
+            // Treasure 1088
+            [-4856, 5768],
+            // Treasure 1089
+            [-4856, 2632],
+            // Treasure 1090
+            [-4856, -440],
+            // Treasure 1091
+            [-4856, -1656],
+            // Treasure 1092
+            [-4856, -5816],
+            // Treasure 1093
+            [-4904, 5768],
+            // Treasure 1094
+            [-4904, 728],
+            // Treasure 1095
+            [-4904, -440],
+            // Treasure 1096
+            [-4904, -4024],
+            // Treasure 1097
+            [-4920, 5704],
+            // Treasure 1098
+            [-4920, 5576],
+            // Treasure 1099
+            [-4920, 2456],
+            // Treasure 1100
+            [-4920, 2376],
+            // Treasure 1101
+            [-4968, 2328],
+            // Treasure 1102
+            [-4984, 5464],
+            // Treasure 1103
+            [-4984, 648],
+            // Treasure 1104
+            [-4984, -1848],
+            // Treasure 1105
+            [-4984, -1912],
+            // Treasure 1106
+            [-4984, -3896],
+            // Treasure 1107
+            [-5032, -744],
+            // Treasure 1108
+            [-5032, -4728],
+            // Treasure 1109
+            [-5048, 2264],
+            // Treasure 1110
+            [-5048, 2184],
+            // Treasure 1111
+            [-5048, -696],
+            // Treasure 1112
+            [-5048, -1320],
+            // Treasure 1113
+            [-5048, -1400],
+            // Treasure 1114
+            [-5048, -5608],
+            // Treasure 1115
+            [-5048, -4648],
+            // Treasure 1116
+            [-5096, 5960],
+            // Treasure 1117
+            [-5112, 1032],
+            // Treasure 1118
+            [-5112, -1272],
+            // Treasure 1119
+            [-5112, -4408],
+            // Treasure 1120
+            [-5112, -4584],
+            // Treasure 1121
+            [-5112, -4088],
+            // Treasure 1122
+            [-5112, -4024],
+            // Treasure 1123
+            [-5176, 520],
+            // Treasure 1124
+            [-5176, -1144],
+            // Treasure 1125
+            [-5176, -2280],
+            // Treasure 1126
+            [-5176, -3512],
+            // Treasure 1127
+            [-5176, -5432],
+            // Treasure 1128
+            [-5176, -4472],
+            // Treasure 1129
+            [-5176, -4840],
+            // Treasure 1130
+            [-5176, -4200],
+            // Treasure 1131
+            [-5240, 5320],
+            // Treasure 1132
+            [-5240, 2120],
+            // Treasure 1133
+            [-5240, 664],
+            // Treasure 1134
+            [-5240, 520],
+            // Treasure 1135
+            [-5240, -1144],
+            // Treasure 1136
+            [-5240, -4392],
+            // Treasure 1137
+            [-5240, -4344],
+            // Treasure 1138
+            [-5240, -4792],
+            // Treasure 1139
+            [-5288, 536],
+            // Treasure 1140
+            [-5288, -1144],
+            // Treasure 1141
+            [-5304, -1000],
+            // Treasure 1142
+            [-5304, -952],
+            // Treasure 1143
+            [-5304, -4664],
+            // Treasure 1144
+            [-5304, -4856],
+            // Treasure 1145
+            [-5368, 456],
+            // Treasure 1146
+            [-5368, -1960],
+            // Treasure 1147
+            [-5368, -3960],
+            // Treasure 1148
+            [-5368, -4600],
+            // Treasure 1149
+            [-5368, -4648],
+            // Treasure 1150
+            [-5368, -4712],
+            // Treasure 1151
+            [-5368, -4856],
+            // Treasure 1152
+            [-5416, 5384],
+            // Treasure 1153
+            [-5416, -4728],
+            // Treasure 1154
+            [-5432, 648],
+            // Treasure 1155
+            [-5432, -2168],
+            // Treasure 1156
+            [-5432, -4600],
+            // Treasure 1157
+            [-5432, -4664],
+            // Treasure 1158
+            [-5480, -2728],
+            // Treasure 1159
+            [-5496, -1128],
+            // Treasure 1160
+            [-5496, -1400],
+            // Treasure 1161
+            [-5496, -1848],
+            // Treasure 1162
+            [-5496, -2552],
+            // Treasure 1163
+            [-5496, -4088],
+            // Treasure 1164
+            [-5544, -1768],
+            // Treasure 1165
+            [-5560, 584],
+            // Treasure 1166
+            [-5560, -1064],
+            // Treasure 1167
+            [-5560, -1144],
+            // Treasure 1168
+            [-5560, -1336],
+            // Treasure 1169
+            [-5560, -3960],
+            // Treasure 1170
+            [-5560, -4088],
+            // Treasure 1171
+            [-5560, -4152],
+            // Treasure 1172
+            [-5624, 5512],
+            // Treasure 1173
+            [-5624, -1144],
+            // Treasure 1174
+            [-5624, -3960],
+            // Treasure 1175
+            [-5624, -4600],
+            // Treasure 1176
+            [-5672, 5576],
+            // Treasure 1177
+            [-5688, 1672],
+            // Treasure 1178
+            [-5688, -3640],
+            // Treasure 1179
+            [-5688, -3832],
+            // Treasure 1180
+            [-5688, -3880],
+            // Treasure 1181
+            [-5688, -4472],
+            // Treasure 1182
+            [-5752, 5832],
+            // Treasure 1183
+            [-5752, 5528],
+            // Treasure 1184
+            [-5752, 1880],
+            // Treasure 1185
+            [-5752, 1416],
+            // Treasure 1186
+            [-5752, 1608],
+            // Treasure 1187
+            [-5752, -3896],
+            // Treasure 1188
+            [-5752, -4600],
+            // Treasure 1189
+            [-5752, -4840],
+            // Treasure 1190
+            [-5752, -5224],
+            // Treasure 1191
+            [-5800, 5576],
+            // Treasure 1192
+            [-5800, -4088],
+            // Treasure 1193
+            [-5816, 1304],
+            // Treasure 1194
+            [-5816, -3304],
+            // Treasure 1195
+            [-5816, -4664],
+            // Treasure 1196
+            [-5816, -4728],
+            // Treasure 1197
+            [-5816, -5304],
+            // Treasure 1198
+            [-5816, -5416],
+            // Treasure 1199
+            [-5864, 2056],
+            // Treasure 1200
+            [-5864, -184],
+            // Treasure 1201
+            [-5864, -3320],
+            // Treasure 1202
+            [-5864, -4792],
+            // Treasure 1203
+            [-5880, 5592],
+            // Treasure 1204
+            [-5880, -2104],
+            // Treasure 1205
+            [-5880, -2808],
+            // Treasure 1206
+            [-5880, -4088],
+            // Treasure 1207
+            [-5880, -4712],
+            // Treasure 1208
+            [-5880, -5304],
+            // Treasure 1209
+            [-5880, -5688],
+            // Treasure 1210
+            [-5880, -5752],
+            // Treasure 1211
+            [-5928, -2040],
+            // Treasure 1212
+            [-5944, 5640],
+            // Treasure 1213
+            [-5944, 1992],
+            // Treasure 1214
+            [-5944, -3704],
+            // Treasure 1215
+            [-5944, -5624],
+            // Treasure 1216
+            [-5992, -3112],
+            // Treasure 1217
+            [-5992, -3240],
+            // Treasure 1218
+            [-5992, -3704],
+            // Treasure 1219
+            [-5992, -5688],
+            // Treasure 1220
+            [-6008, 5192],
+            // Treasure 1221
+            [-6008, 5144],
+            // Treasure 1222
+            [-6008, 5656],
+            // Treasure 1223
+            [-6008, 2056],
+            // Treasure 1224
+            [-6008, 1288],
+            // Treasure 1225
+            [-6008, -440],
+            // Treasure 1226
+            [-6008, -3640],
+            // Treasure 1227
+            [-6008, -5304],
+        ];
+
+        const toMarker = (image) => ([x, z]) => ({
+            x, z,
+            image: `playerimages/${image}`,
+            imageAnchor: [0.5, 1],
+            imageScale: 0.3,
+        });
+
+        return [
+            ...shipwreckCoords.map(toMarker('shipwreck.png')),
+            ...treasureCoords.map(toMarker('chest.png')),
+        ];
+    })()
+};
