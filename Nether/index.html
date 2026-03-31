@@ -31,18 +31,14 @@
     <!-- uNmINeD JS and CSS -->
     <script type="text/javascript" src="unmined.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
+        
+    </style>
 
 </head>
 
 <body>
     <div id="map"></div>
 
-    <div class="dim-nav">
-        <a href="../index.html" class="active"> Overworld</a>
-        <a href="index.html"> Nether</a>
-        <a href="../End/index.html"> End</a>
-    </div>
-    
     <script type="text/javascript">
 
         document.title = UnminedMapProperties.worldName + " - " + document.title;
@@ -50,13 +46,14 @@
         if (UnminedCustomMarkers && UnminedCustomMarkers.isEnabled && UnminedCustomMarkers.markers) {
             UnminedMapProperties.markers = UnminedMapProperties.markers.concat(UnminedCustomMarkers.markers);
         }
-
+        
         if (UnminedPlayers && UnminedPlayers.length > 0) {
             UnminedMapProperties.playerMarkers = Unmined.createPlayerMarkers(UnminedPlayers);
         }
 
         const mapElement = document.getElementById('map');
         const unmined = new Unmined(mapElement, UnminedMapProperties, UnminedRegions);
+
 
     </script>
 </body>
