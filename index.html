@@ -53,9 +53,25 @@
     <div id="map"></div>
 
     <div class="dim-nav">
-        <a href="index.html" class="active"> Overworld</a>
-        <a href="Nether/index.html"> Nether</a>
-        <a href="End/index.html"> End</a>
+
+        <!-- Overworld knop met dropdown -->
+        <div class="dim-nav-dropdown">
+            <a href="index.html" class="active" id="btn-overworld">🌍 Overworld ▾</a>
+            <div class="dim-nav-menu" id="layer-menu">
+                <div class="dim-nav-menu-title">Layers</div>
+                <label><input type="checkbox" id="toggle-villages"    checked> 🏘️ Villages</label>
+                <label><input type="checkbox" id="toggle-pillager"    checked> ⚔️ Pillager</label>
+                <label><input type="checkbox" id="toggle-shipwrecks"  checked> 🚢 Shipwrecks</label>
+                <label><input type="checkbox" id="toggle-temples"     checked> 🏛️ Temples</label>
+                <label><input type="checkbox" id="toggle-portals"     checked> 🌀 Portals</label>
+                <label><input type="checkbox" id="toggle-underground" checked> ⛏️ Underground</label>
+                <label><input type="checkbox" id="toggle-playerbuild" checked> 🏗️ Playerbuild</label>
+                <label><input type="checkbox" id="toggle-landscapes"  checked> 🌿 Landscapes</label>
+            </div>
+        </div>
+
+        <a href="Nether/index.html">🔥 Nether</a>
+        <a href="End/index.html">🌌 End</a>
     </div>
 
     <script type="text/javascript">
@@ -122,6 +138,47 @@
 
         const mapElement = document.getElementById('map');
         const unmined = new Unmined(mapElement, UnminedMapProperties, UnminedRegions);
+
+        // ── Dropdown toggle ──────────────────────────────────────
+        const btn  = document.getElementById('btn-overworld');
+        const menu = document.getElementById('layer-menu');
+
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            menu.classList.toggle('open');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove('open');
+            }
+        });
+
+        // ── Layer checkboxes ─────────────────────────────────────
+        const layerToggles = [
+            { id: 'toggle-villages',    key: 'villages'    },
+            { id: 'toggle-pillager',    key: 'pillager'    },
+            { id: 'toggle-shipwrecks',  key: 'shipwrecks'  },
+            { id: 'toggle-temples',     key: 'temples'     },
+            { id: 'toggle-portals',     key: 'portals'     },
+            { id: 'toggle-underground', key: 'underground' },
+            { id: 'toggle-playerbuild', key: 'playerbuild' },
+            { id: 'toggle-landscapes',  key: 'landscapes'  },
+        ];
+
+        layerToggles.forEach(({ id, key }) => {
+            const checkbox = document.getElementById(id);
+            if (!checkbox) return;
+
+            // Sync initial checkbox state with unmined options
+            checkbox.checked = unmined._Unmined__options?.['show' + key] ?? true;
+
+            checkbox.addEventListener('change', () => {
+                unmined.toggleCustomLayer(key);
+                checkbox.checked = unmined._Unmined__options?.['show' + key] ?? checkbox.checked;
+            });
+        });
 
     </script>
 </body>

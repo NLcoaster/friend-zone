@@ -637,33 +637,20 @@ class Unmined {
             contextmenu.push('-');
 
             if (this.playerMarkersLayer) {
-                contextmenu.push(
-                    {
-                        classname: this.#options.showPlayers ? 'menuitem-checked' : 'menuitem-unchecked',
-                        text: 'Show players',
-                        callback: () => this.togglePlayers()
-                    })
-            }
-
-            // Custom layers loop
-            for (const def of Unmined.customLayerDefs) {
-                const showKey = 'show' + def.key;
                 contextmenu.push({
-                    classname: this.#options[showKey] ? 'menuitem-checked' : 'menuitem-unchecked',
-                    text: def.label,
-                    callback: () => this.toggleCustomLayer(def.key)
+                    classname: this.#options.showPlayers ? 'menuitem-checked' : 'menuitem-unchecked',
+                    text: 'Show players',
+                    callback: () => this.togglePlayers()
                 });
             }
 
             if (this.spawnpointLayer) {
-                contextmenu.push(
-                    {
-                        classname: this.#options.showSpawnpoint ? 'menuitem-checked' : 'menuitem-unchecked',
-                        text: 'Show spawnpoint',
-                        callback: () => this.toggleSpawnpoint()
-                    })
+                contextmenu.push({
+                    classname: this.#options.showSpawnpoint ? 'menuitem-checked' : 'menuitem-unchecked',
+                    text: 'Show spawnpoint',
+                    callback: () => this.toggleSpawnpoint()
+                });
             }
-
 
             if (this.spawnpointLayer || this.playerMarkersLayer) {
                 contextmenu.push('-');
