@@ -13,22 +13,26 @@ html, body {
     image-rendering: pixelated;
 }
 
+/* ── Zoom buttons ───────────────────────────────────────── */
 .ol-zoom {
     position: absolute;
     top: 20px;
     left: 8px;
 }
 
+/* ── Dimension navigation ───────────────────────────────── */
 .dim-nav {
     position: fixed;
-    top: 20px;
-    left: 40px;
+    top: 35px;
+    left: 60px;
     z-index: 9999;
     display: flex;
     gap: 8px;
+    align-items: flex-start;
 }
 
-.dim-nav a {
+.dim-nav a
+.dim-nav-dropdown > a {
     background-color: rgba(0, 0, 0, 0.45);
     color: white;
     padding: 7px 16px;
@@ -42,18 +46,85 @@ html, body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     border: 1px solid rgba(255,255,255,0.1);
     transition: background-color 0.2s, transform 0.1s;
+    display: inline-block;
 }
 
-.dim-nav a:hover {
+.dim-nav a:hover,
+.dim-nav-dropdown > a:hover {
     background-color: rgba(0, 0, 0, 0.7);
     transform: translateY(-1px);
 }
 
-.dim-nav a.active {
+.dim-nav a.active
+.dim-nav-dropdown > a.active {
     border: 1px solid rgba(255,255,255,0.35);
     background-color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
 }
 
+/* ── Dropdown wrapper ───────────────────────────────────── */
+.dim-nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* ── Dropdown menu ──────────────────────────────────────── */
+.dim-nav-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    min-width: 180px;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    padding: 6px 0;
+    z-index: 10000;
+}
+
+.dim-nav-menu.open {
+    display: block;
+}
+
+.dim-nav-menu-title {
+    color: rgba(255,255,255,0.5);
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 14px 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 4px;
+}
+
+.dim-nav-menu label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 14px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.dim-nav-menu label:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.dim-nav-menu input[type="checkbox"] {
+    accent-color: #4CAF50;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+/* ── Map UI ─────────────────────────────────────────────── */
 .mouseposition {
     background-color: white;
     padding: 3px;
