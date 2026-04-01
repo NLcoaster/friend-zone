@@ -10,12 +10,8 @@ UnminedCustomNetherFortress = {
         });
 
         const Nether_FortressCoords = [
-            // broken portal 1
+            // nether fortress 1
             [126, -429],
-            // broken portal 2
-            [-1722, -444],
-            // broken portal 3
-            [-1063, -940],
         ];
 
         return [

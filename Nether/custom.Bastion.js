@@ -1,7 +1,7 @@
-UnminedCustomPortals = {
+UnminedCustombastion = {
     isEnabled: true,
 
-    Ruined Portals: (() => {
+    Bastion: (() => {
         const toMarker = (image, scale) => ([x, z]) => ({
             x, z,
             image,
@@ -9,17 +9,13 @@ UnminedCustomPortals = {
             imageScale: scale,
         });
 
-        const ruined_portalCoords = [
-            // broken portal 1
+        const bastionCoords = [
+            // bastion 1
             [126, -429],
-            // broken portal 2
-            [-1722, -444],
-            // broken portal 3
-            [-1063, -940],
         ];
 
         return [
-            ...ruined_portalCoords.map(toMarker('playerimages/Ruined_Portal.png', 0.3)),
+            ...bastionCoords.map(toMarker('playerimages/bastion.png', 0.3)),
         ];
     })()
 };

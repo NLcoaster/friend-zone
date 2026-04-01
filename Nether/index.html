@@ -24,10 +24,10 @@
     <script type="text/javascript" src="unmined.map.regions.js"></script>
     <script type="text/javascript" src="unmined.map.players.js"></script>
 
-    <!-- Custom pillagers -->
-    <script type="text/javascript" src="custom.pillager.js"></script>
-    <!-- Custom shipwrecks -->
-    <script type="text/javascript" src="custom.shipwrecks.js"></script>
+    <!-- Custom bastion -->
+    <script type="text/javascript" src="custom.bastion.js"></script>
+    <!-- Custom netherfortress -->
+    <script type="text/javascript" src="custom.netherfortress.js"></script>
     <!-- Custom portals -->
     <script type="text/javascript" src="custom.portals.js"></script>
 
@@ -41,10 +41,11 @@
     <div id="map"></div>
 
     <div class="dim-nav">
-        <a href="../index.html"> Overworld ▾</a>
+        <a href="../index.html"> Overworld </a>
+
         <!-- Nether knop met dropdown -->
         <div class="dim-nav-dropdown">
-            <a href="index.html" class="active" id="btn-Nether"> Nether ▾</a>
+            <a href="index.html" class="active" id="btn-nether"> Nether ▾</a>
             <div class="dim-nav-menu" id="layer-menu">
                 <div class="dim-nav-menu-title">Layers</div>
                 <label><input type="checkbox" id="toggle-Bastion"           checked> Bastion</label>
@@ -52,13 +53,13 @@
                 <label><input type="checkbox" id="toggle-portals"           checked> Portals</label>
             </div>
         </div>
+
         <a href="../End/index.html"> End</a>
     </div>
 
     <script type="text/javascript">
 
         document.title = UnminedMapProperties.worldName + " - " + document.title;
-
 
         if (typeof UnminedCustomBastion !== "undefined" &&
             UnminedCustomBastion.isEnabled &&
@@ -103,9 +104,9 @@
 
         // ── Layer checkboxes ─────────────────────────────────────
         const layerToggles = [
-            { id: 'toggle-bastion',             key: 'bastion'    },
-            { id: 'toggle-netherfortress',      key: 'netherfortress'    },
-            { id: 'toggle-portals',             key: 'portals'     },
+            { id: 'toggle-bastion',         key: 'bastion'          },
+            { id: 'toggle-netherfortress',  key: 'netherfortress'   },
+            { id: 'toggle-portals',         key: 'portals'          },
         ];
 
         layerToggles.forEach(({ id, key }) => {

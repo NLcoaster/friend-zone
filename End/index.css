@@ -16,7 +16,7 @@ html, body {
 /* ── Zoom buttons ───────────────────────────────────────── */
 .ol-zoom {
     position: absolute;
-    top: 20px;
+    top: 35px;
     left: 8px;
 }
 
@@ -31,7 +31,7 @@ html, body {
     align-items: flex-start;
 }
 
-.dim-nav a
+.dim-nav a,
 .dim-nav-dropdown > a {
     background-color: rgba(0, 0, 0, 0.45);
     color: white;
@@ -55,7 +55,7 @@ html, body {
     transform: translateY(-1px);
 }
 
-.dim-nav a.active
+.dim-nav a.active,
 .dim-nav-dropdown > a.active {
     border: 1px solid rgba(255,255,255,0.35);
     background-color: rgba(0, 0, 0, 0.65);

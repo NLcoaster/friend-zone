@@ -10,12 +10,8 @@ UnminedCustomPortals = {
         });
 
         const ruined_portalCoords = [
-            // broken portal 1
+            // Ruined portal 1
             [126, -429],
-            // broken portal 2
-            [-1722, -444],
-            // broken portal 3
-            [-1063, -940],
         ];
 
         return [
