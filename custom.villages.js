@@ -1,7 +1,8 @@
 UnminedCustomVillages = {
     isEnabled: true,
 
-    villages: (() => {
+// geeft een object terug met een aparte markers-array per subtype
+    getByType: () => {
         const toMarker = (image, scale) => ([x, z]) => ({
             x, z,
             image,
@@ -305,11 +306,11 @@ UnminedCustomVillages = {
             [-296, -2296],
         ];
 
-        return [
-            ...iglooCoords.map(toMarker('playerimages/igloo.png', 0.3)),
-            ...igloo_with_basementCoords.map(toMarker('playerimages/igloo with basement.png', 0.3)),
-            ...villagerfaceCoords.map(toMarker('playerimages/VillagerFace.png', 0.3)),
-            ...zombievillagerfaceCoords.map(toMarker('playerimages/ZombieVillagerFace.png', 0.3)),
-        ];
-    })()
+        return {
+            igloo:        iglooCoords.map(toMarker('playerimages/igloo.png', 0.3)),
+            iglooBasement: igloo_with_basementCoords.map(toMarker('playerimages/igloo with basement.png', 0.3)),
+            village:      villagerfaceCoords.map(toMarker('playerimages/VillagerFace.png', 0.3)),
+            zombieVillage: zombievillagerfaceCoords.map(toMarker('playerimages/ZombieVillagerFace.png', 0.3)),
+        };
+    }
 };

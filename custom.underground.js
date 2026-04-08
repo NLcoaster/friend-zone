@@ -1,7 +1,7 @@
 UnminedCustomUnderground = {
     isEnabled: true,
 
-    underground: (() => {
+    getByType: () => {
         const toMarker = (image, scale) => ([x, z]) => ({
             x, z,
             image,
@@ -5480,12 +5480,12 @@ UnminedCustomUnderground = {
             [5556, 1236],
         ];
 
-        return [
-            ...ancient_cityCoords.map(toMarker('playerimages/Ancient_City.png', 0.3)),
-            ...abandoned_mineshaftCoords.map(toMarker('playerimages/Abandoned_Mineshaft.png', 0.3)),
-            ...strongholdCoords.map(toMarker('playerimages/Stronghold.png', 0.3)),
-            ...trail_ruinCoords.map(toMarker('playerimages/Trail_Ruin.png', 0.3)),
-            ...trial_chamberCoords.map(toMarker('playerimages/Trial_Chamber.png', 0.3)),
-        ];
-    })()
+        return {
+            ancient_city:       ancient_cityCoords.map(toMarker('playerimages/Ancient_City.png', 0.3)),
+            abandoned_mineshaft: abandoned_mineshaftCoords.map(toMarker('playerimages/Abandoned_Mineshaft.png', 0.3)),
+            stronghold:         strongholdCoords.map(toMarker('playerimages/Stronghold.png', 0.3)),
+            trail_ruin:         trail_ruinCoords.map(toMarker('playerimages/Trail_Ruin.png', 0.3)),
+            trial_chamber:      trial_chamberCoords.map(toMarker('playerimages/Trial_Chamber.png', 0.3)),
+        };
+    }
 };

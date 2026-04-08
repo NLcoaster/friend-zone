@@ -59,12 +59,59 @@
             <a href="index.html" class="active" id="btn-overworld"> Overworld ▾</a>
             <div class="dim-nav-menu" id="layer-menu">
                 <div class="dim-nav-menu-title">Layers</div>
-                <label><input type="checkbox" id="toggle-villages"    checked>  Villages</label>
-                <label><input type="checkbox" id="toggle-pillager"    checked>  Pillager</label>
-                <label><input type="checkbox" id="toggle-shipwrecks"  checked>  Shipwrecks</label>
-                <label><input type="checkbox" id="toggle-temples"     checked>  Temples</label>
-                <label><input type="checkbox" id="toggle-portals"     checked>  Portals</label>
-                <label><input type="checkbox" id="toggle-underground" checked>  Underground</label>
+                    <div class="sub-group">
+                        <label class="sub-header">
+                            <input type="checkbox" id="toggle-villages-all" checked> <strong>Villages</strong>
+                        </label>
+                        <div class="sub-items">
+                            <label><input type="checkbox" id="toggle-igloo"           checked>  Igloo</label>
+                            <label><input type="checkbox" id="toggle-igloo-basement"  checked>  Igloo with basement</label>
+                            <label><input type="checkbox" id="toggle-village"         checked>  Village</label>
+                            <label><input type="checkbox" id="toggle-zombie-village"  checked>  Zombie Village</label>
+                        </div>
+                    </div>
+                <div class="sub-group">
+                    <label class="sub-header"><input type="checkbox" id="toggle-pillager-all" checked> <strong>Pillager</strong></label>
+                    <div class="sub-items">
+                        <label><input type="checkbox" id="toggle-pillager-outpost" checked>  Pillager Outpost</label>
+                        <label><input type="checkbox" id="toggle-witch-hut"        checked>  Witch Hut</label>
+                    </div>
+                </div>
+                <div class="sub-group">
+                    <label class="sub-header"><input type="checkbox" id="toggle-shipwrecks-all" checked> <strong>Shipwrecks</strong></label>
+                    <div class="sub-items">
+                        <label><input type="checkbox" id="toggle-shipwreck" checked>  Shipwreck</label>
+                        <label><input type="checkbox" id="toggle-treasure"  checked>  Treasure Chest</label>
+                    </div>
+                </div>
+                <div class="sub-group">
+                    <label class="sub-header"><input type="checkbox" id="toggle-temples-all" checked> <strong>Temples</strong></label>
+                    <div class="sub-items">
+                        <label><input type="checkbox" id="toggle-desert-pyramid"  checked>  Desert Pyramid</label>
+                        <label><input type="checkbox" id="toggle-desert-well"     checked>  Desert Well</label>
+                        <label><input type="checkbox" id="toggle-jungle-pyramid"  checked>  Jungle Pyramid</label>
+                        <label><input type="checkbox" id="toggle-ocean-ruin"      checked>  Ocean Ruin</label>
+                        <label><input type="checkbox" id="toggle-ocean-monument"  checked>  Ocean Monument</label>
+                    </div>
+                </div>
+                <div class="sub-group">
+                    <label class="sub-header"><input type="checkbox" id="toggle-portals-all" checked> <strong>Portals</strong></label>
+                    <div class="sub-items">
+                        <label><input type="checkbox" id="toggle-nether-portal"  checked>  Nether Portal</label>
+                        <label><input type="checkbox" id="toggle-ruined-portal"  checked>  Ruined Portal</label>
+                        <label><input type="checkbox" id="toggle-end-portal"     checked>  End Portal</label>
+                    </div>
+                </div>
+                <div class="sub-group">
+                    <label class="sub-header"><input type="checkbox" id="toggle-underground-all" checked> <strong>Underground</strong></label>
+                    <div class="sub-items">
+                        <label><input type="checkbox" id="toggle-ancient-city"         checked>  Ancient City</label>
+                        <label><input type="checkbox" id="toggle-mineshaft"            checked>  Mineshaft</label>
+                        <label><input type="checkbox" id="toggle-stronghold"           checked>  Stronghold</label>
+                        <label><input type="checkbox" id="toggle-trail-ruin"           checked>  Trail Ruin</label>
+                        <label><input type="checkbox" id="toggle-trial-chamber"        checked>  Trial Chamber</label>
+                    </div>
+                </div>
                 <label><input type="checkbox" id="toggle-playerbuild" checked>  Playerbuild</label>
                 <label><input type="checkbox" id="toggle-landscapes"  checked>  Landscapes</label>
             </div>
@@ -85,40 +132,63 @@
             UnminedMapProperties.spawnpoint = UnminedCustomSpawnpoint.spawnpoint;
         }
 
-        if (typeof UnminedCustomVillages !== "undefined" &&
-            UnminedCustomVillages.isEnabled &&
-            UnminedCustomVillages.villages) {
-            UnminedMapProperties.villages = UnminedCustomVillages.villages;
+        if (typeof UnminedCustomVillages !== "undefined" && UnminedCustomVillages.isEnabled) {
+            try {
+                const vt = UnminedCustomVillages.getByType();
+                UnminedMapProperties.villages_igloo         = vt.igloo;
+                UnminedMapProperties.villages_iglooBasement = vt.iglooBasement;
+                UnminedMapProperties.villages_village       = vt.village;
+                UnminedMapProperties.villages_zombie        = vt.zombieVillage;
+            } catch (e) {
+                console.warn('custom.villages.js: getByType() niet gevonden. Heb je het bestand bijgewerkt?', e);
+            }
         }
 
-        if (typeof UnminedCustomPillager !== "undefined" &&
-            UnminedCustomPillager.isEnabled &&
-            UnminedCustomPillager.pillager) {
-            UnminedMapProperties.pillager = UnminedCustomPillager.pillager;
+        if (typeof UnminedCustomPillager !== "undefined" && UnminedCustomPillager.isEnabled) {
+            try {
+                const pt = UnminedCustomPillager.getByType();
+                UnminedMapProperties.pillager_outpost = pt.pillager_outpost;
+                UnminedMapProperties.witch_hut        = pt.witch_hut;
+            } catch (e) { console.warn('custom.pillager.js getByType() fout:', e); }
         }
 
-        if (typeof UnminedCustomShipwrecks !== "undefined" &&
-            UnminedCustomShipwrecks.isEnabled &&
-            UnminedCustomShipwrecks.shipwrecks) {
-            UnminedMapProperties.shipwrecks = UnminedCustomShipwrecks.shipwrecks;
+        if (typeof UnminedCustomShipwrecks !== "undefined" && UnminedCustomShipwrecks.isEnabled) {
+            try {
+                const st = UnminedCustomShipwrecks.getByType();
+                UnminedMapProperties.shipwrecks_shipwreck = st.shipwreck;
+                UnminedMapProperties.shipwrecks_treasure  = st.treasure;
+            } catch (e) { console.warn('custom.shipwrecks.js getByType() fout:', e); }
         }
 
-        if (typeof UnminedCustomTemples !== "undefined" &&
-            UnminedCustomTemples.isEnabled &&
-            UnminedCustomTemples.temples) {
-            UnminedMapProperties.temples = UnminedCustomTemples.temples;
+        if (typeof UnminedCustomTemples !== "undefined" && UnminedCustomTemples.isEnabled) {
+            try {
+                const tt = UnminedCustomTemples.getByType();
+                UnminedMapProperties.temples_desert_pyramid = tt.desert_pyramid;
+                UnminedMapProperties.temples_desert_well    = tt.desert_well;
+                UnminedMapProperties.temples_jungle_pyramid = tt.jungle_pyramid;
+                UnminedMapProperties.temples_ocean_ruin     = tt.ocean_ruin;
+                UnminedMapProperties.temples_ocean_monument = tt.ocean_monument;
+            } catch (e) { console.warn('custom.temples.js getByType() fout:', e); }
         }
 
-        if (typeof UnminedCustomPortals !== "undefined" &&
-            UnminedCustomPortals.isEnabled &&
-            UnminedCustomPortals.portals) {
-            UnminedMapProperties.portals = UnminedCustomPortals.portals;
+        if (typeof UnminedCustomPortals !== "undefined" && UnminedCustomPortals.isEnabled) {
+            try {
+                const pot = UnminedCustomPortals.getByType();
+                UnminedMapProperties.portals_nether_portal = pot.nether_portal;
+                UnminedMapProperties.portals_ruined_portal = pot.ruined_portal;
+                UnminedMapProperties.portals_end_portal    = pot.end_portal;
+            } catch (e) { console.warn('custom.portals.js getByType() fout:', e); }
         }
 
-        if (typeof UnminedCustomUnderground !== "undefined" &&
-            UnminedCustomUnderground.isEnabled &&
-            UnminedCustomUnderground.underground) {
-            UnminedMapProperties.underground = UnminedCustomUnderground.underground;
+        if (typeof UnminedCustomUnderground !== "undefined" && UnminedCustomUnderground.isEnabled) {
+            try {
+                const ut = UnminedCustomUnderground.getByType();
+                UnminedMapProperties.underground_ancient_city        = ut.ancient_city;
+                UnminedMapProperties.underground_abandoned_mineshaft = ut.abandoned_mineshaft;
+                UnminedMapProperties.underground_stronghold          = ut.stronghold;
+                UnminedMapProperties.underground_trail_ruin          = ut.trail_ruin;
+                UnminedMapProperties.underground_trial_chamber       = ut.trial_chamber;
+            } catch (e) { console.warn('custom.underground.js getByType() fout:', e); }
         }
 
         if (typeof UnminedCustomPlayerbuild !== "undefined" &&
@@ -158,7 +228,6 @@
 
         // ── Layer checkboxes ─────────────────────────────────────
         const layerToggles = [
-            { id: 'toggle-villages',    key: 'villages'    },
             { id: 'toggle-pillager',    key: 'pillager'    },
             { id: 'toggle-shipwrecks',  key: 'shipwrecks'  },
             { id: 'toggle-temples',     key: 'temples'     },
@@ -172,12 +241,33 @@
             const checkbox = document.getElementById(id);
             if (!checkbox) return;
 
-            // Sync initial checkbox state with unmined options
             checkbox.checked = unmined._Unmined__options?.['show' + key] ?? true;
 
             checkbox.addEventListener('change', () => {
                 unmined.toggleCustomLayer(key);
                 checkbox.checked = unmined._Unmined__options?.['show' + key] ?? checkbox.checked;
+            });
+        });
+
+        // ── Villages sub-checkboxes ───────────────────────────────
+        const villageSubToggles = [
+            { id: 'toggle-igloo',          key: 'villages_igloo'         },
+            { id: 'toggle-igloo-basement', key: 'villages_iglooBasement' },
+            { id: 'toggle-village',        key: 'villages_village'       },
+            { id: 'toggle-zombie-village', key: 'villages_zombie'        },
+        ];
+
+        villageSubToggles.forEach(({ id, key }) => {
+            document.getElementById(id).addEventListener('change', (e) => {
+                unmined.customLayers[key]?.setVisible(e.target.checked);
+            });
+        });
+
+        // Hoofd-checkbox: alle village subtypes tegelijk aan/uit
+        document.getElementById('toggle-villages-all').addEventListener('change', (e) => {
+            villageSubToggles.forEach(({ id, key }) => {
+                unmined.customLayers[key]?.setVisible(e.target.checked);
+                document.getElementById(id).checked = e.target.checked;
             });
         });
 
