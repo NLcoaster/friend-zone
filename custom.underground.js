@@ -4445,16 +4445,18 @@ UnminedCustomUnderground = {
             // Stronghold 2
             [4580, 4420],
             // Stronghold 3
-            [-300, 2292],
+            [2388, -860]
             // Stronghold 4
-            [-1324, -2156],
+            [-300, 2292],
             // Stronghold 5
-            [-1900, 340],
+            [-1324, -2156],
             // Stronghold 6
-            [-4332, -4028],
+            [-1900, 340],
             // Stronghold 7
-            [-4588, -1276],
+            [-4332, -4028],
             // Stronghold 8
+            [-4588, -1276],
+            // Stronghold 9
             [-4668, 1668],
         ];
 
@@ -4532,952 +4534,950 @@ UnminedCustomUnderground = {
         ];
 
         const trial_chamberCoords = [
-            // Trail Chamber 1
-            [5556, 1236],
-            // Trail Chamber 2
-            [5556, 1236],
-            // Trail Chamber 3
-            [5556, 1236],
-            // Trail Chamber 4
-            [5556, 1236],
-            // Trail Chamber 5
-            [5556, 1236],
-            // Trail Chamber 6
-            [5556, 1236],
-            // Trail Chamber 7
-            [5556, 1236],
-            // Trail Chamber 8
-            [5556, 1236],
-            // Trail Chamber 9
-            [5556, 1236],
-            // Trail Chamber 10
-            [5556, 1236],
-            // Trail Chamber 11
-            [5556, 1236],
-            // Trail Chamber 12
-            [5556, 1236],
-            // Trail Chamber 13
-            [5556, 1236],
-            // Trail Chamber 14
-            [5556, 1236],
-            // Trail Chamber 15
-            [5556, 1236],
-            // Trail Chamber 16
-            [5556, 1236],
-            // Trail Chamber 17
-            [5556, 1236],
-            // Trail Chamber 18
-            [5556, 1236],
-            // Trail Chamber 19
-            [5556, 1236],
-            // Trail Chamber 20
-            [5556, 1236],
-            // Trail Chamber 21
-            [5556, 1236],
-            // Trail Chamber 22
-            [5556, 1236],
-            // Trail Chamber 23
-            [5556, 1236],
-            // Trail Chamber 24
-            [5556, 1236],
-            // Trail Chamber 25
-            [5556, 1236],
-            // Trail Chamber 26
-            [5556, 1236],
-            // Trail Chamber 27
-            [5556, 1236],
-            // Trail Chamber 28
-            [5556, 1236],
-            // Trail Chamber 29
-            [5556, 1236],
-            // Trail Chamber 30
-            [5556, 1236],
-            // Trail Chamber 31
-            [5556, 1236],
-            // Trail Chamber 32
-            [5556, 1236],
-            // Trail Chamber 33
-            [5556, 1236],
-            // Trail Chamber 34
-            [5556, 1236],
-            // Trail Chamber 35
-            [5556, 1236],
-            // Trail Chamber 36
-            [5556, 1236],
-            // Trail Chamber 37
-            [5556, 1236],
-            // Trail Chamber 38
-            [5556, 1236],
-            // Trail Chamber 39
-            [5556, 1236],
-            // Trail Chamber 40
-            [5556, 1236],
-            // Trail Chamber 41
-            [5556, 1236],
-            // Trail Chamber 42
-            [5556, 1236],
-            // Trail Chamber 43
-            [5556, 1236],
-            // Trail Chamber 44
-            [5556, 1236],
-            // Trail Chamber 45
-            [5556, 1236],
-            // Trail Chamber 46
-            [5556, 1236],
-            // Trail Chamber 47
-            [5556, 1236],
-            // Trail Chamber 48
-            [5556, 1236],
-            // Trail Chamber 49
-            [5556, 1236],
-            // Trail Chamber 50
-            [5556, 1236],
-            // Trail Chamber 51
-            [5556, 1236],
-            // Trail Chamber 52
-            [5556, 1236],
-            // Trail Chamber 53
-            [5556, 1236],
-            // Trail Chamber 54
-            [5556, 1236],
-            // Trail Chamber 55
-            [5556, 1236],
-            // Trail Chamber 56
-            [5556, 1236],
-            // Trail Chamber 57
-            [5556, 1236],
-            // Trail Chamber 58
-            [5556, 1236],
-            // Trail Chamber 59
-            [5556, 1236],
-            // Trail Chamber 60
-            [5556, 1236],
-            // Trail Chamber 61
-            [5556, 1236],
-            // Trail Chamber 62
-            [5556, 1236],
-            // Trail Chamber 63
-            [5556, 1236],
-            // Trail Chamber 64
-            [5556, 1236],
-            // Trail Chamber 65
-            [5556, 1236],
-            // Trail Chamber 66
-            [5556, 1236],
-            // Trail Chamber 67
-            [5556, 1236],
-            // Trail Chamber 68
-            [5556, 1236],
-            // Trail Chamber 69
-            [5556, 1236],
-            // Trail Chamber 70
-            [5556, 1236],
-            // Trail Chamber 71
-            [5556, 1236],
-            // Trail Chamber 72
-            [5556, 1236],
-            // Trail Chamber 73
-            [5556, 1236],
-            // Trail Chamber 74
-            [5556, 1236],
-            // Trail Chamber 75
-            [5556, 1236],
-            // Trail Chamber 76
-            [5556, 1236],
-            // Trail Chamber 77
-            [5556, 1236],
-            // Trail Chamber 78
-            [5556, 1236],
-            // Trail Chamber 79
-            [5556, 1236],
-            // Trail Chamber 80
-            [5556, 1236],
-            // Trail Chamber 81
-            [5556, 1236],
-            // Trail Chamber 82
-            [5556, 1236],
-            // Trail Chamber 83
-            [5556, 1236],
-            // Trail Chamber 84
-            [5556, 1236],
-            // Trail Chamber 85
-            [5556, 1236],
-            // Trail Chamber 86
-            [5556, 1236],
-            // Trail Chamber 87
-            [5556, 1236],
-            // Trail Chamber 88
-            [5556, 1236],
-            // Trail Chamber 89
-            [5556, 1236],
-            // Trail Chamber 90
-            [5556, 1236],
-            // Trail Chamber 91
-            [5556, 1236],
-            // Trail Chamber 92
-            [5556, 1236],
-            // Trail Chamber 93
-            [5556, 1236],
-            // Trail Chamber 94
-            [5556, 1236],
-            // Trail Chamber 95
-            [5556, 1236],
-            // Trail Chamber 96
-            [5556, 1236],
-            // Trail Chamber 97
-            [5556, 1236],
-            // Trail Chamber 98
-            [5556, 1236],
-            // Trail Chamber 99
-            [5556, 1236],
-            // Trail Chamber 100
-            [5556, 1236],
-            // Trail Chamber 101
-            [5556, 1236],
-            // Trail Chamber 102
-            [5556, 1236],
-            // Trail Chamber 103
-            [5556, 1236],
-            // Trail Chamber 104
-            [5556, 1236],
-            // Trail Chamber 105
-            [5556, 1236],
-            // Trail Chamber 106
-            [5556, 1236],
-            // Trail Chamber 107
-            [5556, 1236],
-            // Trail Chamber 108
-            [5556, 1236],
-            // Trail Chamber 109
-            [5556, 1236],
-            // Trail Chamber 110
-            [5556, 1236],
-            // Trail Chamber 111
-            [5556, 1236],
-            // Trail Chamber 112
-            [5556, 1236],
-            // Trail Chamber 113
-            [5556, 1236],
-            // Trail Chamber 114
-            [5556, 1236],
-            // Trail Chamber 115
-            [5556, 1236],
-            // Trail Chamber 116
-            [5556, 1236],
-            // Trail Chamber 117
-            [5556, 1236],
-            // Trail Chamber 118
-            [5556, 1236],
-            // Trail Chamber 119
-            [5556, 1236],
-            // Trail Chamber 120
-            [5556, 1236],
-            // Trail Chamber 121
-            [5556, 1236],
-            // Trail Chamber 122
-            [5556, 1236],
-            // Trail Chamber 123
-            [5556, 1236],
-            // Trail Chamber 124
-            [5556, 1236],
-            // Trail Chamber 125
-            [5556, 1236],
-            // Trail Chamber 126
-            [5556, 1236],
-            // Trail Chamber 127
-            [5556, 1236],
-            // Trail Chamber 128
-            [5556, 1236],
-            // Trail Chamber 129
-            [5556, 1236],
-            // Trail Chamber 130
-            [5556, 1236],
-            // Trail Chamber 131
-            [5556, 1236],
-            // Trail Chamber 132
-            [5556, 1236],
-            // Trail Chamber 133
-            [5556, 1236],
-            // Trail Chamber 134
-            [5556, 1236],
-            // Trail Chamber 135
-            [5556, 1236],
-            // Trail Chamber 136
-            [5556, 1236],
-            // Trail Chamber 137
-            [5556, 1236],
-            // Trail Chamber 138
-            [5556, 1236],
-            // Trail Chamber 139
-            [5556, 1236],
-            // Trail Chamber 140
-            [5556, 1236],
-            // Trail Chamber 141
-            [5556, 1236],
-            // Trail Chamber 142
-            [5556, 1236],
-            // Trail Chamber 143
-            [5556, 1236],
-            // Trail Chamber 144
-            [5556, 1236],
-            // Trail Chamber 145
-            [5556, 1236],
-            // Trail Chamber 146
-            [5556, 1236],
-            // Trail Chamber 147
-            [5556, 1236],
-            // Trail Chamber 148
-            [5556, 1236],
-            // Trail Chamber 149
-            [5556, 1236],
-            // Trail Chamber 150
-            [5556, 1236],
-            // Trail Chamber 151
-            [5556, 1236],
-            // Trail Chamber 152
-            [5556, 1236],
-            // Trail Chamber 153
-            [5556, 1236],
-            // Trail Chamber 154
-            [5556, 1236],
-            // Trail Chamber 155
-            [5556, 1236],
-            // Trail Chamber 156
-            [5556, 1236],
-            // Trail Chamber 157
-            [5556, 1236],
-            // Trail Chamber 158
-            [5556, 1236],
-            // Trail Chamber 159
-            [5556, 1236],
-            // Trail Chamber 160
-            [5556, 1236],
-            // Trail Chamber 161
-            [5556, 1236],
-            // Trail Chamber 162
-            [5556, 1236],
-            // Trail Chamber 163
-            [5556, 1236],
-            // Trail Chamber 164
-            [5556, 1236],
-            // Trail Chamber 165
-            [5556, 1236],
-            // Trail Chamber 166
-            [5556, 1236],
-            // Trail Chamber 167
-            [5556, 1236],
-            // Trail Chamber 168
-            [5556, 1236],
-            // Trail Chamber 169
-            [5556, 1236],
-            // Trail Chamber 170
-            [5556, 1236],
-            // Trail Chamber 171
-            [5556, 1236],
-            // Trail Chamber 172
-            [5556, 1236],
-            // Trail Chamber 173
-            [5556, 1236],
-            // Trail Chamber 174
-            [5556, 1236],
-            // Trail Chamber 175
-            [5556, 1236],
-            // Trail Chamber 176
-            [5556, 1236],
-            // Trail Chamber 177
-            [5556, 1236],
-            // Trail Chamber 178
-            [5556, 1236],
-            // Trail Chamber 179
-            [5556, 1236],
-            // Trail Chamber 180
-            [5556, 1236],
-            // Trail Chamber 181
-            [5556, 1236],
-            // Trail Chamber 182
-            [5556, 1236],
-            // Trail Chamber 183
-            [5556, 1236],
-            // Trail Chamber 184
-            [5556, 1236],
-            // Trail Chamber 185
-            [5556, 1236],
-            // Trail Chamber 186
-            [5556, 1236],
-            // Trail Chamber 187
-            [5556, 1236],
-            // Trail Chamber 188
-            [5556, 1236],
-            // Trail Chamber 189
-            [5556, 1236],
-            // Trail Chamber 190
-            [5556, 1236],
-            // Trail Chamber 191
-            [5556, 1236],
-            // Trail Chamber 192
-            [5556, 1236],
-            // Trail Chamber 193
-            [5556, 1236],
-            // Trail Chamber 194
-            [5556, 1236],
-            // Trail Chamber 195
-            [5556, 1236],
-            // Trail Chamber 196
-            [5556, 1236],
-            // Trail Chamber 197
-            [5556, 1236],
-            // Trail Chamber 198
-            [5556, 1236],
-            // Trail Chamber 199
-            [5556, 1236],
-            // Trail Chamber 200
-            [5556, 1236],
-            // Trail Chamber 201
-            [5556, 1236],
-            // Trail Chamber 202
-            [5556, 1236],
-            // Trail Chamber 203
-            [5556, 1236],
-            // Trail Chamber 204
-            [5556, 1236],
-            // Trail Chamber 205
-            [5556, 1236],
-            // Trail Chamber 206
-            [5556, 1236],
-            // Trail Chamber 207
-            [5556, 1236],
-            // Trail Chamber 208
-            [5556, 1236],
-            // Trail Chamber 209
-            [5556, 1236],
-            // Trail Chamber 210
-            [5556, 1236],
-            // Trail Chamber 211
-            [5556, 1236],
-            // Trail Chamber 212
-            [5556, 1236],
-            // Trail Chamber 213
-            [5556, 1236],
-            // Trail Chamber 214
-            [5556, 1236],
-            // Trail Chamber 215
-            [5556, 1236],
-            // Trail Chamber 216
-            [5556, 1236],
-            // Trail Chamber 217
-            [5556, 1236],
-            // Trail Chamber 218
-            [5556, 1236],
-            // Trail Chamber 219
-            [5556, 1236],
-            // Trail Chamber 220
-            [5556, 1236],
-            // Trail Chamber 221
-            [5556, 1236],
-            // Trail Chamber 222
-            [5556, 1236],
-            // Trail Chamber 223
-            [5556, 1236],
-            // Trail Chamber 224
-            [5556, 1236],
-            // Trail Chamber 225
-            [5556, 1236],
-            // Trail Chamber 226
-            [5556, 1236],
-            // Trail Chamber 227
-            [5556, 1236],
-            // Trail Chamber 228
-            [5556, 1236],
-            // Trail Chamber 229
-            [5556, 1236],
-            // Trail Chamber 230
-            [5556, 1236],
-            // Trail Chamber 231
-            [5556, 1236],
-            // Trail Chamber 232
-            [5556, 1236],
-            // Trail Chamber 233
-            [5556, 1236],
-            // Trail Chamber 234
-            [5556, 1236],
-            // Trail Chamber 235
-            [5556, 1236],
-            // Trail Chamber 236
-            [5556, 1236],
-            // Trail Chamber 237
-            [5556, 1236],
-            // Trail Chamber 238
-            [5556, 1236],
-            // Trail Chamber 239
-            [5556, 1236],
-            // Trail Chamber 240
-            [5556, 1236],
-            // Trail Chamber 241
-            [5556, 1236],
-            // Trail Chamber 242
-            [5556, 1236],
-            // Trail Chamber 243
-            [5556, 1236],
-            // Trail Chamber 244
-            [5556, 1236],
-            // Trail Chamber 245
-            [5556, 1236],
-            // Trail Chamber 246
-            [5556, 1236],
-            // Trail Chamber 247
-            [5556, 1236],
-            // Trail Chamber 248
-            [5556, 1236],
-            // Trail Chamber 249
-            [5556, 1236],
-            // Trail Chamber 250
-            [5556, 1236],
-            // Trail Chamber 251
-            [5556, 1236],
-            // Trail Chamber 252
-            [5556, 1236],
-            // Trail Chamber 253
-            [5556, 1236],
-            // Trail Chamber 254
-            [5556, 1236],
-            // Trail Chamber 255
-            [5556, 1236],
-            // Trail Chamber 256
-            [5556, 1236],
-            // Trail Chamber 257
-            [5556, 1236],
-            // Trail Chamber 258
-            [5556, 1236],
-            // Trail Chamber 259
-            [5556, 1236],
-            // Trail Chamber 260
-            [5556, 1236],
-            // Trail Chamber 261
-            [5556, 1236],
-            // Trail Chamber 262
-            [5556, 1236],
-            // Trail Chamber 263
-            [5556, 1236],
-            // Trail Chamber 264
-            [5556, 1236],
-            // Trail Chamber 265
-            [5556, 1236],
-            // Trail Chamber 266
-            [5556, 1236],
-            // Trail Chamber 267
-            [5556, 1236],
-            // Trail Chamber 268
-            [5556, 1236],
-            // Trail Chamber 269
-            [5556, 1236],
-            // Trail Chamber 270
-            [5556, 1236],
-            // Trail Chamber 271
-            [5556, 1236],
-            // Trail Chamber 272
-            [5556, 1236],
-            // Trail Chamber 273
-            [5556, 1236],
-            // Trail Chamber 274
-            [5556, 1236],
-            // Trail Chamber 275
-            [5556, 1236],
-            // Trail Chamber 276
-            [5556, 1236],
-            // Trail Chamber 277
-            [5556, 1236],
-            // Trail Chamber 278
-            [5556, 1236],
-            // Trail Chamber 279
-            [5556, 1236],
-            // Trail Chamber 280
-            [5556, 1236],
-            // Trail Chamber 281
-            [5556, 1236],
-            // Trail Chamber 282
-            [5556, 1236],
-            // Trail Chamber 283
-            [5556, 1236],
-            // Trail Chamber 284
-            [5556, 1236],
-            // Trail Chamber 285
-            [5556, 1236],
-            // Trail Chamber 286
-            [5556, 1236],
-            // Trail Chamber 287
-            [5556, 1236],
-            // Trail Chamber 288
-            [5556, 1236],
-            // Trail Chamber 289
-            [5556, 1236],
-            // Trail Chamber 290
-            [5556, 1236],
-            // Trail Chamber 291
-            [5556, 1236],
-            // Trail Chamber 292
-            [5556, 1236],
-            // Trail Chamber 293
-            [5556, 1236],
-            // Trail Chamber 294
-            [5556, 1236],
-            // Trail Chamber 295
-            [5556, 1236],
-            // Trail Chamber 296
-            [5556, 1236],
-            // Trail Chamber 297
-            [5556, 1236],
-            // Trail Chamber 298
-            [5556, 1236],
-            // Trail Chamber 299
-            [5556, 1236],
-            // Trail Chamber 300
-            [5556, 1236],
-            // Trail Chamber 301
-            [5556, 1236],
-            // Trail Chamber 302
-            [5556, 1236],
-            // Trail Chamber 303
-            [5556, 1236],
-            // Trail Chamber 304
-            [5556, 1236],
-            // Trail Chamber 305
-            [5556, 1236],
-            // Trail Chamber 306
-            [5556, 1236],
-            // Trail Chamber 307
-            [5556, 1236],
-            // Trail Chamber 308
-            [5556, 1236],
-            // Trail Chamber 309
-            [5556, 1236],
-            // Trail Chamber 310
-            [5556, 1236],
-            // Trail Chamber 311
-            [5556, 1236],
-            // Trail Chamber 312
-            [5556, 1236],
-            // Trail Chamber 313
-            [5556, 1236],
-            // Trail Chamber 314
-            [5556, 1236],
-            // Trail Chamber 315
-            [5556, 1236],
-            // Trail Chamber 316
-            [5556, 1236],
-            // Trail Chamber 317
-            [5556, 1236],
-            // Trail Chamber 318
-            [5556, 1236],
-            // Trail Chamber 319
-            [5556, 1236],
-            // Trail Chamber 320
-            [5556, 1236],
-            // Trail Chamber 321
-            [5556, 1236],
-            // Trail Chamber 322
-            [5556, 1236],
-            // Trail Chamber 323
-            [5556, 1236],
-            // Trail Chamber 324
-            [5556, 1236],
-            // Trail Chamber 325
-            [5556, 1236],
-            // Trail Chamber 326
-            [5556, 1236],
-            // Trail Chamber 327
-            [5556, 1236],
-            // Trail Chamber 328
-            [5556, 1236],
-            // Trail Chamber 329
-            [5556, 1236],
-            // Trail Chamber 330
-            [5556, 1236],
-            // Trail Chamber 331
-            [5556, 1236],
-            // Trail Chamber 332
-            [5556, 1236],
-            // Trail Chamber 333
-            [5556, 1236],
-            // Trail Chamber 334
-            [5556, 1236],
-            // Trail Chamber 335
-            [5556, 1236],
-            // Trail Chamber 336
-            [5556, 1236],
-            // Trail Chamber 337
-            [5556, 1236],
-            // Trail Chamber 338
-            [5556, 1236],
-            // Trail Chamber 339
-            [5556, 1236],
-            // Trail Chamber 340
-            [5556, 1236],
-            // Trail Chamber 341
-            [5556, 1236],
-            // Trail Chamber 342
-            [5556, 1236],
-            // Trail Chamber 343
-            [5556, 1236],
-            // Trail Chamber 344
-            [5556, 1236],
-            // Trail Chamber 345
-            [5556, 1236],
-            // Trail Chamber 346
-            [5556, 1236],
-            // Trail Chamber 347
-            [5556, 1236],
-            // Trail Chamber 348
-            [5556, 1236],
-            // Trail Chamber 349
-            [5556, 1236],
-            // Trail Chamber 350
-            [5556, 1236],
-            // Trail Chamber 351
-            [5556, 1236],
-            // Trail Chamber 352
-            [5556, 1236],
-            // Trail Chamber 353
-            [5556, 1236],
-            // Trail Chamber 354
-            [5556, 1236],
-            // Trail Chamber 355
-            [5556, 1236],
-            // Trail Chamber 356
-            [5556, 1236],
-            // Trail Chamber 357
-            [5556, 1236],
-            // Trail Chamber 358
-            [5556, 1236],
-            // Trail Chamber 359
-            [5556, 1236],
-            // Trail Chamber 360
-            [5556, 1236],
-            // Trail Chamber 361
-            [5556, 1236],
-            // Trail Chamber 362
-            [5556, 1236],
-            // Trail Chamber 363
-            [5556, 1236],
-            // Trail Chamber 364
-            [5556, 1236],
-            // Trail Chamber 365
-            [5556, 1236],
-            // Trail Chamber 366
-            [5556, 1236],
-            // Trail Chamber 367
-            [5556, 1236],
-            // Trail Chamber 368
-            [5556, 1236],
-            // Trail Chamber 369
-            [5556, 1236],
-            // Trail Chamber 370
-            [5556, 1236],
-            // Trail Chamber 371
-            [5556, 1236],
-            // Trail Chamber 372
-            [5556, 1236],
-            // Trail Chamber 373
-            [5556, 1236],
-            // Trail Chamber 374
-            [5556, 1236],
-            // Trail Chamber 375
-            [5556, 1236],
-            // Trail Chamber 376
-            [5556, 1236],
-            // Trail Chamber 377
-            [5556, 1236],
-            // Trail Chamber 378
-            [5556, 1236],
-            // Trail Chamber 379
-            [5556, 1236],
-            // Trail Chamber 380
-            [5556, 1236],
-            // Trail Chamber 381
-            [5556, 1236],
-            // Trail Chamber 382
-            [5556, 1236],
-            // Trail Chamber 383
-            [5556, 1236],
-            // Trail Chamber 384
-            [5556, 1236],
-            // Trail Chamber 385
-            [5556, 1236],
-            // Trail Chamber 386
-            [5556, 1236],
-            // Trail Chamber 387
-            [5556, 1236],
-            // Trail Chamber 388
-            [5556, 1236],
-            // Trail Chamber 389
-            [5556, 1236],
-            // Trail Chamber 390
-            [5556, 1236],
-            // Trail Chamber 391
-            [5556, 1236],
-            // Trail Chamber 392
-            [5556, 1236],
-            // Trail Chamber 393
-            [5556, 1236],
-            // Trail Chamber 394
-            [5556, 1236],
-            // Trail Chamber 395
-            [5556, 1236],
-            // Trail Chamber 396
-            [5556, 1236],
-            // Trail Chamber 397
-            [5556, 1236],
-            // Trail Chamber 398
-            [5556, 1236],
-            // Trail Chamber 399
-            [5556, 1236],
-            // Trail Chamber 400
-            [5556, 1236],
-            // Trail Chamber 401
-            [5556, 1236],
-            // Trail Chamber 402
-            [5556, 1236],
-            // Trail Chamber 403
-            [5556, 1236],
-            // Trail Chamber 404
-            [5556, 1236],
-            // Trail Chamber 405
-            [5556, 1236],
-            // Trail Chamber 406
-            [5556, 1236],
-            // Trail Chamber 407
-            [5556, 1236],
-            // Trail Chamber 408
-            [5556, 1236],
-            // Trail Chamber 409
-            [5556, 1236],
-            // Trail Chamber 410
-            [5556, 1236],
-            // Trail Chamber 411
-            [5556, 1236],
-            // Trail Chamber 412
-            [5556, 1236],
-            // Trail Chamber 413
-            [5556, 1236],
-            // Trail Chamber 414
-            [5556, 1236],
-            // Trail Chamber 415
-            [5556, 1236],
-            // Trail Chamber 416
-            [5556, 1236],
-            // Trail Chamber 417
-            [5556, 1236],
-            // Trail Chamber 418
-            [5556, 1236],
-            // Trail Chamber 419
-            [5556, 1236],
-            // Trail Chamber 420
-            [5556, 1236],
-            // Trail Chamber 421
-            [5556, 1236],
-            // Trail Chamber 422
-            [5556, 1236],
-            // Trail Chamber 423
-            [5556, 1236],
-            // Trail Chamber 424
-            [5556, 1236],
-            // Trail Chamber 425
-            [5556, 1236],
-            // Trail Chamber 426
-            [5556, 1236],
-            // Trail Chamber 427
-            [5556, 1236],
-            // Trail Chamber 428
-            [5556, 1236],
-            // Trail Chamber 429
-            [5556, 1236],
-            // Trail Chamber 430
-            [5556, 1236],
-            // Trail Chamber 431
-            [5556, 1236],
-            // Trail Chamber 432
-            [5556, 1236],
-            // Trail Chamber 433
-            [5556, 1236],
-            // Trail Chamber 434
-            [5556, 1236],
-            // Trail Chamber 435
-            [5556, 1236],
-            // Trail Chamber 436
-            [5556, 1236],
-            // Trail Chamber 437
-            [5556, 1236],
-            // Trail Chamber 438
-            [5556, 1236],
-            // Trail Chamber 439
-            [5556, 1236],
-            // Trail Chamber 440
-            [5556, 1236],
-            // Trail Chamber 441
-            [5556, 1236],
-            // Trail Chamber 442
-            [5556, 1236],
-            // Trail Chamber 443
-            [5556, 1236],
-            // Trail Chamber 444
-            [5556, 1236],
-            // Trail Chamber 445
-            [5556, 1236],
-            // Trail Chamber 446
-            [5556, 1236],
-            // Trail Chamber 447
-            [5556, 1236],
-            // Trail Chamber 448
-            [5556, 1236],
-            // Trail Chamber 449
-            [5556, 1236],
-            // Trail Chamber 450
-            [5556, 1236],
-            // Trail Chamber 451
-            [5556, 1236],
-            // Trail Chamber 452
-            [5556, 1236],
-            // Trail Chamber 453
-            [5556, 1236],
-            // Trail Chamber 454
-            [5556, 1236],
-            // Trail Chamber 455
-            [5556, 1236],
-            // Trail Chamber 456
-            [5556, 1236],
-            // Trail Chamber 457
-            [5556, 1236],
-            // Trail Chamber 458
-            [5556, 1236],
-            // Trail Chamber 459
-            [5556, 1236],
-            // Trail Chamber 460
-            [5556, 1236],
-            // Trail Chamber 461
-            [5556, 1236],
-            // Trail Chamber 462
-            [5556, 1236],
-            // Trail Chamber 463
-            [5556, 1236],
-            // Trail Chamber 464
-            [5556, 1236],
-            // Trail Chamber 465
-            [5556, 1236],
-            // Trail Chamber 466
-            [5556, 1236],
-            // Trail Chamber 467
-            [5556, 1236],
-            // Trail Chamber 468
-            [5556, 1236],
-            // Trail Chamber 469
-            [5556, 1236],
-            // Trail Chamber 470
-            [5556, 1236],
-            // Trail Chamber 471
-            [5556, 1236],
-            // Trail Chamber 472
-            [5556, 1236],
-            // Trail Chamber 473
-            [5556, 1236],
+            // Trial Chamber 1
+            [5975, 807],
+            // Trial Chamber 2
+            [5975, -4791],
+            // Trial Chamber 3
+            [5769, -4135],
+            // Trial Chamber 4
+            [5705, 2455],
+            // Trial Chamber 5
+            [5705, 23],
+            // Trial Chamber 6
+            [5689, -5321],
+            // Trial Chamber 7
+            [5687, -839],
+            // Trial Chamber 8
+            [5687, -3257],
+            // Trial Chamber 9
+            [5671, 4569],
+            // Trial Chamber 10
+            [5657, 2873],
+            // Trial Chamber 11
+            [5657, -1609],
+            // Trial Chamber 12
+            [5655, -5671],
+            // Trial Chamber 13
+            [5623, 5655],
+            // Trial Chamber 14
+            [5593, 4967],
+            // Trial Chamber 15
+            [5593, 3449],
+            // Trial Chamber 16
+            [5593, 1831],
+            // Trial Chamber 17
+            [5593, -1929],
+            // Trial Chamber 18
+            [5559, 3895],
+            // Trial Chamber 19
+            [5545, -343],
+            // Trial Chamber 20
+            [5511, 1241],
+            // Trial Chamber 21
+            [5511, 697],
+            // Trial Chamber 22
+            [5511, -3735],
+            // Trial Chamber 23
+            [5463, -2409],
+            // Trial Chamber 24
+            [5209, -921],
+            // Trial Chamber 25
+            [5209, -3767],
+            // Trial Chamber 26
+            [5175, 1785],
+            // Trial Chamber 27
+            [5161, 1097],
+            // Trial Chamber 28
+            [5145, -2617],
+            // Trial Chamber 29
+            [5129, 2297],
+            // Trial Chamber 30
+            [5079, 3497],
+            // Trial Chamber 31
+            [5079, 201],
+            // Trial Chamber 32
+            [5065, -4137],
+            // Trial Chamber 33
+            [5049, 3897],
+            // Trial Chamber 34
+            [5049, -5287],
+            // Trial Chamber 35
+            [5047, -4713],
+            // Trial Chamber 36
+            [5031, 4487],
+            // Trial Chamber 37
+            [5015, -3161],
+            // Trial Chamber 38
+            [4969, -5833],
+            // Trial Chamber 39
+            [4967, 809],
+            // Trial Chamber 40
+            [4967, -1849],
+            // Trial Chamber 41
+            [4953, 5079],
+            // Trial Chamber 42
+            [4937, 5639],
+            // Trial Chamber 43
+            [4921, -1335],
+            // Trial Chamber 44
+            [4905, -361],
+            // Trial Chamber 45
+            [4697, -5735],
+            // Trial Chamber 46
+            [4665, -4791],
+            // Trial Chamber 47
+            [4663, 2711],
+            // Trial Chamber 48
+            [4617, -2633],
+            // Trial Chamber 49
+            [4617, -3031],
+            // Trial Chamber 50
+            [4599, -1543],
+            // Trial Chamber 51
+            [4599, -4167],
+            // Trial Chamber 52
+            [4567, 3991],
+            // Trial Chamber 53
+            [4553, 2487],
+            // Trial Chamber 54
+            [4535, 1897],
+            // Trial Chamber 55
+            [4521, 5655],
+            // Trial Chamber 56
+            [4505, -441],
+            // Trial Chamber 57
+            [4471, -761],
+            // Trial Chamber 58
+            [4441, 345],
+            // Trial Chamber 59
+            [4409, 4951],
+            // Trial Chamber 60
+            [4409, -5161],
+            // Trial Chamber 61
+            [4407, -3591],
+            // Trial Chamber 62
+            [4393, -2135],
+            // Trial Chamber 63
+            [4391, 3593],
+            // Trial Chamber 64
+            [4359, 4361],
+            // Trial Chamber 65
+            [4359, 583],
+            // Trial Chamber 66
+            [4359, 1351],
+            // Trial Chamber 67
+            [4153, -329],
+            // Trial Chamber 68
+            [4135, 3865],
+            // Trial Chamber 69
+            [4135, -4873],
+            // Trial Chamber 70
+            [4105, -1383],
+            // Trial Chamber 71
+            [4103, 2297],
+            // Trial Chamber 72
+            [4073, 3577],
+            // Trial Chamber 73
+            [4055, -5977],
+            // Trial Chamber 74
+            [3991, 4377],
+            // Trial Chamber 75
+            [3975, 1863],
+            // Trial Chamber 76
+            [3975, -3655],
+            // Trial Chamber 77
+            [3959, 5705],
+            // Trial Chamber 78
+            [3945, -1031],
+            // Trial Chamber 79
+            [3943, 4985],
+            // Trial Chamber 80
+            [3897, -4231],
+            // Trial Chamber 81
+            [3895, 713],
+            // Trial Chamber 82
+            [3881, 5975],
+            // Trial Chamber 83
+            [3881, 2951],
+            // Trial Chamber 84
+            [3879, -2711],
+            // Trial Chamber 85
+            [3847, -5335],
+            // Trial Chamber 86
+            [3831, 105],
+            // Trial Chamber 87
+            [3815, 1415],
+            // Trial Chamber 88
+            [3559, 3527],
+            // Trial Chamber 89
+            [3559, 2281],
+            // Trial Chamber 90
+            [3559, -919],
+            // Trial Chamber 91
+            [3543, 1817],
+            // Trial Chamber 92
+            [3513, -4743],
+            // Trial Chamber 93
+            [3511, -4119],
+            // Trial Chamber 94
+            [3495, -5209],
+            // Trial Chamber 95
+            [3479, 4009],
+            // Trial Chamber 96
+            [3479, 649],
+            // Trial Chamber 97
+            [3479, -3801],
+            // Trial Chamber 98
+            [3463, 4983],
+            // Trial Chamber 99
+            [3463, 2711],
+            // Trial Chamber 100
+            [3463, -1369],
+            // Trial Chamber 101
+            [3433, 1255],
+            // Trial Chamber 102
+            [3433, -3111],
+            // Trial Chamber 103
+            [3431, 4519],
+            // Trial Chamber 104
+            [3383, -1977],
+            // Trial Chamber 105
+            [3337, -2457],
+            // Trial Chamber 106
+            [3303, -5671],
+            // Trial Chamber 107
+            [3273, 281],
+            // Trial Chamber 108
+            [3255, -265],
+            // Trial Chamber 109
+            [3255, 5591],
+            // Trial Chamber 110
+            [3031, 5159],
+            // Trial Chamber 111
+            [3017, -5927],
+            // Trial Chamber 112
+            [2999, -2103],
+            // Trial Chamber 113
+            [2953, 2231],
+            // Trial Chamber 114
+            [2889, 1719],
+            // Trial Chamber 115
+            [2873, -1415],
+            // Trial Chamber 116
+            [2873, 4631],
+            // Trial Chamber 117
+            [2871, -5383],
+            // Trial Chamber 118
+            [2871, 2969],
+            // Trial Chamber 119
+            [2857, -4617],
+            // Trial Chamber 120
+            [2839, 121],
+            // Trial Chamber 121
+            [2807, -2487],
+            // Trial Chamber 122
+            [2793, -3703],
+            // Trial Chamber 123
+            [2793, -2985],
+            // Trial Chamber 124
+            [2793, -1063],
+            // Trial Chamber 125
+            [2791, -4087],
+            // Trial Chamber 126
+            [2791, 3481],
+            // Trial Chamber 127
+            [2791, 4073],
+            // Trial Chamber 128
+            [2777, 1223],
+            // Trial Chamber 129
+            [2777, 761],
+            // Trial Chamber 130
+            [2743, 5785],
+            // Trial Chamber 131
+            [2711, -343],
+            // Trial Chamber 132
+            [2521, -5833],
+            // Trial Chamber 133
+            [2503, -1991],
+            // Trial Chamber 134
+            [2503, 791],
+            // Trial Chamber 135
+            [2487, -4137],
+            // Trial Chamber 136
+            [2473, 4071],
+            // Trial Chamber 137
+            [2441, 167],
+            // Trial Chamber 138
+            [2423, 1879],
+            // Trial Chamber 139
+            [2409, 2489],
+            // Trial Chamber 140
+            [2407, -873],
+            // Trial Chamber 141
+            [2407, 3305],
+            // Trial Chamber 142
+            [2393, 1255],
+            // Trial Chamber 143
+            [2377, -295],
+            // Trial Chamber 144
+            [2313, 2839],
+            // Trial Chamber 145
+            [2311, -5431],
+            // Trial Chamber 146
+            [2295, -2487],
+            // Trial Chamber 147
+            [2265, -3719],
+            // Trial Chamber 148
+            [2265, 5721],
+            // Trial Chamber 149
+            [2249, -1561],
+            // Trial Chamber 150
+            [2231, -4647],
+            // Trial Chamber 151
+            [2217, 5193],
+            // Trial Chamber 152
+            [2167, 4487],
+            // Trial Chamber 153
+            [1961, -3593],
+            // Trial Chamber 154
+            [1929, -1607],
+            // Trial Chamber 155
+            [1929, 3993],
+            // Trial Chamber 156
+            [1927, 2761],
+            // Trial Chamber 157
+            [1927, 3497],
+            // Trial Chamber 158
+            [1895, 2391],
+            // Trial Chamber 159
+            [1895, 5737],
+            // Trial Chamber 160
+            [1801, 4633],
+            // Trial Chamber 161
+            [1769, -1079],
+            // Trial Chamber 162
+            [1753, 1641],
+            // Trial Chamber 163
+            [1737, -2663],
+            // Trial Chamber 164
+            [1735, 135],
+            // Trial Chamber 165
+            [1719, 4903],
+            // Trial Chamber 166
+            [1719, 871],
+            // Trial Chamber 167
+            [1705, -5975],
+            // Trial Chamber 168
+            [1687, 1383],
+            // Trial Chamber 169
+            [1673, -5129],
+            // Trial Chamber 170
+            [1657, -3273],
+            // Trial Chamber 171
+            [1655, -4791],
+            // Trial Chamber 172
+            [1655, -393],
+            // Trial Chamber 173
+            [1623, -2151],
+            // Trial Chamber 174
+            [1401, -809],
+            // Trial Chamber 175
+            [1399, -5993],
+            // Trial Chamber 176
+            [1383, 3961],
+            // Trial Chamber 177
+            [1351, -2105],
+            // Trial Chamber 178
+            [1351, 9],
+            // Trial Chamber 179
+            [1287, 2871],
+            // Trial Chamber 180
+            [1257, 839],
+            // Trial Chamber 181
+            [1255, -5207],
+            // Trial Chamber 182
+            [1239, 1783],
+            // Trial Chamber 183
+            [1225, -249],
+            // Trial Chamber 184
+            [1207, 5687],
+            // Trial Chamber 185
+            [1175, -2487],
+            // Trial Chamber 186
+            [1161, -2983],
+            // Trial Chamber 187
+            [1143, -4647],
+            // Trial Chamber 188
+            [1127, 4503],
+            // Trial Chamber 189
+            [1113, 2183],
+            // Trial Chamber 190
+            [1097, -3527],
+            // Trial Chamber 191
+            [1097, 1161],
+            // Trial Chamber 192
+            [1095, 5079],
+            // Trial Chamber 193
+            [1079, -1305],
+            // Trial Chamber 194
+            [873, 1143],
+            // Trial Chamber 195
+            [823, -1287],
+            // Trial Chamber 196
+            [809, 4409],
+            // Trial Chamber 197
+            [791, 3991],
+            // Trial Chamber 198
+            [775, -3145],
+            // Trial Chamber 199
+            [761, 2457],
+            // Trial Chamber 200
+            [759, 873],
+            // Trial Chamber 201
+            [745, -4217],
+            // Trial Chamber 202
+            [743, -5815],
+            // Trial Chamber 203
+            [729, 297],
+            // Trial Chamber 204
+            [713, -487],
+            // Trial Chamber 205
+            [711, -4887],
+            // Trial Chamber 206
+            [697, -2665],
+            // Trial Chamber 207
+            [695, -3801],
+            // Trial Chamber 208
+            [665, 4921],
+            // Trial Chamber 209
+            [649, -5319],
+            // Trial Chamber 210
+            [617, 3367],
+            // Trial Chamber 211
+            [601, 1735],
+            // Trial Chamber 212
+            [599, 2951],
+            // Trial Chamber 213
+            [583, -743],
+            // Trial Chamber 214
+            [583, 5465],
+            // Trial Chamber 215
+            [569, -1881],
+            // Trial Chamber 216
+            [327, -3671],
+            // Trial Chamber 217
+            [327, 3385],
+            // Trial Chamber 218
+            [281, 3961],
+            // Trial Chamber 219
+            [279, 4585],
+            // Trial Chamber 220
+            [263, -521],
+            // Trial Chamber 221
+            [249, -5689],
+            // Trial Chamber 222
+            [247, -4279],
+            // Trial Chamber 223
+            [247, 711],
+            // Trial Chamber 224
+            [247, 215],
+            // Trial Chamber 225
+            [215, 3001],
+            // Trial Chamber 226
+            [169, -5401],
+            // Trial Chamber 227
+            [121, -1369],
+            // Trial Chamber 228
+            [119, -2105],
+            // Trial Chamber 229
+            [119, -2505],
+            // Trial Chamber 230
+            [119, 2265],
+            // Trial Chamber 231
+            [87, 4903],
+            // Trial Chamber 232
+            [57, 1655],
+            // Trial Chamber 233
+            [55, 5465],
+            // Trial Chamber 234
+            [41, -3129],
+            // Trial Chamber 235
+            [41, -1047],
+            // Trial Chamber 236
+            [7, 1193],
+            // Trial Chamber 237
+            [-9, -4631],
+            // Trial Chamber 238
+            [-199, -4329],
+            // Trial Chamber 239
+            [-231, 3993],
+            // Trial Chamber 240
+            [-233, -5945],
+            // Trial Chamber 241
+            [-281, -743],
+            // Trial Chamber 242
+            [-297, 87],
+            // Trial Chamber 243
+            [-311, 5703],
+            // Trial Chamber 244
+            [-327, 3479],
+            // Trial Chamber 245
+            [-359, -3625],
+            // Trial Chamber 246
+            [-361, 1191],
+            // Trial Chamber 247
+            [-375, -5287],
+            // Trial Chamber 248
+            [-377, -473],
+            // Trial Chamber 249
+            [-409, -3111],
+            // Trial Chamber 250
+            [-439, -2057],
+            // Trial Chamber 251
+            [-439, 697],
+            // Trial Chamber 252
+            [-503, -1353],
+            // Trial Chamber 253
+            [-503, 1641],
+            // Trial Chamber 254
+            [-503, 4553],
+            // Trial Chamber 255
+            [-521, 2359],
+            // Trial Chamber 256
+            [-535, 4953],
+            // Trial Chamber 257
+            [-537, 2759],
+            // Trial Chamber 258
+            [-553, -2487],
+            // Trial Chamber 259
+            [-761, 889],
+            // Trial Chamber 260
+            [-775, 5511],
+            // Trial Chamber 261
+            [-793, -2599],
+            // Trial Chamber 262
+            [-809, -2999],
+            // Trial Chamber 263
+            [-809, 2249],
+            // Trial Chamber 264
+            [-839, 4567],
+            // Trial Chamber 265
+            [-857, -5417],
+            // Trial Chamber 266
+            [-871, -4023],
+            // Trial Chamber 267
+            [-871, -1399],
+            // Trial Chamber 268
+            [-873, -1961],
+            // Trial Chamber 269
+            [-889, 2825],
+            // Trial Chamber 270
+            [-921, -4873],
+            // Trial Chamber 271
+            [-951, -5657],
+            // Trial Chamber 272
+            [-953, 1785],
+            // Trial Chamber 273
+            [-983, 345],
+            // Trial Chamber 274
+            [-985, 5145],
+            // Trial Chamber 275
+            [-1015, 3545],
+            // Trial Chamber 276
+            [-1049, 1417],
+            // Trial Chamber 277
+            [-1063, -3481],
+            // Trial Chamber 278
+            [-1065, 3833],
+            // Trial Chamber 279
+            [-1081, -791],
+            // Trial Chamber 280
+            [-1287, 873],
+            // Trial Chamber 281
+            [-1319, -3641],
+            // Trial Chamber 282
+            [-1335, 1833],
+            // Trial Chamber 283
+            [-1337, 3033],
+            // Trial Chamber 284
+            [-1353, -841],
+            // Trial Chamber 285
+            [-1369, 3929],
+            // Trial Chamber 286
+            [-1383, 1337],
+            // Trial Chamber 287
+            [-1417, -1879],
+            // Trial Chamber 288
+            [-1431, 2183],
+            // Trial Chamber 289
+            [-1433, 5031],
+            // Trial Chamber 290
+            [-1447, -5735],
+            // Trial Chamber 291
+            [-1447, 5673],
+            // Trial Chamber 292
+            [-1463, -4343],
+            // Trial Chamber 293
+            [-1527, -5111],
+            // Trial Chamber 294
+            [-1591, -1321],
+            // Trial Chamber 295
+            [-1607, -4681],
+            // Trial Chamber 296
+            [-1607, -2503],
+            // Trial Chamber 297
+            [-1609, 4617],
+            // Trial Chamber 298
+            [-1623, -3047],
+            // Trial Chamber 299
+            [-1623, -247],
+            // Trial Chamber 300
+            [-1641, 3481],
+            // Trial Chamber 301
+            [-1831, -2935],
+            // Trial Chamber 302
+            [-1847, 4137],
+            // Trial Chamber 303
+            [-1865, -1385],
+            // Trial Chamber 304
+            [-1881, 1863],
+            // Trial Chamber 305
+            [-1897, -4023],
+            // Trial Chamber 306
+            [-1927, -2151],
+            // Trial Chamber 307
+            [-1927, 663],
+            // Trial Chamber 308
+            [-1929, -5865],
+            // Trial Chamber 309
+            [-1929, -5399],
+            // Trial Chamber 310
+            [-1929, -265],
+            // Trial Chamber 311
+            [-1943, 1353],
+            // Trial Chamber 312
+            [-1961, -3593],
+            // Trial Chamber 313
+            [-1975, 2761],
+            // Trial Chamber 314
+            [-1993, -2505],
+            // Trial Chamber 315
+            [-2007, 2167],
+            // Trial Chamber 316
+            [-2007, 4967],
+            // Trial Chamber 317
+            [-2023, 57],
+            // Trial Chamber 318
+            [-2057, 3383],
+            // Trial Chamber 319
+            [-2105, 4409],
+            // Trial Chamber 320
+            [-2121, -967],
+            // Trial Chamber 321
+            [-2135, 5655],
+            // Trial Chamber 322
+            [-2151, -4585],
+            // Trial Chamber 323
+            [-2375, -4681],
+            // Trial Chamber 324
+            [-2457, 1351],
+            // Trial Chamber 325
+            [-2471, 4343],
+            // Trial Chamber 326
+            [-2487, 89],
+            // Trial Chamber 327
+            [-2489, 3913],
+            // Trial Chamber 328
+            [-2505, -3735],
+            // Trial Chamber 329
+            [-2519, -855],
+            // Trial Chamber 330
+            [-2519, 2887],
+            // Trial Chamber 331
+            [-2535, -393],
+            // Trial Chamber 332
+            [-2569, -1383],
+            // Trial Chamber 333
+            [-2569, -4281],
+            // Trial Chamber 334
+            [-2583, 5449],
+            // Trial Chamber 335
+            [-2585, -5751],
+            // Trial Chamber 336
+            [-2599, 1959],
+            // Trial Chamber 337
+            [-2601, -2631],
+            // Trial Chamber 338
+            [-2649, -3241],
+            // Trial Chamber 339
+            [-2649, -5111],
+            // Trial Chamber 340
+            [-2679, 2505],
+            // Trial Chamber 341
+            [-2695, 3593],
+            // Trial Chamber 342
+            [-2713, -2087],
+            // Trial Chamber 343
+            [-2729, 4951],
+            // Trial Chamber 344
+            [-2919, -521],
+            // Trial Chamber 345
+            [-2951, 2377],
+            // Trial Chamber 346
+            [-2953, -3239],
+            // Trial Chamber 347
+            [-2983, -4039],
+            // Trial Chamber 348
+            [-2983, 4105],
+            // Trial Chamber 349
+            [-3033, -1465],
+            // Trial Chamber 350
+            [-3047, -5351],
+            // Trial Chamber 351
+            [-3047, 1961],
+            // Trial Chamber 352
+            [-3049, -4887],
+            // Trial Chamber 353
+            [-3049, 297],
+            // Trial Chamber 354
+            [-3063, -2185],
+            // Trial Chamber 355
+            [-3081, 2841],
+            // Trial Chamber 356
+            [-3097, -3593],
+            // Trial Chamber 357
+            [-3113, 5081],
+            // Trial Chamber 358
+            [-3127, 3609],
+            // Trial Chamber 359
+            [-3191, -2553],
+            // Trial Chamber 360
+            [-3191, -5911],
+            // Trial Chamber 361
+            [-3207, -951],
+            // Trial Chamber 362
+            [-3255, 1319],
+            // Trial Chamber 363
+            [-3273, 4681],
+            // Trial Chamber 364
+            [-3463, -1383],
+            // Trial Chamber 365
+            [-3463, -5719],
+            // Trial Chamber 366
+            [-3463, 4441],
+            // Trial Chamber 367
+            [-3497, 4041],
+            // Trial Chamber 368
+            [-3511, 729],
+            // Trial Chamber 369
+            [-3513, 2489],
+            // Trial Chamber 370
+            [-3545, -3785],
+            // Trial Chamber 371
+            [-3559, -1079],
+            // Trial Chamber 372
+            [-3561, -2071],
+            // Trial Chamber 373
+            [-3575, -5415],
+            // Trial Chamber 374
+            [-3607, 3497],
+            // Trial Chamber 375
+            [-3623, -4023],
+            // Trial Chamber 376
+            [-3625, -2567],
+            // Trial Chamber 377
+            [-3657, -4649],
+            // Trial Chamber 378
+            [-3689, 1657],
+            // Trial Chamber 379
+            [-3703, -3015],
+            // Trial Chamber 380
+            [-3703, -199],
+            // Trial Chamber 381
+            [-3721, 3031],
+            // Trial Chamber 382
+            [-3737, 217],
+            // Trial Chamber 383
+            [-3737, 1225],
+            // Trial Chamber 384
+            [-3753, 4921],
+            // Trial Chamber 385
+            [-4039, -855],
+            // Trial Chamber 386
+            [-4073, -3639],
+            // Trial Chamber 387
+            [-4087, -4103],
+            // Trial Chamber 388
+            [-4087, -5785],
+            // Trial Chamber 389
+            [-4089, 5449],
+            // Trial Chamber 390
+            [-4105, 1799],
+            // Trial Chamber 391
+            [-4105, 4969],
+            // Trial Chamber 392
+            [-4119, 631],
+            // Trial Chamber 393
+            [-4119, 2167],
+            // Trial Chamber 394
+            [-4121, -4809],
+            // Trial Chamber 395
+            [-4183, -2441],
+            // Trial Chamber 396
+            [-4185, -2969],
+            // Trial Chamber 397
+            [-4217, -2137],
+            // Trial Chamber 398
+            [-4217, 4585],
+            // Trial Chamber 399
+            [-4231, 1223],
+            // Trial Chamber 400
+            [-4233, 3369],
+            // Trial Chamber 401
+            [-4247, -5159],
+            // Trial Chamber 402
+            [-4279, -231],
+            // Trial Chamber 403
+            [-4295, 4041],
+            // Trial Chamber 404
+            [-4297, -1625],
+            // Trial Chamber 405
+            [-4329, 2919],
+            // Trial Chamber 406
+            [-4345, -9],
+            // Trial Chamber 407
+            [-4551, 4951],
+            // Trial Chamber 408
+            [-4601, -1929],
+            // Trial Chamber 409
+            [-4615, -247],
+            // Trial Chamber 410
+            [-4617, -1463],
+            // Trial Chamber 411
+            [-4727, 775],
+            // Trial Chamber 412
+            [-4727, 3865],
+            // Trial Chamber 413
+            [-4745, -2631],
+            // Trial Chamber 414
+            [-4761, -4585],
+            // Trial Chamber 415
+            [-4775, 3529],
+            // Trial Chamber 416
+            [-4775, 4569],
+            // Trial Chamber 417
+            [-4777, -3161],
+            // Trial Chamber 418
+            [-4777, 2311],
+            // Trial Chamber 419
+            [-4791, 2761],
+            // Trial Chamber 420
+            [-4807, -5671],
+            // Trial Chamber 421
+            [-4809, -4201],
+            // Trial Chamber 422
+            [-4809, 5529],
+            // Trial Chamber 423
+            [-4823, -3607],
+            // Trial Chamber 424
+            [-4823, -921],
+            // Trial Chamber 425
+            [-4823, 1225],
+            // Trial Chamber 426
+            [-4823, 1799],
+            // Trial Chamber 427
+            [-4839, -5177],
+            // Trial Chamber 428
+            [-5095, 9],
+            // Trial Chamber 429
+            [-5095, 2455],
+            // Trial Chamber 430
+            [-5111, 5991],
+            // Trial Chamber 431
+            [-5143, -4295],
+            // Trial Chamber 432
+            [-5161, 1943],
+            // Trial Chamber 433
+            [-5177, -3783],
+            // Trial Chamber 434
+            [-5193, 3817],
+            // Trial Chamber 435
+            [-5209, -5785],
+            // Trial Chamber 436
+            [-5209, 761],
+            // Trial Chamber 437
+            [-5225, -425],
+            // Trial Chamber 438
+            [-5257, 4999],
+            // Trial Chamber 439
+            [-5271, 1255],
+            // Trial Chamber 440
+            [-5287, 4505],
+            // Trial Chamber 441
+            [-5321, 3049],
+            // Trial Chamber 442
+            [-5337, -1527],
+            // Trial Chamber 443
+            [-5337, -2455],
+            // Trial Chamber 444
+            [-5367, -1865],
+            // Trial Chamber 445
+            [-5369, -4649],
+            // Trial Chamber 446
+            [-5385, -3209],
+            // Trial Chamber 447
+            [-5399, 5561],
+            // Trial Chamber 448
+            [-5417, -1047],
+            // Trial Chamber 449
+            [-5431, 3447],
+            // Trial Chamber 450
+            [-5449, -5239],
+            // Trial Chamber 451
+            [-5655, 5655],
+            // Trial Chamber 452
+            [-5657, 2265],
+            // Trial Chamber 453
+            [-5671, -4105],
+            // Trial Chamber 454
+            [-5687, 3975],
+            // Trial Chamber 455
+            [-5689, -1047],
+            // Trial Chamber 456
+            [-5703, -361],
+            // Trial Chamber 457
+            [-5735, -2073],
+            // Trial Chamber 458
+            [-5735, 1337],
+            // Trial Chamber 459
+            [-5737, -2983],
+            // Trial Chamber 460
+            [-5799, -2713],
+            // Trial Chamber 461
+            [-5799, 1881],
+            // Trial Chamber 462
+            [-5831, -5321],
+            // Trial Chamber 463
+            [-5831, -4599],
+            // Trial Chamber 464
+            [-5863, 3575],
+            // Trial Chamber 465
+            [-5911, 345],
+            // Trial Chamber 466
+            [-5913, -1337],
+            // Trial Chamber 467
+            [-5913, 4681],
+            // Trial Chamber 468
+            [-5927, 4887],
+            // Trial Chamber 469
+            [-5929, 553],
+            // Trial Chamber 470
+            [-5929, 2919],
+            // Trial Chamber 471
+            [-5945, -5929],
+            // Trial Chamber 472
+            [-5977, -3513],
         ];
 
         return {

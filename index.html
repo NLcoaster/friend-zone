@@ -59,33 +59,47 @@
             <a href="index.html" class="active" id="btn-overworld"> Overworld ▾</a>
             <div class="dim-nav-menu" id="layer-menu">
                 <div class="dim-nav-menu-title">Layers</div>
-                    <div class="sub-group">
-                        <label class="sub-header">
-                            <input type="checkbox" id="toggle-villages-all" checked> <strong>Villages</strong>
-                        </label>
-                        <div class="sub-items">
-                            <label><input type="checkbox" id="toggle-igloo"           checked>  Igloo</label>
-                            <label><input type="checkbox" id="toggle-igloo-basement"  checked>  Igloo with basement</label>
-                            <label><input type="checkbox" id="toggle-village"         checked>  Village</label>
-                            <label><input type="checkbox" id="toggle-zombie-village"  checked>  Zombie Village</label>
-                        </div>
-                    </div>
+
+                <!-- Villages -->
                 <div class="sub-group">
-                    <label class="sub-header"><input type="checkbox" id="toggle-pillager-all" checked> <strong>Pillager</strong></label>
+                    <label class="sub-header">
+                        <input type="checkbox" id="toggle-villages-all" checked> <strong>Villages</strong>
+                    </label>
+                    <div class="sub-items">
+                        <label><input type="checkbox" id="toggle-igloo"           checked>  Igloo</label>
+                        <label><input type="checkbox" id="toggle-igloo-basement"  checked>  Igloo with basement</label>
+                        <label><input type="checkbox" id="toggle-village"         checked>  Village</label>
+                        <label><input type="checkbox" id="toggle-zombie-village"  checked>  Zombie Village</label>
+                    </div>
+                </div>
+
+                <!-- Pillager -->
+                <div class="sub-group">
+                    <label class="sub-header">
+                        <input type="checkbox" id="toggle-pillager-all" checked> <strong>Pillager</strong>
+                    </label>
                     <div class="sub-items">
                         <label><input type="checkbox" id="toggle-pillager-outpost" checked>  Pillager Outpost</label>
                         <label><input type="checkbox" id="toggle-witch-hut"        checked>  Witch Hut</label>
                     </div>
                 </div>
+
+                <!-- Shipwrecks -->
                 <div class="sub-group">
-                    <label class="sub-header"><input type="checkbox" id="toggle-shipwrecks-all" checked> <strong>Shipwrecks</strong></label>
+                    <label class="sub-header">
+                        <input type="checkbox" id="toggle-shipwrecks-all" checked> <strong>Shipwrecks</strong>
+                    </label>
                     <div class="sub-items">
                         <label><input type="checkbox" id="toggle-shipwreck" checked>  Shipwreck</label>
                         <label><input type="checkbox" id="toggle-treasure"  checked>  Treasure Chest</label>
                     </div>
                 </div>
+
+                <!-- Temples -->
                 <div class="sub-group">
-                    <label class="sub-header"><input type="checkbox" id="toggle-temples-all" checked> <strong>Temples</strong></label>
+                    <label class="sub-header">
+                        <input type="checkbox" id="toggle-temples-all" checked> <strong>Temples</strong>
+                    </label>
                     <div class="sub-items">
                         <label><input type="checkbox" id="toggle-desert-pyramid"  checked>  Desert Pyramid</label>
                         <label><input type="checkbox" id="toggle-desert-well"     checked>  Desert Well</label>
@@ -94,24 +108,33 @@
                         <label><input type="checkbox" id="toggle-ocean-monument"  checked>  Ocean Monument</label>
                     </div>
                 </div>
+
+                <!-- Portals -->
                 <div class="sub-group">
-                    <label class="sub-header"><input type="checkbox" id="toggle-portals-all" checked> <strong>Portals</strong></label>
+                    <label class="sub-header">
+                        <input type="checkbox" id="toggle-portals-all" checked> <strong>Portals</strong>
+                    </label>
                     <div class="sub-items">
                         <label><input type="checkbox" id="toggle-nether-portal"  checked>  Nether Portal</label>
                         <label><input type="checkbox" id="toggle-ruined-portal"  checked>  Ruined Portal</label>
                         <label><input type="checkbox" id="toggle-end-portal"     checked>  End Portal</label>
                     </div>
                 </div>
+
+                <!-- Underground -->
                 <div class="sub-group">
-                    <label class="sub-header"><input type="checkbox" id="toggle-underground-all" checked> <strong>Underground</strong></label>
+                    <label class="sub-header">
+                        <input type="checkbox" id="toggle-underground-all" checked> <strong>Underground</strong>
+                    </label>
                     <div class="sub-items">
-                        <label><input type="checkbox" id="toggle-ancient-city"         checked>  Ancient City</label>
-                        <label><input type="checkbox" id="toggle-mineshaft"            checked>  Mineshaft</label>
-                        <label><input type="checkbox" id="toggle-stronghold"           checked>  Stronghold</label>
-                        <label><input type="checkbox" id="toggle-trail-ruin"           checked>  Trail Ruin</label>
-                        <label><input type="checkbox" id="toggle-trial-chamber"        checked>  Trial Chamber</label>
+                        <label><input type="checkbox" id="toggle-ancient-city"    checked>  Ancient City</label>
+                        <label><input type="checkbox" id="toggle-mineshaft"       checked>  Mineshaft</label>
+                        <label><input type="checkbox" id="toggle-stronghold"      checked>  Stronghold</label>
+                        <label><input type="checkbox" id="toggle-trail-ruin"      checked>  Trail Ruin</label>
+                        <label><input type="checkbox" id="toggle-trial-chamber"   checked>  Trial Chamber</label>
                     </div>
                 </div>
+
                 <label><input type="checkbox" id="toggle-playerbuild" checked>  Playerbuild</label>
                 <label><input type="checkbox" id="toggle-landscapes"  checked>  Landscapes</label>
             </div>
@@ -219,55 +242,99 @@
             menu.classList.toggle('open');
         });
 
-        // Close menu when clicking outside
+        // Sluit menu bij klik buiten
         document.addEventListener('click', (e) => {
             if (!btn.contains(e.target) && !menu.contains(e.target)) {
                 menu.classList.remove('open');
             }
         });
 
-        // ── Layer checkboxes ─────────────────────────────────────
-        const layerToggles = [
-            { id: 'toggle-pillager',    key: 'pillager'    },
-            { id: 'toggle-shipwrecks',  key: 'shipwrecks'  },
-            { id: 'toggle-temples',     key: 'temples'     },
-            { id: 'toggle-portals',     key: 'portals'     },
-            { id: 'toggle-underground', key: 'underground' },
-            { id: 'toggle-playerbuild', key: 'playerbuild' },
-            { id: 'toggle-landscapes',  key: 'landscapes'  },
-        ];
+        // ── Hulpfuncties ─────────────────────────────────────────
 
-        layerToggles.forEach(({ id, key }) => {
-            const checkbox = document.getElementById(id);
-            if (!checkbox) return;
+        // Zet hoofd-checkbox op checked / unchecked / indeterminate
+        // op basis van de huidige staat van de sub-checkboxes.
+        function syncParentCheckbox(allId, subToggles) {
+            const states = subToggles.map(({ id }) => document.getElementById(id).checked);
+            const allOn  = states.every(Boolean);
+            const allOff = states.every(v => !v);
+            const el     = document.getElementById(allId);
+            el.checked       = allOn;
+            el.indeterminate = !allOn && !allOff;
+        }
 
-            checkbox.checked = unmined._Unmined__options?.['show' + key] ?? true;
-
-            checkbox.addEventListener('change', () => {
-                unmined.toggleCustomLayer(key);
-                checkbox.checked = unmined._Unmined__options?.['show' + key] ?? checkbox.checked;
+        // Koppelt een groep sub-checkboxes aan een hoofd-checkbox.
+        //   subToggles : [{ id, key }, ...]
+        //   allId      : id van de hoofd-checkbox
+        //   setVisible : (key, boolean) => void
+        function bindGroupToggles(subToggles, allId, setVisible) {
+            // Sub-checkbox gewijzigd → laag tonen/verbergen + hoofd bijwerken
+            subToggles.forEach(({ id, key }) => {
+                document.getElementById(id).addEventListener('change', (e) => {
+                    setVisible(key, e.target.checked);
+                    syncParentCheckbox(allId, subToggles);
+                });
             });
-        });
 
-        // ── Villages sub-checkboxes ───────────────────────────────
-        const villageSubToggles = [
+            // Hoofd-checkbox gewijzigd → alle subs + lagen tegelijk aan/uit
+            document.getElementById(allId).addEventListener('change', (e) => {
+                subToggles.forEach(({ id, key }) => {
+                    setVisible(key, e.target.checked);
+                    document.getElementById(id).checked = e.target.checked;
+                });
+                document.getElementById(allId).indeterminate = false;
+            });
+        }
+
+        // ── Villages ─────────────────────────────────────────────
+        bindGroupToggles([
             { id: 'toggle-igloo',          key: 'villages_igloo'         },
             { id: 'toggle-igloo-basement', key: 'villages_iglooBasement' },
             { id: 'toggle-village',        key: 'villages_village'       },
             { id: 'toggle-zombie-village', key: 'villages_zombie'        },
-        ];
+        ], 'toggle-villages-all', (key, visible) => unmined.customLayers[key]?.setVisible(visible));
 
-        villageSubToggles.forEach(({ id, key }) => {
+        // ── Pillager ─────────────────────────────────────────────
+        bindGroupToggles([
+            { id: 'toggle-pillager-outpost', key: 'pillager_outpost' },
+            { id: 'toggle-witch-hut',        key: 'witch_hut'        },
+        ], 'toggle-pillager-all', (key, visible) => unmined.customLayers[key]?.setVisible(visible));
+
+        // ── Shipwrecks ───────────────────────────────────────────
+        bindGroupToggles([
+            { id: 'toggle-shipwreck', key: 'shipwrecks_shipwreck' },
+            { id: 'toggle-treasure',  key: 'shipwrecks_treasure'  },
+        ], 'toggle-shipwrecks-all', (key, visible) => unmined.customLayers[key]?.setVisible(visible));
+
+        // ── Temples ──────────────────────────────────────────────
+        bindGroupToggles([
+            { id: 'toggle-desert-pyramid', key: 'temples_desert_pyramid' },
+            { id: 'toggle-desert-well',    key: 'temples_desert_well'    },
+            { id: 'toggle-jungle-pyramid', key: 'temples_jungle_pyramid' },
+            { id: 'toggle-ocean-ruin',     key: 'temples_ocean_ruin'     },
+            { id: 'toggle-ocean-monument', key: 'temples_ocean_monument' },
+        ], 'toggle-temples-all', (key, visible) => unmined.customLayers[key]?.setVisible(visible));
+
+        // ── Portals ──────────────────────────────────────────────
+        bindGroupToggles([
+            { id: 'toggle-nether-portal', key: 'portals_nether_portal' },
+            { id: 'toggle-ruined-portal', key: 'portals_ruined_portal' },
+            { id: 'toggle-end-portal',    key: 'portals_end_portal'    },
+        ], 'toggle-portals-all', (key, visible) => unmined.customLayers[key]?.setVisible(visible));
+
+        // ── Underground ──────────────────────────────────────────
+        bindGroupToggles([
+            { id: 'toggle-ancient-city',  key: 'underground_ancient_city'        },
+            { id: 'toggle-mineshaft',     key: 'underground_abandoned_mineshaft' },
+            { id: 'toggle-stronghold',    key: 'underground_stronghold'          },
+            { id: 'toggle-trail-ruin',    key: 'underground_trail_ruin'          },
+            { id: 'toggle-trial-chamber', key: 'underground_trial_chamber'       },
+        ], 'toggle-underground-all', (key, visible) => unmined.customLayers[key]?.setVisible(visible));
+
+        // ── Losse lagen (geen sub-items) ─────────────────────────
+        ['toggle-playerbuild', 'toggle-landscapes'].forEach(id => {
+            const key = id.replace('toggle-', '');
             document.getElementById(id).addEventListener('change', (e) => {
                 unmined.customLayers[key]?.setVisible(e.target.checked);
-            });
-        });
-
-        // Hoofd-checkbox: alle village subtypes tegelijk aan/uit
-        document.getElementById('toggle-villages-all').addEventListener('change', (e) => {
-            villageSubToggles.forEach(({ id, key }) => {
-                unmined.customLayers[key]?.setVisible(e.target.checked);
-                document.getElementById(id).checked = e.target.checked;
             });
         });
 
