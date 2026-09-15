@@ -251,14 +251,14 @@ UnminedCustomPlayerbuild = {
                     offsetY: 20,
                     font: "bold 20px Calibri,sans serif",
                 },
-            //City
+            //Icona Landmarkia
                 {
                     x: 1024,
                     z: 1024,
                     image: "playerimages/item.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.5,
-                    text: "Monuments City",
+                    text: "Icona Landmarkia",
                     textColor: "yellow",
                     offsetX: 0,
                     offsetY: 20,
