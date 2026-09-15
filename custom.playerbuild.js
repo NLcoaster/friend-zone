@@ -225,7 +225,7 @@ UnminedCustomPlayerbuild = {
                     offsetY: 20,
                     font: "bold 20px Calibri,sans serif",
                 },
-            //Sand Castle
+            //Zahravan
                 {
                     x: -1280,
                     z: -306,
@@ -308,6 +308,16 @@ UnminedCustomPlayerbuild = {
                     x: -2144,
                     z: -1300,
                     text: "Copper Harbor",
+                    textColor: "black",
+                    offsetX: 0,
+                    offsetY: 0,
+                    font: "bold 12px Calibri,sans serif",
+                },
+			//Aetheropolis
+                {
+                    x: -990,
+                    z: -1694,
+                    text: "Aetheropolis",
                     textColor: "black",
                     offsetX: 0,
                     offsetY: 0,
