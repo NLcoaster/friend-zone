@@ -323,6 +323,16 @@ UnminedCustomPlayerbuild = {
                     offsetY: 0,
                     font: "bold 12px Calibri,sans serif",
                 },
+			//ender portal City
+                {
+                    x: -1870,
+                    z: -297,
+                    text: "ender portal City",
+                    textColor: "black",
+                    offsetX: 0,
+                    offsetY: 0,
+                    font: "bold 12px Calibri,sans serif",
+                },
         // quests
             //prison
                 {
