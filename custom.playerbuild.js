@@ -232,7 +232,7 @@ UnminedCustomPlayerbuild = {
                     image: "playerimages/item.png",
                     imageAnchor: [0.5, 1],
                     imageScale: 0.5,
-                    text: "Sand Castle",
+                    text: "Zahravan",
                     textColor: "yellow",
                     offsetX: 0,
                     offsetY: 20,
@@ -253,7 +253,7 @@ UnminedCustomPlayerbuild = {
                 },
             //Icona Landmarkia
                 {
-                    x: 1024,
+                    x: 1344,
                     z: 1024,
                     image: "playerimages/item.png",
                     imageAnchor: [0.5, 1],
