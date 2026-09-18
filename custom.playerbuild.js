@@ -317,11 +317,14 @@ UnminedCustomPlayerbuild = {
                 {
                     x: -990,
                     z: -1694,
+                    image: "playerimages/item.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.5,
                     text: "Aetheropolis",
-                    textColor: "black",
+                    textColor: "yellow",
                     offsetX: 0,
                     offsetY: 0,
-                    font: "bold 12px Calibri,sans serif",
+                    font: "bold 20px Calibri,sans serif",
                 },
 			//ender portal City
                 {
