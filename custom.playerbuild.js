@@ -67,6 +67,19 @@ UnminedCustomPlayerbuild = {
                     offsetY: 20,
                     font: "bold 10px Calibri,sans serif",
                 },
+            // Map room 3
+                {
+                    x: -358,
+                    z: -892,
+                    image: "playerimages/world.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.25,
+                    text: "Map Room",
+                    textColor: "black",
+                    offsetX: 0,
+                    offsetY: 20,
+                    font: "bold 10px Calibri,sans serif",
+                },
             //library 1
                 {
                     x: -70,
@@ -336,6 +349,19 @@ UnminedCustomPlayerbuild = {
                     offsetY: 0,
                     font: "bold 12px Calibri,sans serif",
                 },
+            //joran's hideout
+                {
+                    x: -37,
+                    z: 1905,
+                    image: "playerimages/item.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.5,
+                    text: "joran's hideout",
+                    textColor: "yellow",
+                    offsetX: 0,
+                    offsetY: 0,
+                    font: "bold 20px Calibri,sans serif",
+                },
         // quests
             //prison
                 {
@@ -362,6 +388,36 @@ UnminedCustomPlayerbuild = {
                     offsetX: 0,
                     offsetY: 20,
                     font: "bold 20px Calibri,sans serif",
+                },
+                 
+        // vilage name
+                {
+                    x: -407,
+                    z: -957,
+                    text: "Blizzardburg",
+                    textColor: "black",
+                    offsetX: 0,
+                    offsetY: 20,
+                    font: "bold 20px Calibri,sans serif",
+                },
+        // available land
+                {
+                    x: -2142,
+                    z: 837,
+                    text: "not yet claimed",
+                    textColor: "white",
+                    offsetX: 0,
+                    offsetY: 20,
+                    font: "bold 15px Calibri,sans serif",
+                },
+                {
+                    x: -1245,
+                    z: 190,
+                    text: "not yet claimed",
+                    textColor: "white",
+                    offsetX: 0,
+                    offsetY: 20,
+                    font: "bold 15px Calibri,sans serif",
                 },
     // do not delete the following two closing brackets
     ]
