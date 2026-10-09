@@ -67,7 +67,7 @@ UnminedCustomPlayerbuild = {
                     offsetY: 20,
                     font: "bold 10px Calibri,sans serif",
                 },
-            // Map room 3
+            //Map room 3
                 {
                     x: -358,
                     z: -892,
@@ -390,7 +390,7 @@ UnminedCustomPlayerbuild = {
                     font: "bold 20px Calibri,sans serif",
                 },
                  
-        // vilage name
+        //village name
                 {
                     x: -407,
                     z: -957,
@@ -400,7 +400,7 @@ UnminedCustomPlayerbuild = {
                     offsetY: 20,
                     font: "bold 20px Calibri,sans serif",
                 },
-        // available land
+        //available land
                 {
                     x: -2142,
                     z: 837,
