@@ -400,6 +400,15 @@ UnminedCustomPlayerbuild = {
                     offsetY: 20,
                     font: "bold 20px Calibri,sans serif",
                 },
+                {
+                    x: -1880,
+                    z: 253,
+                    text: "portal city",
+                    textColor: "black",
+                    offsetX: 0,
+                    offsetY: 20,
+                    font: "bold 20px Calibri,sans serif",
+                },
         //available land
                 {
                     x: -2142,

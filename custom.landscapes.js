@@ -40,6 +40,16 @@ UnminedCustomLandscapes = {
 
     landscapes: [
         //landscape names
+            //Peamazu mountain
+                {
+                x: -1950,
+                z: 455,
+                text: "Peamazu mountain",
+                textColor: "blue",
+                offsetX: 0,
+                offsetY: 0,
+                font: "bold 15px Calibri,sans serif",
+                },
             //lake of Mizu umi
                 {
                 x: -800,

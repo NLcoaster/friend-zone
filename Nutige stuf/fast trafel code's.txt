@@ -1,0 +1,40 @@
+[-L R] [-U D]
+
+	home 
+		tp @initiator -42 75 -163
+[
+Hullo my frend, how ah you doo-ing tuday?
+
+weh may ah take yew?
+]
+
+travel guide North East
+
+	Marit
+		tp @initiator 58 63 -744
+
+travel guide North West
+
+	§6Zahravan
+		tp @initiator -1125 71 -305
+	frank bouw werk
+		tp @initiator -2203 67 -504
+	§2The greenkeep
+		tp @initiator -2004 76 -1502
+	Aetheropolis
+		tp @initiator -1036 67 -1684
+
+travel guide south East
+
+	§bCity
+		tp @initiator 1455 66 922
+
+
+
+travel guide south West
+
+	§2Daar§4ook§r's hut
+		tp @initiator -1570 81 400
+
+	§bjoran's §ghideout 
+		tp @initiator -139 70 1806
