@@ -345,7 +345,6 @@ class Unmined {
             this.updateCustomLayer(def.key);
         }
 
-        this.updateSpawnpointLayer();
         this.updatePlayerMarkersLayer();
         this.olMap.addControl(this.createContextMenu());
 
