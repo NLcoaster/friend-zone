@@ -362,6 +362,20 @@ UnminedCustomPlayerbuild = {
                     offsetY: 20,
                     font: "bold 20px Calibri,sans serif",
                 },
+            //Johan's Mountain
+                {
+                    x: -2142,
+                    z: 837,
+                    image: "playerimages/item.png",
+                    imageAnchor: [0.5, 1],
+                    imageScale: 0.5,
+                    text: "B01 Dome",
+                    textColor: "yellow",
+                    offsetX: 0,
+                    offsetY: 20,
+                    font: "bold 20px Calibri,sans serif",
+                },
+
         // quests
             //prison
                 {
@@ -389,6 +403,7 @@ UnminedCustomPlayerbuild = {
                     offsetY: 20,
                     font: "bold 20px Calibri,sans serif",
                 },
+
                  
         //village name
                 {
@@ -409,16 +424,8 @@ UnminedCustomPlayerbuild = {
                     offsetY: 20,
                     font: "bold 20px Calibri,sans serif",
                 },
+
         //available land
-                {
-                    x: -2142,
-                    z: 837,
-                    text: "not yet claimed",
-                    textColor: "white",
-                    offsetX: 0,
-                    offsetY: 20,
-                    font: "bold 20px Calibri,sans serif",
-                },
                 {
                     x: -1245,
                     z: 190,
